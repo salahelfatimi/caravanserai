@@ -34,11 +34,13 @@ export default {
     },
     extend: {
       fontFamily: {
-        satoshi: ['Satoshi', 'sans-serif'],
+        boska: ['Boska', 'sans-serif'],
+        
       },   
       colors: {
-        greenPrimary:'#084226',
-        redPrimary: '#790202', 
+        primary:'#8F6448',
+        secondary:'#D0C3B0',
+        
        
       },
     },
