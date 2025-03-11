@@ -57,12 +57,12 @@ export default function Activitte() {
     
 
     return (
-        <div className="relative h-screen bg-primary flex flex-col lg:flex-row-reverse gap-10 lg:gap-0  items-center">
+        <div className="relative pb-20 lg:pb-0 bg-primary flex flex-col lg:flex-row-reverse gap-10 lg:gap-0 w-full items-center">
             {/* Left side with image slider */}
-            <div className="lg:w-1/2 h-[30rem] md:h-full overflow-hidden bg-white select-none cursor-grab active:cursor-grabbing" ref={emblaRef}>
-                <div className="flex h-full w-full transition-transform duration-700 ease-linear ">
+            <div className="lg:w-1/2 w-full overflow-hidden bg-white select-none cursor-grab active:cursor-grabbing" ref={emblaRef}>
+                <div className="flex  w-full transition-transform duration-700 ease-linear ">
                     {activite.map((ele, index) => (
-                        <div key={index} className="relative flex-none w-full h-full">
+                        <div key={index} className="relative flex-none w-full ">
                             <Image width={1920} height={1080} quality={50} src={ele.image} alt={ele.title} title={ele.title} className="w-full h-full object-cover "/>
                             <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-60  p-6">
                                 <h3 className="text-2xl lg:text-4xl font-bold text-center font-boska">{ele.title}</h3>
@@ -74,7 +74,7 @@ export default function Activitte() {
             </div>
             
             {/* Right side with text */}
-            <div className="lg:w-1/2 flex flex-col items-center justify-center text-white container">
+            <div className="lg:w-1/2 flex flex-col  items-center justify-center text-white container">
                 <h2 className=" text-5xl text-center font-boska font-medium mb-10">
                     Adventures, Culture & Pure Fun
                 </h2>

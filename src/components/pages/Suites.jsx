@@ -23,7 +23,7 @@ export default function Suites() {
     },[])
 
     return(
-        <div className="relative h-screen bg-white flex flex-col-reverse lg:flex-row-reverse  gap-10 lg:gap-0 items-center">
+        <div className="relative pb-20 lg:pb-0  bg-white flex flex-col-reverse lg:flex-row-reverse  gap-10 lg:gap-0 items-center justify-center">
                 <div className=" flex flex-col gap-10 items-start justify-center md:w-1/2 mx-auto container "> 
                     <h2 className="text-6xl text-center font-boska font-medium text-primary  ">Suites & Rooms</h2>
                     <div className="flex flex-col justify-start gap-4 w-full  items-start">
@@ -36,12 +36,12 @@ export default function Suites() {
 
                     </div>
                 </div>
-                <div className="md:w-1/2">
-                    <div className=" overflow-hidden relative"  ref={emblaRef}>
+                <div className="lg:w-1/2">
+                    <div className=" overflow-hidden relative "  ref={emblaRef}>
                         <div  className="flex transition-transform ease-out duration-700">
                             {[1,2,3,4].map((ele, index) => (
                                 <div key={index} className=" relative  min-w-full w-full">
-                                    <Image  src={`/img/suites&rooms/${selected}/${selected}_${index+1}.jpg`} title={selected} alt={selected} className="  object-cover object-center md:h-screen h-[30rem] min-w-full w-full"  width={1920} height={1080}  />
+                                    <Image  src={`/img/suites&rooms/${selected}/${selected}_${index+1}.jpg`} title={selected} alt={selected} className="  object-cover object-center  lg:h-full h-[50vh] w-full " quality={50}  width={1920} height={1080}  />
                                 </div>
                             ))}
                         </div>
