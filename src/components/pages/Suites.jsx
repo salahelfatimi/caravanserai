@@ -41,7 +41,7 @@ export default function Suites() {
                         <div  className="flex transition-transform ease-out duration-700">
                             {[1,2,3,4].map((ele, index) => (
                                 <div key={index} className=" relative  min-w-full w-full">
-                                    <Image  src={`/img/suites&rooms/${selected}/${selected}_${index+1}.jpg`} title={selected} alt={selected} className="  object-cover object-center  lg:h-full h-[50vh] w-full " quality={50}  width={1920} height={1080}  />
+                                    <Image  src={`/img/suites&rooms/${selected}/${selected}_${index+1}.jpg`} title={selected} alt={selected} className="  object-cover object-center  lg:h-full h-[50vh] w-full " quality={100}  width={1920} height={1080}  />
                                 </div>
                             ))}
                         </div>

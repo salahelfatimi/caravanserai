@@ -67,7 +67,7 @@ export default function ScrollSection() {
               <Image
                 width={500}
                 height={500}
-                quality={50}
+                quality={100}
                 src={`/img/scrollSection/${src}`}
                 alt={`Floating ${index + 1}`}
                 className="rounded-3xl lg:h-[90vh] h-[50vh] w-full object-cover object-center"

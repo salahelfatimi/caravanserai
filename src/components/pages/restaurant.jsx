@@ -55,16 +55,16 @@ export default function ScrollSection() {
   }, []);
 
   return (
-    <div ref={sectionRef} className="  pb-20 lg:pb-0 bg-white h-screen  p-4 lg:p-8 flex flex-col lg:flex-row-reverse gap-6 lg:gap-10 items-center justify-center">
+    <div ref={sectionRef} className=" relative  pb-20 lg:pb-0 bg-white h-screen  p-4 lg:p-8 flex flex-col lg:flex-row-reverse gap-6 lg:gap-10 items-center justify-center">
       {/* Left side - Scrolling Images */}
       <div className="h-full  lg:w-1/2 overflow-hidden">
         <div ref={imageContainerRef} className="relative gap-10 flex-col flex">
           {images.map((src, index) => (
             <div key={index} className="imageRestaurant">
               <Image
-                width={6000}
-                height={3376}
-                quality={50}
+                width={1920}
+                height={1080}
+                quality={100}
                 src={`/img/restaurant/${src}`}
                 alt={`Floating ${index + 1}`}
                 className="rounded-3xl lg:h-full h-[50vh] w-full object-cover object-center"
