@@ -39,11 +39,7 @@ const ServiceList = () => {
                 </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-2">
                     {services.map(({ title, description, icon: Icon }, index) => (
-                        <div
-                            key={index}
-                            ref={(el) => (serviceRefs.current[index] = el)} // Store each service card element in the ref
-                            className="flex items-center space-x-4 p-4 border rounded-lg bg-white duration-700 cursor-pointer hover:shadow-lg transition-shadow"
-                        >
+                        <div key={index} ref={(el) => (serviceRefs.current[index] = el)} className="flex items-center space-x-4 p-4 border rounded-lg bg-white duration-700 cursor-pointer hover:shadow-lg transition-shadow" >
                             <Icon className="w-8 h-8 text-primary" />
                             <div>
                                 <h3 className={`${montserratAlternates.className} text-xs lg:text-lg font-medium`}>{title}</h3>

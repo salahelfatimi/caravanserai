@@ -34,21 +34,11 @@ export default function Book() {
                     <form className="flex flex-col md:flex-row justify-between container mx-auto gap-20 p-4 px-10 shadow-2xl  bg-white lg:rounded-full">
                         <div className="flex flex-col items-center justify-center">
                             <h4 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Arrival</h4>
-                            <DatePicker
-                                selected={startDate}
-                                onChange={(date) => setStartDate(date)}
-                                className="bg-transparent text-2xl lg:text-4xl font-serif w-full text-black focus:outline-none text-center"
-                                dateFormat="dd MMMM"
-                            />
+                            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} className="bg-transparent text-2xl lg:text-4xl font-serif w-full text-black focus:outline-none text-center" dateFormat="dd MMMM" />
                         </div>
                         <div className="flex flex-col items-center justify-center">
                             <h4 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Departure</h4>
-                            <DatePicker
-                                selected={endDate}
-                                onChange={(date) => setEndDate(date)}
-                                className="bg-transparent text-2xl lg:text-4xl font-serif w-full text-black focus:outline-none text-center"
-                                dateFormat="dd MMMM"
-                            />
+                            <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} className="bg-transparent text-2xl lg:text-4xl font-serif w-full text-black focus:outline-none text-center" dateFormat="dd MMMM" />
                         </div>
                         <div className="flex flex-col items-center justify-center">
                             <h4 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Adults</h4>

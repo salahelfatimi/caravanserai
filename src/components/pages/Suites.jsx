@@ -8,17 +8,12 @@ import Image from 'next/image';
 import suites from '../data/suites';
 const montserratAlternates = Montserrat_Alternates({
     subsets: ['latin'],
-    weight: ['400', '500', '700'], // Customize based on your design
+    weight: ['400', '500', '700'],
     display: 'swap',
   })
 export default function Suites() {
-    const [emblaRef] = useEmblaCarousel({
-            loop: true,
-            align: 'start',
-            containScroll: 'trimSnaps',
-            dragFree: true
-        }, [AutoScroll({ playOnInit: true, speed:1 , stopOnInteraction:false, stopOnMouseEnter: false , stopOnFocusIn : false})])
-
+    const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start', containScroll: 'trimSnaps', dragFree: true },
+    [AutoScroll({ playOnInit: true, speed:1 , stopOnInteraction:false, stopOnMouseEnter: false , stopOnFocusIn : false})])
     return (
         <div className="flex flex-col gap-6 py-20 bg-white ">
             <h2 className="text-6xl md:text-7xl text-center font-boska font-medium text-primary">Suites & Rooms</h2>
@@ -37,11 +32,11 @@ export default function Suites() {
                     ))}
                 </div>
             </div>
-            {/* <div className=' w-full  flex items-center justify-center'>
+            <div className=' w-full  flex items-center justify-center'>
                 <button className={` ${montserratAlternates.className} bg-primary rounded-2xl hover:bg-white border-2 w-fit border-primary hover:text-primary duration-700 text-white text-xl font-medium  px-8 py-2`}>
-                    See All
+                    See All Suites 
                 </button>
-            </div> */}
+            </div>
           
         </div>
     );
@@ -49,23 +44,15 @@ export default function Suites() {
 
 function SuiteCarousel({ images, title }) {
     const [emblaRef] = useEmblaCarousel({ loop: true }, [
-        Autoplay({ stopOnInteraction: false, speed: 1, delay: 3000 }) // Autoplay never stops
+        Autoplay({ stopOnInteraction: false, speed: 1, delay: 3000 }) 
     ]);
 
     return (
-        <div className="embla overflow-hidden pointer-events-none" ref={emblaRef}>
-            <div className="embla__container flex">
+        <div className=" overflow-hidden pointer-events-none" ref={emblaRef}>
+            <div className=" flex">
                 {images.map((image, index) => (
-                    <div key={index} className="embla__slide flex-[0_0_100%] min-w-0 relative h-72">
-                        <Image
-                            src={image}
-                            alt={`${title}`}
-                            title={`${title}`}
-                            width={1000}
-                            quality={50}
-                            height={1000}
-                            className="object-bottom object-cover  h-full w-full "
-                        />
+                    <div key={index} className=" flex-[0_0_100%] min-w-0 relative h-72">
+                       <Image src={image} alt={`${title}`} title={`${title}`} width={1000} quality={50} height={1000} className="object-bottom object-cover  h-full w-full " />
                     </div>
                 ))}
             </div>

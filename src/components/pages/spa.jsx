@@ -43,13 +43,7 @@ export default function Restaurant() {
             <div className="lg:columns-3 columns-2 container space-y-5 p-5 bg-cover lg:block hidden">
                 {spa.map((ele, index) => (
                     <div key={index} ref={el => imageRefs.current[index] = el}>
-                        <Image
-                            className="rounded-2xl border-4 border-primary  object-cover object-bottom"
-                            src={`${ele}`}
-                            width={1920}
-                            height={1080}
-                            alt={`Spa image ${index + 1}`}
-                        />
+                      <Image className="rounded-2xl border-4 border-primary  object-cover object-bottom" src={`${ele}`} width={1920} height={1080} alt="Caravan Serai" title="Caravan Serai"/>
                     </div>
                 ))}
             </div>
@@ -57,8 +51,7 @@ export default function Restaurant() {
                 <div className="flex  w-fit transition-transform duration-700 ease-linear ">
                     {spa.map((ele, index) => (
                         <div key={index} className="relative flex-none w-fit pl-10 ">
-                            <Image width={1920} height={1080} quality={50} src={`${ele}`}  className="rounded-2xl border-4 border-primary w-full h-[20rem] object-cover "/>
-                           
+                            <Image width={1920} height={1080} quality={50} src={`${ele}`} alt="Caravan Serai" title="Caravan Serai"  className="rounded-2xl border-4 border-primary w-full h-[20rem] object-cover "/>
                         </div>
                     ))}
                 </div>

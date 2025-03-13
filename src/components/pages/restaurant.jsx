@@ -22,7 +22,7 @@ export default function Restaurant() {
     [AutoScroll({ playOnInit: true, speed:1 , stopOnInteraction:false, stopOnMouseEnter: false , stopOnFocusIn : false})])
     
     useEffect(() => {
-        imageRefs.current.forEach((image, index) => {
+        imageRefs.current.forEach((image) => {
             gsap.fromTo(image,
                 { scale: 0.8, opacity: 0 },
                 {
@@ -43,13 +43,7 @@ export default function Restaurant() {
             <div className="lg:columns-3 columns-2 container space-y-5 p-5 bg-cover lg:block hidden">
                 {restaurant.map((ele, index) => (
                     <div key={index} ref={el => imageRefs.current[index] = el}>
-                        <Image
-                            className="rounded-2xl border-4 border-primary  object-cover object-bottom"
-                            src={`/img/restaurant/${ele}`}
-                            width={1920}
-                            height={1080}
-                            alt={`Spa image ${index + 1}`}
-                        />
+                       <Image className="rounded-2xl border-4 border-primary  object-cover object-bottom" src={`/img/restaurant/${ele}`} width={1920} height={1080} alt="Caravan Serai" title="Caravan Serai" />
                     </div>
                 ))}
             </div>
@@ -57,7 +51,7 @@ export default function Restaurant() {
                 <div className="flex  w-fit transition-transform duration-700 ease-linear ">
                     {restaurant.map((ele, index) => (
                         <div key={index} className="relative flex-none w-fit pl-10 ">
-                            <Image width={1920} height={1080} quality={50} src={`/img/restaurant/${ele}`}  className="rounded-2xl border-4 border-primary w-full h-[20rem] object-cover "/>
+                            <Image width={1920} height={1080} quality={50} src={`/img/restaurant/${ele}`}  className="rounded-2xl border-4 border-primary w-full h-[20rem] object-cover " alt="Caravan Serai" title="Caravan Serai"/>
                            
                         </div>
                     ))}
