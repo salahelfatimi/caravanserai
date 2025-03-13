@@ -38,8 +38,8 @@ export default function Restaurant() {
     }, []);
 
     return (
-        <div className="py-20">
-            <h2 className="text-5xl md:text-7xl text-center font-boska font-semibold mb-10 text-primary">Spa & Well-being</h2>
+        <div className="py-20 bg-black bg bg-top bg-[url(/img/bg-yellow.svg)]">
+            <h2 className="text-5xl md:text-7xl text-center font-boska font-semibold mb-10 text-white">Spa & Well-being</h2>
             <div className="lg:columns-3 columns-2 container space-y-5 p-5 bg-cover lg:block hidden">
                 {spa.map((ele, index) => (
                     <div key={index} ref={el => imageRefs.current[index] = el}>
@@ -53,7 +53,7 @@ export default function Restaurant() {
                     </div>
                 ))}
             </div>
-            <div className="w-fit overflow-hidden bg-white select-none cursor-grab active:cursor-grabbing block lg:hidden" ref={emblaRef}>
+            <div className="w-fit overflow-hidden   select-none cursor-grab active:cursor-grabbing block lg:hidden" ref={emblaRef}>
                 <div className="flex  w-fit transition-transform duration-700 ease-linear ">
                     {spa.map((ele, index) => (
                         <div key={index} className="relative flex-none w-fit pl-10 ">
@@ -63,7 +63,7 @@ export default function Restaurant() {
                     ))}
                 </div>
             </div>
-            <p className={`${montserratAlternates.className} text-xs md:text-lg container text-center pt-10`}>
+            <p className={`${montserratAlternates.className} text-xs md:text-lg container text-center pt-10 text-white`}>
               Reconnect with your senses in our wellness sanctuary, where tradition and relaxation blend harmoniously. Experience the Hammam & Steam Bath, a time-honored Moroccan ritual that detoxifies, purifies, and rejuvenates your skin with warm steam and natural black soap. Indulge in our Body & Beauty Treatments, offering soothing massages, invigorating body scrubs, and rejuvenating facials, all enriched with locally sourced argan oil and Moroccan beauty secrets. For a complete wellness experience, our Spa & Wellness Packages provide tailor-made combinations of massages, scrubs, and holistic rituals designed to restore balance and serenity.
             </p>
         </div>

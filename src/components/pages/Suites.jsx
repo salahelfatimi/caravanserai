@@ -20,7 +20,7 @@ export default function Suites() {
         }, [AutoScroll({ playOnInit: true, speed:1 , stopOnInteraction:false, stopOnMouseEnter: false , stopOnFocusIn : false})])
 
     return (
-        <div className="flex flex-col gap-6 py-20 bg-white">
+        <div className="flex flex-col gap-6 py-20 bg-white ">
             <h2 className="text-6xl md:text-7xl text-center font-boska font-medium text-primary">Suites & Rooms</h2>
             <p className={`${montserratAlternates.className}  container text-center`}>Step into a world of luxury and comfort with our elegant suites and rooms. Enjoy a refined atmosphere, premium amenities, and a peaceful retreat. Scroll through the images to explore each space and find the perfect accommodation for your stay.</p>
             <div className="overflow-hidden relative select-none cursor-grab active:cursor-grabbing" ref={emblaRef}>
@@ -59,9 +59,11 @@ function SuiteCarousel({ images, title }) {
                     <div key={index} className="embla__slide flex-[0_0_100%] min-w-0 relative h-72">
                         <Image
                             src={image}
-                            alt={`${title} - Image ${index + 1}`}
-                            width={1920}
-                            height={1080}
+                            alt={`${title}`}
+                            title={`${title}`}
+                            width={1000}
+                            quality={50}
+                            height={1000}
                             className="object-bottom object-cover  h-full w-full "
                         />
                     </div>

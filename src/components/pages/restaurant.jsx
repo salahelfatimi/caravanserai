@@ -38,7 +38,7 @@ export default function Restaurant() {
     }, []);
 
     return (
-        <div className="py-20">
+        <div className="py-20  ">
             <h2 className="text-4xl md:text-7xl text-center font-boska font-semibold mb-10 text-primary">A Culinary Journey – Taste the Essence of Morocco</h2>
             <div className="lg:columns-3 columns-2 container space-y-5 p-5 bg-cover lg:block hidden">
                 {restaurant.map((ele, index) => (

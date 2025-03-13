@@ -32,7 +32,7 @@ const ServiceList = () => {
     }, []);
 
     return (
-        <div className="bg-primary bg-cover bg-[url(/img/bg.svg)]">
+        <div className="bg-primary bg-contain bg-[url(/img/bg.svg)]">
             <div className="flex flex-col gap-6 py-20 container">
                 <h2 className="text-3xl lg:text-6xl text-center font-boska font-medium text-white">
                     Premium Hotel Services for an Unforgettable Stay
