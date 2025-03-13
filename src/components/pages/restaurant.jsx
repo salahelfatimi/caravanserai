@@ -1,92 +1,72 @@
-"use client";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Montserrat_Alternates } from "next/font/google";
+import { useRef, useEffect } from "react";
 import Image from "next/image";
+import spa from "../data/spa";
+import { Montserrat_Alternates } from "next/font/google";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import restaurant from "../data/restaurant";
+import useEmblaCarousel from "embla-carousel-react";
+import AutoScroll from "embla-carousel-auto-scroll";
 
 const montserratAlternates = Montserrat_Alternates({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'], // Customize based on your design
-  display: 'swap',
+    subsets: ['latin'],
+    weight: ['400', '500', '700'], // Customize based on your design
+    display: 'swap',
 });
 
 gsap.registerPlugin(ScrollTrigger);
 
-const images = [
-  "restaurant_1.jpg",
-  "restaurant_2.jpg",
-  "restaurant_3.jpg",
-  "restaurant_4.jpg",
-  "restaurant_5.jpg",
-  "restaurant_6.jpg",
-  // "restaurant_7.jpg",
-];
+export default function Restaurant() {
+    const imageRefs = useRef([]);
+    const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start', containScroll: 'trimSnaps', dragFree: true}, 
+    [AutoScroll({ playOnInit: true, speed:1 , stopOnInteraction:false, stopOnMouseEnter: false , stopOnFocusIn : false})])
+    
+    useEffect(() => {
+        imageRefs.current.forEach((image, index) => {
+            gsap.fromTo(image,
+                { scale: 0.8, opacity: 0 },
+                {
+                    scale: 1, opacity: 1, duration: 1, ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: image,
+                        start: "top 80%", 
+                        toggleActions: "play none none none",
+                    }
+                }
+            );
+        });
+    }, []);
 
-export default function ScrollSection() {
-  const sectionRef = useRef(null);
-  const imageContainerRef = useRef(null);
-
-  useEffect(() => {
-    const images = gsap.utils.toArray(".imageRestaurant");
-
-    // Calculate the total scroll distance based on the height of each image
-    let totalScrollDistance =0;
-    images.forEach((image) => {
-      totalScrollDistance += image.offsetHeight;
-    });
-
-    // Log the total scroll distance for debugging
-    console.log(`Total scroll distance: ${totalScrollDistance}px`);
-
-    // GSAP animation to scroll the images
-    gsap.to(imageContainerRef.current, {
-      y: -totalScrollDistance, // Scroll to the end of all images
-      ease: "none",
-      scrollTrigger: {
-        trigger: sectionRef.current,
-        start: "top top", // Start when the top of the section hits the top of the viewport
-        end: `+=${totalScrollDistance}`, // End after scrolling the total distance
-        scrub: 1, // Smooth scrubbing effect
-        pin: true, // Pin the section while scrolling
-        anticipatePin: 1, // Improve pinning behavior
-      },
-    });
-  }, []);
-
-  return (
-    <div ref={sectionRef} className=" relative  pb-20 lg:pb-0 bg-white h-screen  p-4 lg:p-8 flex flex-col lg:flex-row-reverse gap-6 lg:gap-10 items-center justify-center">
-      {/* Left side - Scrolling Images */}
-      <div className="h-full  lg:w-1/2 overflow-hidden">
-        <div ref={imageContainerRef} className="relative gap-10 flex-col flex">
-          {images.map((src, index) => (
-            <div key={index} className="imageRestaurant">
-              <Image
-                width={1920}
-                height={1080}
-                quality={100}
-                src={`/img/restaurant/${src}`}
-                alt={`Floating ${index + 1}`}
-                className="rounded-3xl lg:h-full h-[50vh] w-full object-cover object-center"
-              />
+    return (
+        <div className="py-20">
+            <h2 className="text-4xl md:text-7xl text-center font-boska font-semibold mb-10 text-primary">A Culinary Journey – Taste the Essence of Morocco</h2>
+            <div className="lg:columns-3 columns-2 container space-y-5 p-5 bg-cover lg:block hidden">
+                {restaurant.map((ele, index) => (
+                    <div key={index} ref={el => imageRefs.current[index] = el}>
+                        <Image
+                            className="rounded-2xl border-4 border-primary  object-cover object-bottom"
+                            src={`/img/restaurant/${ele}`}
+                            width={1920}
+                            height={1080}
+                            alt={`Spa image ${index + 1}`}
+                        />
+                    </div>
+                ))}
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Right side - Text content (static) */}
-      <div className="w-full lg:w-1/2  flex flex-col gap-4 items-center justify-center text-center">
-            <h2 className="font-boska font-bold text-primary text-4xl lg:text-6xl leading-tight">
-                A Culinary Journey – Taste the Essence of Morocco
-            </h2>
-            <p className={` ${montserratAlternates.className} font-boska text-black text-xs lg:text-lg leading-relaxed max-w-[90%] lg:max-w-[70%]`}>
+            <div className="w-fit overflow-hidden bg-white select-none cursor-grab active:cursor-grabbing block lg:hidden" ref={emblaRef}>
+                <div className="flex  w-fit transition-transform duration-700 ease-linear ">
+                    {restaurant.map((ele, index) => (
+                        <div key={index} className="relative flex-none w-fit pl-10 ">
+                            <Image width={1920} height={1080} quality={50} src={`/img/restaurant/${ele}`}  className="rounded-2xl border-4 border-primary w-full h-[20rem] object-cover "/>
+                           
+                        </div>
+                    ))}
+                </div>
+            </div>
+              <p className={`${montserratAlternates.className} text-sm lg:text-lg container text-center pt-10`}>
                 Indulge in a sensory feast at Caravan Serai’s restaurant, where authentic Moroccan flavors meet refined culinary artistry. From fragrant tagines to delicate pastries, every dish is crafted with fresh, locally sourced ingredients and a touch of tradition. <br />
                 Sip on refreshing mint tea, savor the richness of Moroccan spices, and let each bite transport you to a world of culinary delight. Whether dining under the stars or in our elegant indoor space, every meal is an experience to remember.
-            </p>
-            <button className="bg-primary hover:bg-white border-2 border-primary hover:text-primary duration-700 text-white text-2xl font-boska px-8 py-2">
-            Book Now
-            </button>
-      </div>
-    </div>
-  );
+              </p>
+        </div>
+    );
 }

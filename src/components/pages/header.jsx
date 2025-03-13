@@ -30,7 +30,7 @@ export default function Header() {
                         Timeless tranquility and historic charm at Caravan Serai
                     </h1>
                     <div>
-                        <button className="bg-primary hover:bg-white hover:text-primary duration-700  text-white text-2xl font-boska px-8 py-4 mt-4">
+                        <button className={`bg-primary hover:bg-white hover:text-primary duration-700  text-white text-2xl font-boska px-8 py-4 mt-4`}>
                             Book Now
                         </button>
                     </div>

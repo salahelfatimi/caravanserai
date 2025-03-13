@@ -1,53 +1,72 @@
-'use client'
-import Image from "next/image";
-import { Montserrat_Alternates } from 'next/font/google' 
-import Autoplay from "embla-carousel-autoplay";
-import useEmblaCarousel from "embla-carousel-react";
-import { use, useEffect, useState } from "react";
+'use client';
+
+import AutoScroll from 'embla-carousel-auto-scroll';
+import Autoplay from 'embla-carousel-autoplay';
+import useEmblaCarousel from 'embla-carousel-react';
+import { Montserrat_Alternates } from 'next/font/google';
+import Image from 'next/image';
+import suites from '../data/suites';
 const montserratAlternates = Montserrat_Alternates({
     subsets: ['latin'],
     weight: ['400', '500', '700'], // Customize based on your design
     display: 'swap',
   })
 export default function Suites() {
-    const [selected, setSelected] = useState('majorelle')
-    console.log(selected)
-    const [emblaRef] = useEmblaCarousel({ loop: true }, [
-        Autoplay({ stopOnInteraction:false ,speed: 1, delay: 5000 }),
-    ])
-    const ClickButtonSelect = (name) => {
-        setSelected(name)
-    }
-    useEffect(() => {
-        ClickButtonSelect(selected)
-    },[])
+    const [emblaRef] = useEmblaCarousel({
+            loop: true,
+            align: 'start',
+            containScroll: 'trimSnaps',
+            dragFree: true
+        }, [AutoScroll({ playOnInit: true, speed:1 , stopOnInteraction:false, stopOnMouseEnter: false , stopOnFocusIn : false})])
 
-    return(
-        <div className="relative pb-20 lg:pb-0  bg-white flex flex-col-reverse lg:flex-row-reverse  gap-10 lg:gap-0 items-center justify-center">
-                <div className=" flex flex-col gap-10 items-start justify-center md:w-1/2 mx-auto container "> 
-                    <h2 className="text-6xl text-center font-boska font-medium text-primary  ">Suites & Rooms</h2>
-                    <div className="flex flex-col justify-start gap-4 w-full  items-start">
-                        <button onClick={()=>(ClickButtonSelect('chambre_double_classique'))} className={`${montserratAlternates.className} text-start font-medium text-sm lg:text-xl hover:bg-primary hover:text-white hover:px-4  duration-700 ${ selected=='chambre_double_classique'&&' bg-primary text-white px-4 '}`} >Chambre Double Classique</button>
-                        <button onClick={()=>(ClickButtonSelect('suite'))} className={`${montserratAlternates.className} text-start font-medium text-sm lg:text-xl hover:bg-primary hover:text-white hover:px-4  duration-700 ${ selected=='suite'&&' bg-primary text-white px-4 '}`} >Suite</button>
-                        <button onClick={()=>(ClickButtonSelect('suite_superieure'))} className={`${montserratAlternates.className} font-medium text-sm lg:text-xl hover:bg-primary hover:text-white hover:px-4  duration-700 ${ selected=='suite_superieure'&&' bg-primary text-white px-4 '}`} >Suite Supérieure</button>
-                        <button onClick={()=>(ClickButtonSelect('majorelle'))} className={`${montserratAlternates.className} text-start font-medium text-sm lg:text-xl hover:bg-primary hover:text-white hover:px-4  duration-700 ${ selected=='majorelle'&&' bg-primary text-white px-4 '}`} >Suite King avec Piscine Privée - Majorelle</button>
-                        <button onClick={()=>(ClickButtonSelect('beldi'))} className={`${montserratAlternates.className} text-start font-medium text-sm lg:text-xl hover:bg-primary hover:text-white hover:px-4  duration-700 ${ selected=='beldi'&&' bg-primary text-white px-4 '}`} >Suite Lit King-Size avec Piscine Privée - Beldi</button>
-                        <button onClick={()=>(ClickButtonSelect('suite_triple'))} className={`${montserratAlternates.className} text-start font-medium text-sm lg:text-xl hover:bg-primary hover:text-white hover:px-4  duration-700 ${ selected=='suite_triple'&&' bg-primary text-white px-4 '}`} >Suite Triple</button>
-
-                    </div>
-                </div>
-                <div className="lg:w-1/2">
-                    <div className=" overflow-hidden relative "  ref={emblaRef}>
-                        <div  className="flex transition-transform ease-out duration-700">
-                            {[1,2,3,4].map((ele, index) => (
-                                <div key={index} className=" relative  min-w-full w-full">
-                                    <Image  src={`/img/suites&rooms/${selected}/${selected}_${index+1}.jpg`} title={selected} alt={selected} className="  object-cover object-center  lg:h-full h-[50vh] w-full " quality={100}  width={1920} height={1080}  />
+    return (
+        <div className="flex flex-col gap-6 py-20 bg-white">
+            <h2 className="text-6xl md:text-7xl text-center font-boska font-medium text-primary">Suites & Rooms</h2>
+            <p className={`${montserratAlternates.className}  container text-center`}>Step into a world of luxury and comfort with our elegant suites and rooms. Enjoy a refined atmosphere, premium amenities, and a peaceful retreat. Scroll through the images to explore each space and find the perfect accommodation for your stay.</p>
+            <div className="overflow-hidden relative select-none cursor-grab active:cursor-grabbing" ref={emblaRef}>
+                <div className="flex transition-transform ease-out duration-700">
+                    {suites.map((suite,index) => (
+                        <div key={index} className="min-w-full lg:min-w-[30%] p-4">
+                            <div className="rounded-2xl border-4 border-primary overflow-hidden shadow-lg bg-white">
+                                <div className="relative">
+                                    <SuiteCarousel images={suite.images} title={suite.title} />
                                 </div>
-                            ))}
+                                {/* <h3 className={`${montserratAlternates.className}   font-medium text-xl font-boska bg-primary py-3 text-white flex items-center justify-center`}>{suite.title}</h3> */}
+                            </div>
                         </div>
-                    </div>
+                    ))}
                 </div>
+            </div>
+            {/* <div className=' w-full  flex items-center justify-center'>
+                <button className={` ${montserratAlternates.className} bg-primary rounded-2xl hover:bg-white border-2 w-fit border-primary hover:text-primary duration-700 text-white text-xl font-medium  px-8 py-2`}>
+                    See All
+                </button>
+            </div> */}
           
         </div>
-    )
+    );
+}
+
+function SuiteCarousel({ images, title }) {
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [
+        Autoplay({ stopOnInteraction: false, speed: 1, delay: 3000 }) // Autoplay never stops
+    ]);
+
+    return (
+        <div className="embla overflow-hidden pointer-events-none" ref={emblaRef}>
+            <div className="embla__container flex">
+                {images.map((image, index) => (
+                    <div key={index} className="embla__slide flex-[0_0_100%] min-w-0 relative h-72">
+                        <Image
+                            src={image}
+                            alt={`${title} - Image ${index + 1}`}
+                            width={1920}
+                            height={1080}
+                            className="object-bottom object-cover  h-full w-full "
+                        />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 }

@@ -3,6 +3,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import AutoScroll from 'embla-carousel-auto-scroll'
 import Image from 'next/image'
 import { Montserrat_Alternates } from 'next/font/google'
+import activite from '../data/activite'
 const montserratAlternates = Montserrat_Alternates({
     subsets: ['latin'],
     weight: ['400', '500', '700'], // Customize based on your design
@@ -17,45 +18,7 @@ export default function Activitte() {
         dragFree: true
     }, [AutoScroll({ playOnInit: true, speed:1 , stopOnInteraction:false, stopOnMouseEnter: false , stopOnFocusIn : false})])
     
-    const activite = [
-        {
-            image: "/img/activite/art.png",
-            title: "🎨 Art Exhibitions",
-            description: "Immerse yourself in Marrakech’s vibrant art scene with stunning exhibitions featuring local and international artists."
-        },
-        {
-            image: "/img/activite/bicycle.png",
-            title: "🚴 Bicycle Rentals",
-            description: "Pedal your way through Marrakech’s hidden gems, from lively souks to breathtaking desert landscapes."
-        },
-        {
-            image: "/img/activite/billard.png",
-            title: "🎱 Billiards & Game Room",
-            description: "Relax and challenge your friends to a game of billiards in our cozy lounge with Moroccan-style decor."
-        },
-        {
-            image: "/img/activite/hiking.png",
-            title: "⛰️ Hiking & Cycling",
-            description: "Venture into the stunning Moroccan countryside with guided hikes and thrilling cycling trails."
-        },
-        {
-            image: "/img/activite/spa.png",
-            title: "🛀 Spa & Wellness",
-            description: "Indulge in rejuvenating treatments, traditional hammams, and relaxing massages using Moroccan argan oil."
-        },
-        {
-            image: "/img/activite/windsurfing.png",
-            title: "🌊 Windsurfing & Water Sports",
-            description: "Experience the thrill of windsurfing and other water sports just a short trip away from the hotel."
-        },
-        {
-            image: "/img/activite/yoga.png",
-            title: "🧘 Yoga Sessions",
-            description: "Find your inner peace with guided yoga sessions in a tranquil setting, surrounded by nature."
-        }
-    ];
-    
-
+   
     return (
         <div className="relative pb-20 lg:pb-0 bg-primary flex flex-col lg:flex-row-reverse gap-10 lg:gap-0 w-full items-center">
             {/* Left side with image slider */}

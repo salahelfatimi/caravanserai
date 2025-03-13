@@ -1,9 +1,13 @@
 'use client'
 import Activitte from "@/components/pages/activite";
+import Book from "@/components/pages/book";
 import Header from "@/components/pages/header";
+import Instagram from "@/components/pages/instagram";
 import Restaurant from "@/components/pages/restaurant";
 import ScrollSection from "@/components/pages/scrollSection";
-import Suites from "@/components/pages/Suites";
+import ServiceList from "@/components/pages/service";
+import Spa from "@/components/pages/spa";
+import Suites from "@/components/pages/suites";
 import Lenis from 'lenis'
 import { useEffect } from "react";
 
@@ -19,15 +23,19 @@ export default function Home() {
   }, [])
 
   return (
-    <div className=" ">
+    <div className="  ">
         <Header/>
-        <ScrollSection/>
+        <ServiceList/>
         <Suites/>
+        <Book/>
+        <Spa/>
         <Activitte/>
         <Restaurant/>
-        <div className=" h-screen bg-black">
-
-        </div>
+        <Instagram/>
+        {/* <ScrollSection/>
+        <Suites/>
+        <Activitte/>
+        <Restaurant/> */}
     </div>
   );
 }
