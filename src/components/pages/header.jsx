@@ -9,7 +9,6 @@ export default function Header() {
     useEffect(() => {
         gsap.to(".header-image, .header-overlay", {
             scale: 1.5,
-
             scrollTrigger: {
                 trigger: ".header-image",
                 start: "top top",

@@ -40,5 +40,7 @@
   font-style: italic;
 }
 
-
+.overflow-hidden {
+  overflow: hidden;
+}
 

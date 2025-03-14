@@ -1,18 +1,12 @@
 import { useRef, useEffect } from "react";
 import Image from "next/image";
-import spa from "../data/spa";
-import { Montserrat_Alternates } from "next/font/google";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import restaurant from "../data/restaurant";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 
-const montserratAlternates = Montserrat_Alternates({
-    subsets: ['latin'],
-    weight: ['400', '500', '700'], // Customize based on your design
-    display: 'swap',
-});
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,7 +24,7 @@ export default function Restaurant() {
                     scrollTrigger: {
                         trigger: image,
                         start: "top 80%", 
-                        toggleActions: "play none none none",
+                        toggleActions: "play none none play",
                     }
                 }
             );
@@ -57,7 +51,7 @@ export default function Restaurant() {
                     ))}
                 </div>
             </div>
-              <p className={`${montserratAlternates.className} text-sm lg:text-lg container text-center pt-10`}>
+              <p className={` text-sm lg:text-lg container text-center pt-10`}>
                 Indulge in a sensory feast at Caravan Serai’s restaurant, where authentic Moroccan flavors meet refined culinary artistry. From fragrant tagines to delicate pastries, every dish is crafted with fresh, locally sourced ingredients and a touch of tradition. <br />
                 Sip on refreshing mint tea, savor the richness of Moroccan spices, and let each bite transport you to a world of culinary delight. Whether dining under the stars or in our elegant indoor space, every meal is an experience to remember.
               </p>

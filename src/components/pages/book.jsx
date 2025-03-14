@@ -4,13 +4,6 @@ import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import { Minus, Plus } from "lucide-react";
-import { Montserrat_Alternates } from "next/font/google";
-
-const montserratAlternates = Montserrat_Alternates({
-    subsets: ['latin'],
-    weight: ['400', '500', '700'],
-    display: 'swap',
-});
 
 export default function Book() {
     const [startDate, setStartDate] = useState(new Date());
@@ -58,7 +51,7 @@ export default function Book() {
                         </div>
                     </form>
                     <div className="container w-full flex items-center justify-center mx-auto px-4 mt-6">
-                        <button className={` ${montserratAlternates.className} bg-white font-bold capitalize text-2xl text-primary py-2 px-6 rounded-full hover:bg-primary hover:text-white border-2 border-white transition duration-300`}>
+                        <button className={` bg-white font-bold capitalize text-2xl text-primary py-2 px-6 rounded-full hover:bg-primary hover:text-white border-2 border-white transition duration-300`}>
                             Book Now
                         </button>
                     </div>

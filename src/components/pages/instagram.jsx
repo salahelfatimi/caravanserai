@@ -8,22 +8,22 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Instagram() {
     const imageRefs = useRef([]); 
 
-    useEffect(() => {
-        imageRefs.current.forEach((image, index) => {
-            gsap.from(image, {
-                opacity: 0,
-                y: 50,
-                duration: 2,
-                scrollTrigger: {
-                    trigger: image,
-                    start: "top 80%", 
-                    end: "bottom 20%", 
-                    toggleActions: "play none none none", 
-                },
-            });
+      useEffect(() => {
+        imageRefs.current.forEach((image,index) => {
+            gsap.fromTo(image,
+                { scale: 0.8, opacity: 0},
+                
+                {
+                    scale: 1, opacity: 1, duration: 1, delay: index * 0.05, ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: image,
+                        start: "top 80%", 
+                        toggleActions: "play none none play",
+                    }
+                }
+            );
         });
     }, []);
-
     return (
         <div className="py-20 ">
             <div className="gap-10 flex flex-col items-center ">

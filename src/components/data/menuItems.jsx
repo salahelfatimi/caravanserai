@@ -1,11 +1,21 @@
 const menuItems = [
     {
+        title: "CaravanSerai",
+        links: [
+            { name: "Home", href: "/" },
+            { name: "About Us", href: "/about_us" },
+            { name: "Contact", href: "/contact" },
+
+        ],
+    },
+    {
         title: "ACCOMMODATIONS",
         links: [
-            { name: "Rooms", href: "/accommodations/rooms" },
-            { name: "Suites", href: "/accommodations/suites" },
-            { name: "Exceptional Suites", href: "/accommodations/exceptional-suites" },
-            { name: "Riads", href: "/accommodations/riads" },
+            { name: "suites classiques ", href: "/accommodations/suites_classiques" },
+            { name: "suites juniors", href: "/accommodations/suites_juniors" },
+            { name: "suites supérieures ", href: "/accommodations/suites_supérieures" },
+            { name: "suites triples", href: "/accommodations/suites_triples" },
+            { name: "suites piscines_privées", href: "/accommodations/suites_piscines_privees" },
         ],
     },
     {
@@ -21,11 +31,10 @@ const menuItems = [
     {
         title: "SPA & WELLNESS",
         links: [
-            { name: "Massages", href: "/spa/massages" },
-            { name: "Hammams", href: "/spa/hammams" },
-            { name: "Treatments", href: "/spa/treatments" },
-            { name: "Hair & Beauty Salon", href: "/spa/hair-beauty-salon" },
-            { name: "Sports", href: "/spa/sports" },
+            { name: "Hammam & Messages", href: "/spa/massages_and_messages" },
+            { name: "hair removal", href: "/spa/hair_removal" },
+            { name: "body care", href: "/spa/body_care" },
+            { name: "hands & feet", href: "/spa/hands_and_feet" },
         ],
     },
     {
@@ -39,14 +48,18 @@ const menuItems = [
     {
         title: "EXPERIENCES",
         links: [
-            { name: "5 Nights for the Price of 4", href: "/experiences/5-nights" },
-            { name: "Romantic Escape", href: "/experiences/romantic-escape" },
-            { name: "La Mamounia in Advance", href: "/experiences/mamounia-advance" },
-            { name: "Excellence Golf by La Mamounia", href: "/experiences/golf" },
-            { name: "Very Morocco", href: "/experiences/very-morocco" },
-            { name: "Burgundy Wines & Classical Music", href: "/experiences/wines-music" },
+            { name: "Art Exhibitions", href: "/experiences/art_exhibitions" },
+            { name: "Bicycle Rentals", href: "/experiences/bicycle_rentals" },
+            { name: "Billiards & Game Room", href: "/experiences/billiards_and_game_room" },
+            { name: "Hiking & Cycling", href: "/experiences/hiking_and_cycling" },
+            { name: "Spa & Wellness", href: "/experiences/spa_and_Wellness" },
+            { name: "Windsurfing & Water Sports", href: "/experiences/windsurfing_and_water_sports" },
+            { name: "Yoga Sessions", href: "/experiences/yoga_sessions" },
+
+
         ],
-    }
+    },
+    
     
 ];
 

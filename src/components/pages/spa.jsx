@@ -1,18 +1,10 @@
 import { useRef, useEffect } from "react";
 import Image from "next/image";
 import spa from "../data/spa";
-import { Montserrat_Alternates } from "next/font/google";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import restaurant from "../data/restaurant";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
-
-const montserratAlternates = Montserrat_Alternates({
-    subsets: ['latin'],
-    weight: ['400', '500', '700'], // Customize based on your design
-    display: 'swap',
-});
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,7 +22,7 @@ export default function Restaurant() {
                     scrollTrigger: {
                         trigger: image,
                         start: "top 80%", 
-                        toggleActions: "play none none none",
+                        toggleActions: "play none none play",
                     }
                 }
             );
@@ -56,7 +48,7 @@ export default function Restaurant() {
                     ))}
                 </div>
             </div>
-            <p className={`${montserratAlternates.className} text-xs md:text-lg container text-center pt-10 text-white`}>
+            <p className={` text-xs md:text-lg container text-center pt-10 text-white`}>
               Reconnect with your senses in our wellness sanctuary, where tradition and relaxation blend harmoniously. Experience the Hammam & Steam Bath, a time-honored Moroccan ritual that detoxifies, purifies, and rejuvenates your skin with warm steam and natural black soap. Indulge in our Body & Beauty Treatments, offering soothing massages, invigorating body scrubs, and rejuvenating facials, all enriched with locally sourced argan oil and Moroccan beauty secrets. For a complete wellness experience, our Spa & Wellness Packages provide tailor-made combinations of massages, scrubs, and holistic rituals designed to restore balance and serenity.
             </p>
         </div>

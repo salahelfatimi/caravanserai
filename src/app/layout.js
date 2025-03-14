@@ -1,8 +1,13 @@
 import Navbar from "@/components/pages/navbar/navbar";
 import "./globals.css";
 import Footer from "@/components/pages/footer/footer";
+import { Montserrat_Alternates } from "next/font/google";
 
-
+const montserratAlternates = Montserrat_Alternates({
+    subsets: ['latin'],
+    weight: ['400', '500', '700'], // Customize based on your design
+    display: 'swap',
+});
 
 
 export const metadata = {
@@ -11,9 +16,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
-      <body className={``}>
+      <body className={` ${montserratAlternates.className}`}>
         <main>
           <Navbar/>
           {children}
