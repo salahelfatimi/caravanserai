@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer(){
     return(
 
-        <div className="bg-primary">
+        <div className="bg-primary bg-top bg-[url(/img/bg-yellow.svg)]" >
             <div className=" flex lg:flex-row flex-col items-center justify-between container py-10 ">
                 <Image src="/img/logo_white.png" height={500} width={500} alt="Caravan Serai" title="Caravan Serai" className=" w-40" />
                 <div className="flex flex-col items-center lg:items-start gap-1">

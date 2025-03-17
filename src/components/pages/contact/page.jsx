@@ -5,7 +5,7 @@ export default function ContactPage(){
     return(
         <div>
             <div className=" relative h-[35rem] bg-center flex flex-col text-center items-center justify-center" >
-                <Image src={'/img/contact/contact_1.jpg'} width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover"/>
+                <Image src={'/img/contact/contact_1.jpg'} width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 <div className=" absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className=" relative z-20 flex flex-col gap-4 container">
                     <h1 className="font-boska font-medium text-6xl lg:text-8xl text-white" >Contact Us</h1>
