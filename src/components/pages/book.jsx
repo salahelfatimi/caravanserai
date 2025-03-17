@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import { Minus, Plus } from "lucide-react";
+import { ArrowRight, BookA, Calendar1, ChevronLeft, ChevronRight, Minus, Plus } from "lucide-react";
 import BookFull from '../tools/bookFull';
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -63,7 +63,7 @@ export default function Book() {
                 setEndDate(new Date(new Date().setDate(new Date().getDate() + 1)))
                 setEtaps(false)
                 setFullname('')
-                setPhone()
+                setPhone('')
                 setStartDate(new Date())
             } else {
                 toast.error('Failed to submit reservation.');
@@ -79,10 +79,9 @@ export default function Book() {
     return (
         <div className=''>
             <Toaster position="bottom-right" reverseOrder={false}/>
-            <div className="bg-primary py-10 bg-cover bg-[url(/img/bg.svg)] ">
-                <div className="min-h-[10rem] container w-full flex items-center flex-col justify-center">
-                    <h2 className="text-5xl font-semibold uppercase text-white text-center mb-6 font-boska">Book Your Stay</h2>
-                    <form onSubmit={handleSubmit} className="flex flex-col md:flex-row justify-between container mx-auto   gap-20 p-4 px-10 shadow-2xl  bg-white lg:rounded-full">
+            <div className=" ">
+                <div className="min-h-[10rem] container w-full flex items-center flex-col justify-center ">
+                    <form onSubmit={handleSubmit} className="flex flex-col md:flex-row justify-between container mx-auto border-4 border-primary  gap-20 p-4 px-10 shadow-2xl  bg-white lg:rounded-full">
                         <div className={` flex flex-col lg:flex-row justify-between mx-auto py-2 gap-20 ${etaps==false?'block':'hidden'}`}>
                             <div className="flex flex-col items-center justify-center ">
                                 <h4 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Arrival</h4>
@@ -125,16 +124,16 @@ export default function Book() {
                             
                         </div>
                     </form>
-                    <div className="container w-full flex items-center justify-center gap-10 mx-auto px-4 mt-6">
-                        <button onClick={()=>(setEtaps(false))} className={`${etaps==true?'block':'hidden'} bg-white font-bold capitalize text-lg text-primary py-2 px-6 rounded-full hover:bg-primary hover:text-white border-2 border-white transition duration-300`}>
-                            Back
+                    <div className="container w-full flex flex-row items-center justify-center gap-10 mx-auto px-4 mt-6">
+                        <button onClick={()=>(setEtaps(false))} className={`${etaps==true?'block':'hidden'} flex flex-row-reverse gap-2 items-center bg-primary font-bold capitalize text-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
+                            Back <ChevronLeft />
                         </button>
-                        <button onClick={()=>(setEtaps(true))} className={`${etaps==false?'block':'hidden'} bg-white font-bold capitalize text-lg text-primary py-2 px-6 rounded-full hover:bg-primary hover:text-white border-2 border-white transition duration-300`}>
-                            Suivant
+                        <button onClick={()=>(setEtaps(true))} className={`${etaps==false?'block':'hidden'} flex items-center gap-2 bg-primary font-bold capitalize text-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
+                            Suivant <ChevronRight />
                         </button>
                         
-                        <button type="submit" onClick={handleSubmit} disabled={isSubmitting} className={` ${etaps==true?'block':'hidden'} bg-white font-bold capitalize text-lg text-primary py-2 px-6 rounded-full hover:bg-primary hover:text-white border-2 border-white transition duration-300`}>
-                            {isSubmitting ? 'Booking...' : 'Book Now'}
+                        <button type="submit" onClick={handleSubmit} disabled={isSubmitting} className={` ${etaps==true?'block':'hidden'} flex flex-row-reverse gap-2 items-center bg-primary font-bold capitalize text-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
+                            {isSubmitting ? 'Booking...' : 'Book Now'} <Calendar1 />
                         </button>
                        
                        

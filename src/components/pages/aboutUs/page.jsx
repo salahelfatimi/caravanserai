@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Discover_marrakech from "./discover_marrakech";
 import { HeartHandshake, MousePointerClick, ShieldCheck } from "lucide-react";
+import Book from "../book";
 
 export default function AboutUsPage(){
     return(
@@ -36,10 +37,10 @@ export default function AboutUsPage(){
                 </div>
             </div>
            <Discover_marrakech/>
-           <div className=" flex flex-col  items-center gap-10 py-20 bg-white bg-top bg-[url(/img/bg-yellow.svg)] container">
+           <div className=" flex flex-col   gap-10 py-20 bg-white bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <h2 className=" text-3xl md:text-5xl text-center font-boska font-bold  text-primary " >Book Your Stay at Caravan Serai Today</h2>
                 <p className=" text-center">Escape to a world of tranquility and timeless beauty at Caravan Serai Marrakech. Whether for a romantic getaway, family retreat, or cultural adventure, our boutique hotel offers a truly unforgettable experience.</p>
-                
+                <Book/>
                 <div className="py-10 px-6 text-center">
                     <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
                         {/* Best Price Guarantee */}

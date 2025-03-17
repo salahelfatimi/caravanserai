@@ -30,7 +30,7 @@ export default function Restaurant() {
     }, []);
 
     return (
-        <div className="py-20 bg-black bg bg-top bg-[url(/img/bg-yellow.svg)]">
+        <div className="py-20 bg-black bg-top bg-[url(/img/bg-yellow.svg)]">
             <h2 className="text-5xl md:text-7xl text-center font-boska font-semibold mb-10 text-white">Spa & Well-being</h2>
             <div className="lg:columns-3 columns-2 container space-y-5 p-5 bg-cover lg:block hidden">
                 {spa.map((ele, index) => (
