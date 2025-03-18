@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Discover_marrakech from "./discover_marrakech";
 import { HeartHandshake, MousePointerClick, ShieldCheck } from "lucide-react";
@@ -6,12 +7,12 @@ import Book from "../book";
 export default function AboutUsPage(){
     return(
         <div>
-            <div className="relative h-[40rem] bg-center flex flex-col text-center items-center justify-center">
+            <div className="relative h-screen bg-center flex flex-col text-center items-center justify-center">
                 <Image src={'/img/aboutUs/about_us_1.jpg'} width={1920} height={1080} alt="Caravan Serai" title="Caravan Serai" className="absolute inset-0 h-full w-full object-bottom object-cover"/>
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className="relative z-20 flex flex-col gap-4 container">
                     <h1 className="font-boska font-medium text-6xl lg:text-8xl text-white">About Caravan Serai</h1>
-                    <p className="text-center text-white mb-8 lg:text-xl">Located in the heart of Marrakech’s Palmeraie, Caravan Serai is a luxurious boutique hotel inspired by the historic caravanserais, where travelers once rested on their journeys across the desert. Our 4-star hotel blends traditional Moroccan charm with modern comforts, offering a tranquil escape from the bustling city.</p>
+                    <p className="text-center text-white mb-8 text-xs lg:text-xl">Located in the heart of Marrakech’s Palmeraie, Caravan Serai is a luxurious boutique hotel inspired by the historic caravanserais, where travelers once rested on their journeys across the desert. Our 4-star hotel blends traditional Moroccan charm with modern comforts, offering a tranquil escape from the bustling city.</p>
                 </div>
             </div>
             {/* <div className=" flex flex-col  items-center justify-center gap-6 bg-primary py-10 bg-top  bg-[url(/img/bg.svg)]">
@@ -20,7 +21,7 @@ export default function AboutUsPage(){
             </div> */}
             <div className=" flex flex-col lg:flex-row bg-white  bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <div className="lg:w-1/2 ">
-                    <Image src={'/img/aboutUs/about_us.jpg'} width={1920} height={1080} className=" h-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                    <Image src={'/img/aboutUs/about_us_2.jpg'} width={1920} height={1080} className=" h-[50rem] object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 </div>
                 <div className="lg:w-1/2 flex flex-col gap-8 justify-center p-4 ">
                     <h2 className="text-4xl text-start font-boska font-bold  text-primary " >Experience Authentic Moroccan Elegance</h2>

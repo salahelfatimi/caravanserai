@@ -32,7 +32,7 @@ export default function Restaurant() {
     }, []);
 
     return (
-        <div className="py-20  bg-primary  bg-top bg-[url(/img/bg-yellow.svg)] ">
+        <div className="py-20  bg-primary bg-contain  bg-top bg-[url(/img/bg-yellow.svg)] ">
             <h2 className="text-4xl md:text-7xl text-center font-boska font-semibold mb-4 text-white">Discover Marrakech & Beyond</h2>
             <p className=" text-center mb-10 text-white ">Caravan Serai offers easy access to Marrakech’s top attractions, including:</p>
 

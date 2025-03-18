@@ -31,10 +31,10 @@ const menuItems = [
     {
         title: "SPA & WELLNESS",
         links: [
-            { name: "Hammam & Messages", href: "/spa/massages_and_messages" },
-            { name: "hair removal", href: "/spa/hair_removal" },
-            { name: "body care", href: "/spa/body_care" },
-            { name: "hands & feet", href: "/spa/hands_and_feet" },
+            { name: "Hammam & Messages", href: "/spa_and_wellness/hammam_and_messages" },
+            { name: "hair removal", href: "/spa_and_wellness/hair_removal" },
+            { name: "body care", href: "/spa_and_wellness/body_care" },
+            { name: "hands & feet", href: "/spa_and_wellness/hands_and_feet" },
         ],
     },
     {

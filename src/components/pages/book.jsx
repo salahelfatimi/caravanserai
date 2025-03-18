@@ -124,15 +124,15 @@ export default function Book() {
                             
                         </div>
                     </form>
-                    <div className="container w-full flex flex-row items-center justify-center gap-10 mx-auto px-4 mt-6">
-                        <button onClick={()=>(setEtaps(false))} className={`${etaps==true?'block':'hidden'} flex flex-row-reverse gap-2 items-center bg-primary font-bold capitalize text-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
+                    <div className="container w-full flex flex-row items-center justify-center gap-3 mx-auto px-4 mt-6">
+                        <button onClick={()=>(setEtaps(false))} className={`${etaps==true?'block':'hidden'} flex flex-row-reverse gap-2 items-center bg-primary font-bold capitalize lg:ttext-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
                             Back <ChevronLeft />
                         </button>
-                        <button onClick={()=>(setEtaps(true))} className={`${etaps==false?'block':'hidden'} flex items-center gap-2 bg-primary font-bold capitalize text-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
+                        <button onClick={()=>(setEtaps(true))} className={`${etaps==false?'block':'hidden'} flex items-center gap-2 bg-primary font-bold capitalize lg:ttext-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
                             Suivant <ChevronRight />
                         </button>
                         
-                        <button type="submit" onClick={handleSubmit} disabled={isSubmitting} className={` ${etaps==true?'block':'hidden'} flex flex-row-reverse gap-2 items-center bg-primary font-bold capitalize text-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
+                        <button type="submit" onClick={handleSubmit} disabled={isSubmitting} className={` ${etaps==true?'block':'hidden'} flex flex-row-reverse gap-2 items-center bg-primary font-bold capitalize lg:text-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
                             {isSubmitting ? 'Booking...' : 'Book Now'} <Calendar1 />
                         </button>
                        

@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import caravanseraiImages from "../data/instagram";
