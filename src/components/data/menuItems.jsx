@@ -11,10 +11,11 @@ const menuItems = [
     {
         title: "ACCOMMODATIONS",
         links: [
-            { name: "suites classiques ", href: "/accommodations/suites_classiques" },
-            { name: "suites juniors", href: "/accommodations/suites_juniors" },
-            { name: "suites supérieures ", href: "/accommodations/suites_supérieures" },
-            { name: "suites triples", href: "/accommodations/suites_triples" },
+            // { name: "suites classiques ", href: "/accommodations/suites_classiques" },
+            // { name: "suites juniors", href: "/accommodations/suites_juniors" },
+            // { name: "suites supérieures ", href: "/accommodations/suites_supérieures" },
+            // { name: "suites triples", href: "/accommodations/suites_triples" },
+            { name: "suites", href: "/accommodations/suites" },
             { name: "suites piscines_privées", href: "/accommodations/suites_piscines_privees" },
         ],
     },
@@ -45,7 +46,7 @@ const menuItems = [
     {
         title: "EXPERIENCES",
         links: [
-            { name: "Billiards & Game Room", href: "/experiences/billiards_and_game_room" },
+            { name: "Billiards", href: "/experiences/billiards" },
             { name: "Hiking & Cycling", href: "/experiences/hiking_and_cycling" },
             { name: "Yoga Sessions", href: "/experiences/yoga_sessions" },
         ],

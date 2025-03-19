@@ -8,7 +8,7 @@ import suites from '../data/suites';
 
 export default function Suites() {
     const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start', containScroll: 'trimSnaps', dragFree: true },
-    [AutoScroll({ playOnInit: true, speed:1 , stopOnInteraction:false, stopOnMouseEnter: false , stopOnFocusIn : false})])
+    [AutoScroll({ playOnInit: true, speed:1 , stopOnInteraction:false, stopOnMouseEnter: true , stopOnFocusIn : false})])
     return (
         <div className="flex flex-col gap-6 py-20 bg-primary bg-contain lg:bg-[url(/img/bg.svg)]">
             <h2 className="text-6xl md:text-7xl text-center font-boska font-medium text-white">Suites & Rooms</h2>
