@@ -5,7 +5,6 @@ import Instagram from "@/components/pages/instagram";
 import Restaurant from "@/components/pages/restaurant";
 import ServiceList from "@/components/pages/service";
 import Spa from "@/components/pages/spa";
-import Suites from "@/components/pages/suites";
 
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
           <p className=" text-center">Escape to a world of tranquility and timeless beauty at Caravan Serai Marrakech. Whether for a romantic getaway, family retreat, or cultural adventure, our boutique hotel offers a truly unforgettable experience.</p>
           <Book/>
         </div>
-        <Suites/>
         <Restaurant/>
         <Spa/>
         <Activitte/>
