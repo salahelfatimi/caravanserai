@@ -6,7 +6,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import suites from '../data/suites';
 
-export default function Suites() {
+export default function Suites_Page() {
     const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start', containScroll: 'trimSnaps', dragFree: true },
     [AutoScroll({ playOnInit: true, speed:1 , stopOnInteraction:false, stopOnMouseEnter: true , stopOnFocusIn : false})])
     return (
