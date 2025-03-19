@@ -21,11 +21,8 @@ const menuItems = [
     {
         title: "RESTAURANTS",
         links: [
-            { name: "The Asian by Jean-Georges", href: "/restaurants/asian" },
-            { name: "The Italian by Jean-Georges", href: "/restaurants/italian" },
             { name: "The Moroccan", href: "/restaurants/moroccan" },
-            { name: "The Pool Pavilion", href: "/restaurants/pool-pavilion" },
-            { name: "The Brunch", href: "/restaurants/brunch" },
+            { name: "The Franch", href: "/restaurants/franch" },
         ],
     },
     {
@@ -48,15 +45,9 @@ const menuItems = [
     {
         title: "EXPERIENCES",
         links: [
-            { name: "Art Exhibitions", href: "/experiences/art_exhibitions" },
-            { name: "Bicycle Rentals", href: "/experiences/bicycle_rentals" },
             { name: "Billiards & Game Room", href: "/experiences/billiards_and_game_room" },
             { name: "Hiking & Cycling", href: "/experiences/hiking_and_cycling" },
-            { name: "Spa & Wellness", href: "/experiences/spa_and_Wellness" },
-            { name: "Windsurfing & Water Sports", href: "/experiences/windsurfing_and_water_sports" },
             { name: "Yoga Sessions", href: "/experiences/yoga_sessions" },
-
-
         ],
     },
     

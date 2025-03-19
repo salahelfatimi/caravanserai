@@ -6,7 +6,7 @@ export default function Activitte() {
     return (
         <div className="relative   bg-primary flex flex-col  w-full ">
             <div className=" ">
-                <Image src={'/img/caravanserai/caravanseri_1.jpg'} width={1920} height={1080} quality={50} alt="Caravan Serai" title="Caravan Serai" className="w-full lg:h-[60rem] object-bottom object-cover"/>
+                <Image src={'/img/activite/activite_3.jpg'} width={1920} height={1080} quality={50} alt="Caravan Serai" title="Caravan Serai" className="w-full lg:h-[60rem] object-bottom object-cover"/>
             </div>
                 <div className=" flex flex-col  items-center justify-center text-white py-20 container">
                     <h2 className=" text-4xl text-center font-boska font-medium mb-10">

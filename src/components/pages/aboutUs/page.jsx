@@ -30,7 +30,7 @@ export default function AboutUsPage(){
                     <ul className=" *:text-sm space-y-3 ">
                         <li><strong>Prime Location</strong> – Situated in La Palmeraie, just minutes from Marrakech’s Medina and major attractions.</li>
                         <li><strong>Authentic Moroccan Hospitality</strong> - Authentic Moroccan Hospitality – Experience warm, personalized service in a setting designed for relaxation.</li>
-                        <li><strong>Luxury Accommodations</strong> – Choose from our 19 elegantly designed rooms and suites, featuring private terraces, intricate Moroccan décor, and stunning views of the Atlas Mountains.</li>
+                        <li><strong>Luxury Accommodations</strong> – Choose from our 16 elegantly designed rooms and suites, featuring private terraces, intricate Moroccan décor, and stunning views of the Atlas Mountains.</li>
                         <li><strong>World-Class Amenities</strong> – Unwind at our outdoor swimming pool, rejuvenate in our traditional hammam & spa, or savor gourmet Moroccan and international cuisine at our on-site restaurant.</li>
                         <li><strong>Exclusive Experiences</strong> – Explore Marrakech with desert excursions, camel rides, quad biking, golf, and more.</li>
 

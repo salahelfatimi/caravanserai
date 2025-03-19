@@ -111,15 +111,26 @@ export default function Book() {
                         <div className={` flex flex-col lg:flex-row justify-between mx-auto py-2 gap-20 ${etaps==true?'block':'hidden'}`}>
                             <div>
                                 <h4 className={`after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Full Name</h4>
-                                <input type="text" onChange={(e)=>(setFullname(e.target.value))} value={fullName} name="fullName" id=""  className="bg-transparent border-b-2 border-primary text-xl placeholder:text-2xl  font-serif text-black focus:outline-none w-full text-center pl-4 " />
+                                <input type="text" onChange={(e)=>(setFullname(e.target.value))} value={fullName} name="fullName" id=""  className="bg-transparent border-b-2 border-primary text-lg placeholder:text-2xl text-black focus:outline-none w-full text-center pl-4 " />
                             </div>
                             <div>
                                 <h4 className={`after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Telephone</h4>
-                                <input type="tel" onChange={(e)=>(setPhone(e.target.value))} value={phone} name="phone" id=""  className="bg-transparent border-b-2 border-primary text-xl placeholder:text-2xl  font-serif text-black focus:outline-none w-full text-center pl-4 "/>
+                                <input type="tel" onChange={(e)=>(setPhone(e.target.value))} value={phone} name="phone" id=""  className="bg-transparent border-b-2 border-primary text-lg placeholder:text-2xl   text-black focus:outline-none w-full text-center pl-4 "/>
                             </div>
                             <div>
-                                <h4 className={` text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Email</h4>
-                                <input type="email" onChange={(e)=>(setEmail(e.target.value))} value={email} name="email" id=""  className="bg-transparent border-b-2 border-primary text-xl  placeholder:text-2xl font-serif text-black focus:outline-none w-full text-center pl-4 "/>
+                                <h4 className={` after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Email</h4>
+                                <input type="email" onChange={(e)=>(setEmail(e.target.value))} value={email} name="email" id=""  className="bg-transparent border-b-2 border-primary text-lg  placeholder:text-2xl text-black focus:outline-none w-full text-center pl-4 "/>
+                            </div>
+                            <div>
+                                <h4 className={` after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Suites</h4>
+                                <select name="Suites" id=" "  className="bg-transparent border-b-2 border-primary text-lg pb-1  placeholder:text-2xl  text-black focus:outline-none w-full  pl-4 ">
+                                    <option value="">suites</option>
+                                    <option value="suites classiques">suites classiques - 99 $</option>
+                                    <option value="suites juniors">suites juniors - 99 $</option>
+                                    <option value="suites supérieures">suites supérieures - 99 $</option>
+                                    <option value="suites triples">suites triples - 99 $</option>
+                                    <option value="suites piscines privées">suites piscines privées - 99 $</option>
+                                </select>
                             </div>
                             
                         </div>
@@ -132,7 +143,7 @@ export default function Book() {
                             Suivant <ChevronRight />
                         </button>
                         
-                        <button type="submit" onClick={handleSubmit} disabled={isSubmitting} className={` ${etaps==true?'block':'hidden'} flex flex-row-reverse gap-2 items-center bg-primary font-bold capitalize lg:text-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
+                        <button type="submit" onClick={handleSubmit} disabled={isSubmitting} className={` ${etaps==true?'block':'hidden'}  flex items-center gap-2 bg-primary font-bold capitalize lg:ttext-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
                             {isSubmitting ? 'Booking...' : 'Book Now'} <Calendar1 />
                         </button>
                        
