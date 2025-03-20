@@ -13,8 +13,11 @@ export default function Yoga_sessions(){
                 </div>
             </div>    
             <div className=" flex lg:flex-row-reverse flex-col items-center justify-center gap-3  bg-top bg-[url(/img/bg-yellow.svg)] ">
-                <div className="lg:w-1/2">
-                    <Image src={'/img/experiences/yoga_sessions/yoga_sessions_1.jpg'} width={1920} height={1080} className="h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                <div className="lg:w-1/2 h-screen">
+                    <video autoPlay loop muted className="w-full h-full object-cover " about="Caravan Serai" title="Caravan Serai" > 
+                        <source src="/vid/yoga/yoga.mp4" type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div className=" lg:w-1/2 p-4 flex flex-col gap-4">
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Types of Yoga Sessions Offered</h2>
@@ -44,7 +47,7 @@ export default function Yoga_sessions(){
             </div>  
             <div className=" flex lg:flex-row flex-col items-center justify-center gap-3  bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <div className="lg:w-1/2">
-                    <Image src={'/img/experiences/yoga_sessions/yoga_sessions_2.jpg'} width={1920} height={1080} className="h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                    <Image src={'/img/experiences/yoga_sessions/yoga_sessions_1.jpg'} width={1920} height={1080} className="h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 </div>
                 <div className=" lg:w-1/2 p-4 flex flex-col gap-4">
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">- Group Yoga Sessions</h2>
