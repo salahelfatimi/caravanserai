@@ -29,8 +29,8 @@ export default function Billiards(){
                     </div>
             </div>
             <div className=" flex flex-col   gap-10 py-20 bg-white bg-top bg-[url(/img/bg-yellow.svg)] ">
-                <h2 className=" text-3xl md:text-5xl text-center font-boska font-bold  text-primary " >Book Your Ultimate Body Care Experience</h2>
-                <p className=" text-center">Indulge in the ultimate relaxation at Caravan Serai. Whether you're seeking a solo escape, a couple’s retreat, or a group experience, we promise a moment of pure bliss.</p>
+                <h2 className=" text-3xl md:text-5xl text-center font-boska font-bold  text-primary " >Book Your Stay at Caravan Serai Today</h2>
+                <p className=" text-center">Escape to a world of tranquility and timeless beauty at Caravan Serai Marrakech. Whether for a romantic getaway, family retreat, or cultural adventure, our boutique hotel offers a truly unforgettable experience.</p>
                 <Book/>
             </div>   
         </div>

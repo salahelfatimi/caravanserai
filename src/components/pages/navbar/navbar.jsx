@@ -87,7 +87,7 @@ export default function Navbar() {
                   <ul className="pl-6 flex flex-col">
                     {items?.links?.map((ele, index) => (
                       <li key={index} className={` `} onClick={() => setOpenNav(!openNav)}>
-                        <Link href={ele.href} className="text-sm capitalize ">- {ele.name}</Link>
+                        <Link href={ele.href} className="text-sm  ">- {ele.name}</Link>
                       </li>
                     ))}
                   </ul>

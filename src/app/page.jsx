@@ -2,6 +2,7 @@ import Activitte from "@/components/pages/activite";
 import Book from "@/components/pages/book";
 import Header from "@/components/pages/header";
 import Instagram from "@/components/pages/instagram";
+import Menu from "@/components/pages/menu";
 import Restaurant from "@/components/pages/restaurant";
 import ServiceList from "@/components/pages/service";
 import Spa from "@/components/pages/spa";
