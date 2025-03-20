@@ -5,41 +5,44 @@ export default function Weddings(){
     return(
         <div>
             <div className=" relative h-screen bg-center flex flex-col text-center items-center justify-center">
-                <Image src={'/img/events/weddings_and_celebrations/weddings_and_celebrations_4.jpg'} width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                <Image src={'/img/events/private_events/private_events.jpg'} width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className="relative z-20 flex flex-col gap-4 container ">
-                    <h1 className="font-boska font-medium text-3xl lg:text-8xl text-white">Weddings & Celebrations at Caravan Serai</h1>
-                    <p className="text-center text-white mb-8 text-xs lg:text-xl">Create Unforgettable Memories in a Magical Setting</p>
+                    <h1 className="font-boska font-medium text-3xl lg:text-8xl text-white">Private Events at Caravan Serai</h1>
+                    <p className="text-center text-white mb-8 text-xs lg:text-xl">A Unique Venue for Your Special Moments</p>
                 </div>
             </div>
             <div className=" bg-primary py-10  bg-cover bg-top bg-[url(/img/bg-yellow.svg)]">
-               <p className=" container text-center text-white font-medium text-xs lg:text-base">At Caravan Serai, we offer the perfect backdrop for your dream wedding or special celebration. Nestled in the heart of Marrakech, our enchanting venue blends Moroccan elegance with modern luxury, creating an unforgettable experience for you and your guests.</p>
+               <p className=" container text-center text-white font-medium text-xs lg:text-base">At Caravan Serai, we understand that each event is unique and deserves to be celebrated in a setting that is both elegant and memorable. Whether you’re hosting an intimate gathering or a grand celebration, our venue provides the perfect atmosphere for any occasion.</p>
             </div>
             <div className=" flex lg:flex-row-reverse flex-col items-center justify-center gap-3  bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <div className="lg:w-1/2 h-screen">
-                    <Image src={'/img/events/weddings_and_celebrations/weddings_and_celebrations_2.jpg'} width={1920} height={1080} className="h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                    <video autoPlay loop muted className="w-full h-full object-cover " about="Caravan Serai" title="Caravan Serai" > 
+                        <source src="/vid/events/private_events/private_events.mp4" type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div className=" lg:w-1/2 p-4 flex flex-col gap-4">
-                    <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Why Choose Caravan Serai?</h2>
+                    <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Why Host Your Private Event at Caravan Serai?</h2>
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
-                            <li> Exquisite Moroccan Ambiance – Celebrate in a breathtaking riad with stunning architecture, lush gardens, and serene courtyards.</li>
-                            <li>Personalized Event Planning – Our dedicated team will assist in planning and coordinating every detail to perfection.</li>
-                            <li>Gourmet Dining Experience – Indulge in a curated menu featuring traditional Moroccan and international cuisine.</li>
-                            <li>Luxury Accommodation – Offer your guests a relaxing stay in our beautifully designed rooms and suites.</li>
-                            <li>Seamless Service – From décor to entertainment, we ensure every aspect of your event runs smoothly.</li>
+                            <li>Elegant Moroccan Setting – Celebrate your special occasion in the heart of Marrakech, surrounded by stunning Moroccan architecture, lush gardens, and tranquil courtyards.</li>
+                            <li>Tailored Event Planning – Our dedicated event planning team will work closely with you to personalize every detail, ensuring a flawless experience.</li>
+                            <li>Gourmet Dining – Enjoy a menu crafted to suit your event, featuring both traditional Moroccan flavors and international cuisine.</li>
+                            <li>Exclusive Use of Venue – Whether it’s a corporate event, a family celebration, or a private gathering, we offer exclusive access to our beautiful space.</li>
+                            <li>Professional Service – From decoration to entertainment, our experienced staff will ensure every aspect of your event is handled with care and precision.</li>
                         </ul>
                     </div>
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Services We Offer</h2>
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
-                            <li>Weddings & Receptions – Say "I do" in a romantic Moroccan setting.</li>
-                            <li>Engagement Parties – Celebrate love with an intimate gathering.</li>
-                            <li>Anniversaries – Mark your milestones in an elegant atmosphere.</li>
-                            <li>Private Events – From birthdays to corporate celebrations, we cater to all occasions.</li>
+                            <li>Birthday Parties – Celebrate your milestones with an unforgettable event.</li>
+                            <li>Corporate Events – Host meetings, conferences, or team-building activities in a sophisticated environment.</li>
+                            <li>Private Dinners – Enjoy a private dining experience with bespoke menus and personalized service.</li>
+                            <li>Themed Celebrations – From intimate dinners to large-scale gatherings, we can help bring your vision to life.</li>
                         </ul>
                     </div>
-                    <Link href="/contact" className=" text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary w-full p-2 px-3 text-2xl font-medium text-white rounded-full">Book Your Celebration</Link>
+                    <Link href="/contact" className=" text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary w-full p-2 px-3 text-2xl font-medium text-white rounded-full">Book Your Private Event</Link>
                 </div>
             </div>
         </div>
