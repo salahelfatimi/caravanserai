@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
-import discover_marrakech from "@/components/data/discover_marrakech";
+import discover_marrakech from "@/app/data/discover_marrakech";
 
 
 
@@ -12,9 +12,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Restaurant() {
     const imageRefs = useRef([]);
-    const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start', containScroll: 'trimSnaps', dragFree: true}, 
-    [AutoScroll({ playOnInit: true, speed:1 , stopOnInteraction:false, stopOnMouseEnter: false , stopOnFocusIn : false})])
-    
+    const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start', containScroll: 'trimSnaps', dragFree: true },
+        [AutoScroll({ playOnInit: true, speed: 1, stopOnInteraction: false, stopOnMouseEnter: false, stopOnFocusIn: false })])
+
     useEffect(() => {
         imageRefs.current.forEach((image) => {
             gsap.fromTo(image,
@@ -23,7 +23,7 @@ export default function Restaurant() {
                     scale: 1, opacity: 1, duration: 1, ease: "power3.out",
                     scrollTrigger: {
                         trigger: image,
-                        start: "top 80%", 
+                        start: "top 80%",
                         toggleActions: "play none none play",
                     }
                 }
@@ -39,7 +39,7 @@ export default function Restaurant() {
             <div className="lg:columns-3 columns-2 container space-y-5 p-5 bg-cover lg:block hidden">
                 {discover_marrakech.map((ele, index) => (
                     <div key={index} ref={el => imageRefs.current[index] = el}>
-                       <Image className="rounded-2xl border-4 border-white  object-cover object-bottom" src={`/img/aboutUs/discover_marrakech/${ele}`} width={1920} height={1080} alt="Caravan Serai" title="Caravan Serai" />
+                        <Image className="rounded-2xl border-4 border-white  object-cover object-bottom" src={`/img/aboutUs/discover_marrakech/${ele}`} width={1920} height={1080} alt="Caravan Serai" title="Caravan Serai" />
                     </div>
                 ))}
             </div>
@@ -47,8 +47,8 @@ export default function Restaurant() {
                 <div className="flex  w-fit transition-transform duration-700 ease-linear ">
                     {discover_marrakech.map((ele, index) => (
                         <div key={index} className="relative flex-none w-fit pl-10 ">
-                            <Image width={1920} height={1080} quality={50} src={`/img/aboutUs/discover_marrakech/${ele}`}  className="rounded-2xl border-4 border-whitte w-full h-[20rem] object-cover " alt="Caravan Serai" title="Caravan Serai"/>
-                           
+                            <Image width={1920} height={1080} quality={50} src={`/img/aboutUs/discover_marrakech/${ele}`} className="rounded-2xl border-4 border-whitte w-full h-[20rem] object-cover " alt="Caravan Serai" title="Caravan Serai" />
+
                         </div>
                     ))}
                 </div>

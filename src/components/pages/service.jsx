@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useRef } from "react";
-import services from "../data/services"; // Import the service list
+import services from "../../app/data/services"; // Import the service list
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -9,15 +9,15 @@ const ServiceList = () => {
     const serviceRefs = useRef([]);
 
     useEffect(() => {
-        serviceRefs.current.forEach((image,index) => {
+        serviceRefs.current.forEach((image, index) => {
             gsap.fromTo(image,
-                { scale: 0.8, opacity: 0},
-                
+                { scale: 0.8, opacity: 0 },
+
                 {
                     scale: 1, opacity: 1, duration: 1, delay: index * 0.05, ease: "power3.out",
                     scrollTrigger: {
                         trigger: image,
-                        start: "top 80%", 
+                        start: "top 80%",
                         toggleActions: "play none none play",
                     }
                 }

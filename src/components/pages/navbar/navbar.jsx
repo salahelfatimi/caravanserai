@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { Calendar, Menu, X } from "lucide-react";
-import menuItems from "@/components/data/menuItems";
+import menuItems from "@/app/data/menuItems";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -64,7 +64,7 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-        
+
       </div>
 
       {/* Menu Panel */}

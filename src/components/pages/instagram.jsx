@@ -1,24 +1,24 @@
 'use client'
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import caravanseraiImages from "../data/instagram";
+import caravanseraiImages from "../../app/data/instagram";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Instagram() {
-    const imageRefs = useRef([]); 
+    const imageRefs = useRef([]);
 
-      useEffect(() => {
-        imageRefs.current.forEach((image,index) => {
+    useEffect(() => {
+        imageRefs.current.forEach((image, index) => {
             gsap.fromTo(image,
-                { scale: 0.8, opacity: 0},
-                
+                { scale: 0.8, opacity: 0 },
+
                 {
                     scale: 1, opacity: 1, duration: 1, delay: index * 0.05, ease: "power3.out",
                     scrollTrigger: {
                         trigger: image,
-                        start: "top 80%", 
+                        start: "top 80%",
                         toggleActions: "play none none play",
                     }
                 }
@@ -48,6 +48,6 @@ export default function Instagram() {
                 </div>
             </div>
         </div>
-        
+
     );
 }
