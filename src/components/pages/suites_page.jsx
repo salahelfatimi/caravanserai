@@ -18,7 +18,7 @@ export default function Suites_Page() {
                 <div className="flex transition-transform ease-out duration-700">
                     {suites.map((suite, index) => (
                         <div key={index} className="min-w-full lg:min-w-[40rem] p-4">
-                            <div className="rounded-2xl border-4 border-white overflow-hidden shadow-lg bg-white">
+                            <div className="rounded-2xl border-4 border-primary overflow-hidden shadow-lg bg-white">
                                 <div className="relative">
                                     <SuiteCarousel images={suite.images} title={'caravanserai marrakech'} />
                                 </div>
