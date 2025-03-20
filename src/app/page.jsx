@@ -7,6 +7,7 @@ import Restaurant from "@/components/pages/restaurant";
 import ServiceList from "@/components/pages/service";
 import Spa from "@/components/pages/spa";
 import Suites_Page from "@/components/pages/suites_page";
+import Suites_page_privees from "@/components/pages/suites_page_privees";
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
           <Book/>
         </div>
         <Suites_Page/>
+        <Suites_page_privees/>
         <Restaurant/>
         <Spa/>
         <Activitte/>
