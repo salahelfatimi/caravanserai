@@ -28,11 +28,11 @@ export default function Suites_page_privees() {
                     ))}
                 </div>
             </div>
-            <div className=' w-full  flex items-center justify-center'>
+            {/* <div className=' w-full  flex items-center justify-center'>
                 <button className={` bg-white rounded-2xl hover:bg-primary border-2 w-fit border-white hover:text-white duration-700 text-primary text-xl font-medium  px-8 py-2`}>
                     See All Suites piscines prive
                 </button>
-            </div>
+            </div> */}
         </div>
     );
 }

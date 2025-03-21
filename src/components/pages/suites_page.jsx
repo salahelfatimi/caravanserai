@@ -27,11 +27,11 @@ export default function Suites_Page() {
                     ))}
                 </div>
             </div>
-            <div className=' w-full  flex items-center justify-center'>
+            {/* <div className=' w-full  flex items-center justify-center'>
                 <button className={` bg-primary rounded-2xl hover:bg-white border-2 w-fit border-primary hover:text-primary duration-700 text-white text-xl font-medium  px-8 py-2`}>
                     See All Suites
                 </button>
-            </div>
+            </div> */}
         </div>
     );
 }
