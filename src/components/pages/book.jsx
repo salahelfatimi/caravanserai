@@ -15,6 +15,8 @@ export default function Book() {
     const [fullName, setFullname] = useState('');
     const [phone, setPhone] = useState();
     const [email, setEmail] = useState('');
+    const [suites, setSuites] = useState('');
+
     const [etaps,setEtaps]=useState(false)
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -30,7 +32,7 @@ export default function Book() {
         e.preventDefault();
         setIsSubmitting(true);
 
-        if (!fullName || !phone) {
+        if (!fullName || !phone || !email || !suites) {
             toast.error('Please fill in all required fields.');
             setIsSubmitting(false);
             return;
@@ -39,6 +41,7 @@ export default function Book() {
         const reservationData = {
             startDate: startDate.toLocaleDateString(),
             endDate: endDate.toLocaleDateString(),
+            suites,
             adults,
             children,
             fullName,
@@ -64,6 +67,7 @@ export default function Book() {
                 setEtaps(false)
                 setFullname('')
                 setPhone('')
+                setSuites('')
                 setStartDate(new Date())
             } else {
                 toast.error('Failed to submit reservation.');
@@ -123,13 +127,13 @@ export default function Book() {
                             </div>
                             <div>
                                 <h3 className={` after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Suites</h3>
-                                <select name="Suites" id=" "  className="bg-transparent border-b-2 border-primary text-lg pb-1  placeholder:text-2xl  text-black focus:outline-none w-full  pl-4 ">
+                                <select onChange={(e)=>setSuites(e.target.value)} name="Suites" id=" "  className="bg-transparent border-b-2 border-primary text-lg pb-1  placeholder:text-2xl  text-black focus:outline-none w-full  pl-4 ">
                                     <option value="">suites</option>
-                                    <option value="suites classiques">suites classiques - 99 $</option>
-                                    <option value="suites juniors">suites juniors - 99 $</option>
-                                    <option value="suites supérieures">suites supérieures - 99 $</option>
-                                    <option value="suites triples">suites triples - 99 $</option>
-                                    <option value="suites piscines privées">suites piscines privées - 99 $</option>
+                                    <option value="suites classiques">suites classiques</option>
+                                    <option value="suites juniors">suites juniors</option>
+                                    <option value="suites supérieures">suites supérieures</option>
+                                    <option value="suites triples">suites triples</option>
+                                    <option value="suites piscines privées">suites piscines privées</option>
                                 </select>
                             </div>
                             
