@@ -98,7 +98,7 @@ export default function Navbar() {
 
           {/* Image Section */}
           <div className="w-2/5 hidden lg:block min-h-screen bg-primary">
-            <Image width={1920} height={1080} loading="eager" src="/img/navbar/caravanserai_1.jpg" className="object-center h-full object-cover" alt="Caravan Serai’s" title="Caravan Serai’s" />
+            <Image width={1920} height={1080}  src="/img/navbar/caravanserai_1.jpg" className="object-center h-full object-cover" alt="Caravan Serai’s" title="Caravan Serai’s" />
           </div>
         </div>
       </div>

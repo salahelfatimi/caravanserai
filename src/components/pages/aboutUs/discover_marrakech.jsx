@@ -39,7 +39,7 @@ export default function Restaurant() {
             <div className="lg:columns-3 columns-2 container space-y-5 p-5 bg-cover lg:block hidden">
                 {discover_marrakech.map((ele, index) => (
                     <div key={index} ref={el => imageRefs.current[index] = el}>
-                        <Image className="rounded-2xl border-4 border-white  object-cover object-bottom" loading="eager" src={`/img/aboutUs/discover_marrakech/${ele}`} width={1920} height={1080} alt="Caravan Serai" title="Caravan Serai" />
+                        <Image className="rounded-2xl border-4 border-white  object-cover object-bottom"  src={`/img/aboutUs/discover_marrakech/${ele}`} width={1920} height={1080} alt="Caravan Serai" title="Caravan Serai" />
                     </div>
                 ))}
             </div>
@@ -47,7 +47,7 @@ export default function Restaurant() {
                 <div className="flex  w-fit transition-transform duration-700 ease-linear ">
                     {discover_marrakech.map((ele, index) => (
                         <div key={index} className="relative flex-none w-fit pl-10 ">
-                            <Image width={1920} height={1080} quality={50} src={`/img/aboutUs/discover_marrakech/${ele}`} loading="eager" className="rounded-2xl border-4 border-whitte w-full h-[20rem] object-cover " alt="Caravan Serai" title="Caravan Serai" />
+                            <Image width={1920} height={1080} quality={50} src={`/img/aboutUs/discover_marrakech/${ele}`}  className="rounded-2xl border-4 border-whitte w-full h-[20rem] object-cover " alt="Caravan Serai" title="Caravan Serai" />
 
                         </div>
                     ))}

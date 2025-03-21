@@ -5,28 +5,28 @@ export default function ContactPage(){
     return(
         <div>
             <div className=" relative h-screen bg-center flex flex-col text-center items-center justify-center" >
-                <Image src={'/img/contact/contact_1.jpg'} width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                <Image src={'/img/contact/contact_1.jpg'} loading="eager" width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 <div className=" absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className=" relative z-20 flex flex-col gap-4 container">
-                    <h1 className="font-boska font-medium text-6xl lg:text-8xl text-white" >Contact Us</h1>
+                    <h1 className="font-boska font-medium text-6xl lg:text-8xl text-white" >Contact Us - Caravan Serai</h1>
                     <p className="text-center text-white mb-8 text-xs lg:text-xl">We’d love to hear from you! Whether you have a question, need assistance, or just want to say hello, feel free to reach out to us.</p>
                 </div>
             </div>
             <div className=" flex flex-col md:flex-row items-center justify-center gap-6 bg-primary py-10 bg-cover bg-[url(/img/bg.svg)]">
                 <div className=" bg-white rounded flex flex-col lg:flex-row items-center gap-1 p-4">
-                    <h3 className=" text-lg  font-medium font-serif text-primary ">Email : </h3>
+                    <h2 className=" text-lg  font-medium font-serif text-primary ">Email : </h2>
                     <p className=" text-sm">contat@caravanserai_marrakech.com</p>
                 </div>
                 <div className=" bg-white rounded flex flex-row items-center gap-1 p-4">
-                    <h3 className=" text-lg  font-medium font-serif text-primary ">Phone : </h3>
+                    <h2 className=" text-lg  font-medium font-serif text-primary ">Phone : </h2>
                     <p className=" text-sm">+212 5 24 35 41 76</p>
                 </div>
                 <div className=" bg-white rounded flex flex-row items-center gap-1 p-4">
-                    <h3 className=" text-lg  font-medium font-serif text-primary ">Check-in time : </h3>
+                    <h2 className=" text-lg  font-medium font-serif text-primary ">Check-in time : </h2>
                     <p className=" text-sm">14:00</p>
                 </div>
                 <div className=" bg-white rounded flex flex-row items-center gap-1 p-4">
-                    <h3 className=" text-lg  font-medium font-serif text-primary ">Check-out time : </h3>
+                    <h2 className=" text-lg  font-medium font-serif text-primary ">Check-out time : </h2>
                     <p className=" text-sm">12:00</p>
                 </div>
             </div>

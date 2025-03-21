@@ -15,13 +15,13 @@ export default function AboutUsPage(){
                     <p className="text-center text-white mb-8 text-xs lg:text-xl">Located in the heart of Marrakech’s Palmeraie, Caravan Serai is a luxurious boutique hotel inspired by the historic caravanserais, where travelers once rested on their journeys across the desert. Our 4-star hotel blends traditional Moroccan charm with modern comforts, offering a tranquil escape from the bustling city.</p>
                 </div>
             </div>
-            {/* <div className=" flex flex-col  items-center justify-center gap-6 bg-primary py-10 bg-top  bg-[url(/img/bg.svg)]">
+            <div className=" flex flex-col  items-center justify-center gap-6 bg-primary py-10 bg-top  bg-[url(/img/bg.svg)]">
                 <h2 className=" text-center text-white text-3xl md:text-5xl font-boska font-bold uppercase">A Sanctuary of Relaxation & Wellness</h2>
                 <p className=" text-white text-center">Indulge in a luxurious spa experience, where ancient Moroccan rituals meet modern wellness. Our hammam, massage therapies, and beauty treatments are designed to restore balance and well-being.</p>
-            </div> */}
+            </div>
             <div className=" flex flex-col lg:flex-row bg-white  bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <div className="lg:w-1/2 ">
-                    <Image src={'/img/aboutUs/about_us_2.jpg'} width={1920} height={1080} className=" h-[50rem] object-cover" alt="Caravan Serai" title="Caravan Serai" loading="eager"/>
+                    <Image src={'/img/aboutUs/about_us_2.jpg'} width={1920} height={1080} className=" h-[50rem] object-cover" alt="Caravan Serai" title="Caravan Serai" />
                 </div>
                 <div className="lg:w-1/2 flex flex-col gap-8 justify-center p-4 ">
                     <h2 className="text-4xl text-start font-boska font-bold  text-primary " >Experience Authentic Moroccan Elegance</h2>
