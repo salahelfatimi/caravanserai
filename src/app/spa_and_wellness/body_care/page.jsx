@@ -1,11 +1,41 @@
 import Book from "@/components/pages/book";
 import Image from "next/image";
 
+export async function generateMetadata() {
+    return {
+      title: "Body Care at Caravan Serai Marrakech",
+      alternates: {
+        canonical: "/spa_and_wellness/body_care",
+      },
+      openGraph: {
+        title: "Caravan Serai",
+        description: "Rejuvenate your body and skin with luxurious body care treatments at Caravan Serai Marrakech. Indulge in nourishing treatments designed to leave you feeling refreshed and glowing. Book your session today!",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/spa_and_wellness/body_care`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Caravan Serai",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Caravan Serai",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+}
+
 export default function Body_care(){
     return(
         <div>
             <div className=" relative h-screen bg-center flex flex-col text-center items-center justify-center">
-                <Image src={'/img/spa_and_wellness/body_care/body_care.jpg'} width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                <Image src={'/img/spa_and_wellness/body_care/body_care.jpg'} loading="eager" width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className="relative z-20 flex flex-col gap-4 container ">
                     <h1 className="font-boska font-medium text-3xl lg:text-8xl text-white"> Body Care – Caravan Serai's Paradise</h1>

@@ -1,11 +1,41 @@
 import Image from "next/image";
 import Link from "next/link";
 
+export async function generateMetadata() {
+    return {
+      title: "Professional Meeting & Event Space",
+      alternates: {
+        canonical: "/events/seminars",
+      },
+      openGraph: {
+        title: "Caravan Serai",
+        description: "Host your next seminar or corporate event at Caravan Serai Marrakech. Our luxurious venue offers a perfect setting for seminars, conferences, and business meetings. Book your event space today!",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/events/seminars`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Caravan Serai",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Caravan Serai",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+}
+
 export default function Seminars(){
     return(
         <div>
             <div className=" relative h-screen bg-center flex flex-col text-center items-center justify-center">
-                <Image src={'/img/events/seminar/seminar.jpg'} width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                <Image src={'/img/events/seminar/seminar.jpg'} loading="eager" width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className="relative z-20 flex flex-col gap-4 container ">
                     <h1 className="font-boska font-medium text-3xl lg:text-8xl text-white">Seminars at Caravan Serai</h1>

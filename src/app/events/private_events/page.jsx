@@ -1,11 +1,41 @@
 import Image from "next/image";
 import Link from "next/link";
 
+export async function generateMetadata() {
+    return {
+      title: "Private Events at Caravan Serai Marrakech",
+      alternates: {
+        canonical: "/events/private_events",
+      },
+      openGraph: {
+        title: "Caravan Serai",
+        description: "Host your private event at Caravan Serai Marrakech. Whether it's a birthday, anniversary, or intimate gathering, our luxurious venue offers the perfect setting for unforgettable moments. Book your private event today!",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/events/private_events`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Caravan Serai",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Caravan Serai",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+}
+
 export default function Weddings(){
     return(
         <div>
             <div className=" relative h-screen bg-center flex flex-col text-center items-center justify-center">
-                <Image src={'/img/events/private_events/private_events.jpg'} width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                <Image src={'/img/events/private_events/private_events.jpg'} loading="eager" width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className="relative z-20 flex flex-col gap-4 container ">
                     <h1 className="font-boska font-medium text-3xl lg:text-8xl text-white">Private Events at Caravan Serai</h1>

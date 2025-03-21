@@ -1,11 +1,41 @@
 import Book from "@/components/pages/book";
 import Image from "next/image";
 
+export async function generateMetadata() {
+    return {
+      title: "Best Moroccan Cuisine",
+      alternates: {
+        canonical: "/restaurants/moroccan",
+      },
+      openGraph: {
+        title: "Caravan Serai",
+        description: "Experience authentic Moroccan flavors at our restaurant in Morocco. Enjoy traditional dishes, exquisite service, and a warm ambiance. Book your table today!",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/restaurants/moroccan`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Caravan Serai",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Caravan Serai",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+}
+
 export default function Moroccan(){
     return(
         <div>
             <div className=" relative h-screen bg-center flex flex-col text-center items-center justify-center">
-                <Image src={'/img/restaurant/restaurant_3.jpg'} width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                <Image src={'/img/restaurant/restaurant_3.jpg'} loading="eager" width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className="relative z-20 flex flex-col gap-4 container ">
                     <h1 className="font-boska font-medium text-3xl lg:text-8xl text-white">Authentic Moroccan Cuisine at Caravan Serai</h1>

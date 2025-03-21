@@ -1,6 +1,36 @@
 import Book from "@/components/pages/book";
 import Image from "next/image";
 
+export async function generateMetadata() {
+    return {
+      title: "Rejuvenate Your Mind & Body",
+      alternates: {
+        canonical: "/experiences/yoga_sessions",
+      },
+      openGraph: {
+        title: "Caravan Serai",
+        description: "Find balance and relaxation with our yoga sessions at Caravan Serai Marrakech. Experience peace of mind and body in a serene setting with expert instructors. Book your session today!",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/experiences/yoga_sessions`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Caravan Serai",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Caravan Serai",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+}
+
 export default function Yoga_sessions(){
     return(
         <div>

@@ -2,11 +2,41 @@ import Book from "@/components/pages/book";
 import { Clock } from "lucide-react";
 import Image from "next/image";
 
+export async function generateMetadata() {
+    return {
+      title: "Hands & Feet Care at Caravan Serai Marrakech",
+      alternates: {
+        canonical: "/spa_and_wellness/hands_and_feet",
+      },
+      openGraph: {
+        title: "Caravan Serai",
+        description: "Pamper your hands and feet with luxurious treatments at Caravan Serai Marrakech. Our professional care will leave your skin soft, smooth, and revitalized. Book your appointment today for the ultimate relaxation experience!",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/spa_and_wellness/hands_and_feet`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Caravan Serai",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Caravan Serai",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+}
+
 export default function Hands_and_feet(){
     return(
         <div>
             <div className=" relative h-screen bg-center flex flex-col text-center items-center justify-center">
-                <Image src={'/img/spa_and_wellness/hands_and_feet/hands_and_feet.jpg'} width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                <Image src={'/img/spa_and_wellness/hands_and_feet/hands_and_feet.jpg'} loading="eager" width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className="relative z-20 flex flex-col gap-4 container ">
                     <h1 className="font-boska font-medium text-3xl lg:text-8xl text-white">Hands & Feet Care – Mains et Pieds</h1>

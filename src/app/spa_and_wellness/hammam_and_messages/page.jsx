@@ -1,12 +1,41 @@
 import Book from "@/components/pages/book";
-import { CheckCircle, Flower, Leaf, Users } from "lucide-react";
 import Image from "next/image";
+
+export async function generateMetadata() {
+    return {
+      title: "Hammam & Massages at Caravan Serai Marrakech",
+      alternates: {
+        canonical: "/spa_and_wellness/hammam_and_messages",
+      },
+      openGraph: {
+        title: "Caravan Serai",
+        description: "Experience ultimate relaxation at Caravan Serai Marrakech with traditional Moroccan hammam treatments and rejuvenating massages. Indulge in a soothing journey for the body and mind. Book your treatment today!",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/spa_and_wellness/hammam_and_messages`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Caravan Serai",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Caravan Serai",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+}
 
 export default function Hammam_and_messages(){
     return(
         <div>
             <div className=" relative h-screen bg-center flex flex-col text-center items-center justify-center">
-                <Image src={'/img/spa/spa_1.jpg'} width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                <Image src={'/img/spa/spa_1.jpg'} loading="eager" width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className="relative z-20 flex flex-col gap-4 container ">
                     <h1 className="font-boska font-medium text-3xl lg:text-8xl text-white">Hammam & Massages - A Journey to Relaxation at Caravan Serai</h1>
