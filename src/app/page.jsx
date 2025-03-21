@@ -9,6 +9,36 @@ import Spa from "@/components/pages/spa";
 import Suites_Page from "@/components/pages/suites_page";
 import Suites_page_privees from "@/components/pages/suites_page_privees";
 
+export async function generateMetadata() {
+  return {
+    title: "Caravan Serai Marrakesh  | Luxury Hotel & Spa Official Site ",
+    alternates: {
+      canonical: "/",
+    },
+    openGraph: {
+      title: "Caravan Serai",
+      description: "Book your stay at Caravan Serai Marrakesh. Enjoy spa treatments, hammams, fine dining, and elegant accommodations in a serene oasis.",
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
+      robots: {
+        index: true,
+        follow: true,
+      },
+      siteName: "Caravan Serai",
+      images: [
+        {
+          url: `/opengraph-image.jpg`,
+          secureUrl: `/opengraph-image.jpg`,
+          width: 1200,
+          height: 675,
+          alt: "Caravan Serai",
+        }
+      ],
+      type: "website",
+
+    },
+  }
+};
+
 
 export default function Home() {
   return (

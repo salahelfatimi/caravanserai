@@ -84,15 +84,15 @@ export default function Book() {
                     <form onSubmit={handleSubmit} className="flex flex-col md:flex-row justify-between container mx-auto border-4 border-primary  gap-20 p-4 px-10 shadow-2xl  bg-white lg:rounded-full">
                         <div className={` flex flex-col lg:flex-row justify-between mx-auto py-2 gap-20 ${etaps==false?'block':'hidden'}`}>
                             <div className="flex flex-col items-center justify-center ">
-                                <h4 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Arrival</h4>
+                                <h3 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Arrival</h3>
                                 <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} className="bg-transparent text-2xl lg:text-4xl font-serif w-full text-black focus:outline-none text-center" dateFormat="dd MMMM" />
                             </div>
                             <div className="flex flex-col items-center justify-center">
-                                <h4 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Leaving</h4>
+                                <h3 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Leaving</h3>
                                 <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} className="bg-transparent text-2xl lg:text-4xl font-serif w-full text-black focus:outline-none text-center" dateFormat="dd MMMM" />
                             </div>
                             <div className="flex flex-col items-center justify-center">
-                                <h4 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Adults</h4>
+                                <h3 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Adults</h3>
                                 <div className="flex flex-row items-center justify-center gap-6">
                                     <button type="button" onClick={() => handleAdultsChange(-1)}><Minus /></button>
                                     <input type="number" name="Adults" value={adults} onChange={(e)=>(setAdults(e.target.value))} className="bg-transparent text-2xl lg:text-4xl font-serif text-black focus:outline-none w-full text-center [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
@@ -100,7 +100,7 @@ export default function Book() {
                                 </div>
                             </div>
                             <div className="flex flex-col items-center justify-center ">
-                                <h4 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Children</h4>
+                                <h3 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Children</h3>
                                 <div className="flex flex-row items-center justify-center gap-6">
                                     <button type="button" onClick={() => handleChildrenChange(-1)}><Minus /></button>
                                     <input type="number" name="Children" value={children} onChange={(e)=>(setChildren(e.target.value))}  className="bg-transparent text-2xl lg:text-4xl font-serif text-black focus:outline-none w-full text-center [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
@@ -110,19 +110,19 @@ export default function Book() {
                         </div>
                         <div className={` flex flex-col lg:flex-row justify-between mx-auto py-2 gap-20 ${etaps==true?'block':'hidden'}`}>
                             <div>
-                                <h4 className={`after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Full Name</h4>
+                                <h3 className={`after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Full Name</h3>
                                 <input type="text" onChange={(e)=>(setFullname(e.target.value))} value={fullName} name="fullName" id=""  className="bg-transparent border-b-2 border-primary text-lg placeholder:text-2xl text-black focus:outline-none w-full text-center pl-4 " />
                             </div>
                             <div>
-                                <h4 className={`after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Telephone</h4>
+                                <h3 className={`after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Telephone</h3>
                                 <input type="tel" onChange={(e)=>(setPhone(e.target.value))} value={phone} name="phone" id=""  className="bg-transparent border-b-2 border-primary text-lg placeholder:text-2xl   text-black focus:outline-none w-full text-center pl-4 "/>
                             </div>
                             <div>
-                                <h4 className={` after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Email</h4>
+                                <h3 className={` after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Email</h3>
                                 <input type="email" onChange={(e)=>(setEmail(e.target.value))} value={email} name="email" id=""  className="bg-transparent border-b-2 border-primary text-lg  placeholder:text-2xl text-black focus:outline-none w-full text-center pl-4 "/>
                             </div>
                             <div>
-                                <h4 className={` after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Suites</h4>
+                                <h3 className={` after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Suites</h3>
                                 <select name="Suites" id=" "  className="bg-transparent border-b-2 border-primary text-lg pb-1  placeholder:text-2xl  text-black focus:outline-none w-full  pl-4 ">
                                     <option value="">suites</option>
                                     <option value="suites classiques">suites classiques - 99 $</option>

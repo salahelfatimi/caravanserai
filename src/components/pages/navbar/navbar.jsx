@@ -56,7 +56,7 @@ export default function Navbar() {
         <button onClick={() => setOpenNav(!openNav)}>
           <Menu className="stroke-white" size={50} />
         </button>
-        <Link href={'/'}><Image onClick={() => setOpenNav(false)} src="/img/logo_text_white.png" height={500} width={500} alt="Caravan Serai" title="Caravan Serai" className="w-48 " /></Link>
+        <Link href={'/'}><Image onClick={() => setOpenNav(false)} loading="eager" src="/img/logo_text_white.png" height={500} width={500} alt="Caravan Serai" title="Caravan Serai" className="w-48 " /></Link>
         <div className="hidden lg:block">
           <div className="flex flex-row gap-6 ">
             <button className="bg-white font-medium text-primary hover:bg-primary hover:text-white duration-500 px-6 py-2 flex items-center justify-center gap-2 rounded-full ">
@@ -77,13 +77,13 @@ export default function Navbar() {
                   <X className="stroke-primary" size={30} />
                 </button>
               </div>
-              <Link href={'/'}><Image onClick={() => setOpenNav(false)} src="/img/Logo_text.png" height={500} width={500} alt="Caravan Serai" title="Caravan Serai" className="w-48" /></Link>
+              <Link href={'/'}><Image onClick={() => setOpenNav(false)} src="/img/Logo_text.png" loading="eager" height={500} width={500} alt="Caravan Serai" title="Caravan Serai" className="w-48" /></Link>
             </div>
             {/* Scrollable Menu Items Section */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-between overflow-y-auto h-[calc(100vh-200px)]">
               {menuItems.map((items, index) => (
                 <div key={index} className="">
-                  <h3 className="font-semibold font-boska text-xl lg:text-2xl text-primary">{index + 1} - {items.title}</h3>
+                  <span className="font-semibold font-boska text-xl lg:text-2xl text-primary">{index + 1} - {items.title}</span>
                   <ul className="pl-6 flex flex-col">
                     {items?.links?.map((ele, index) => (
                       <li key={index} className={` `} onClick={() => setOpenNav(!openNav)}>
@@ -98,7 +98,7 @@ export default function Navbar() {
 
           {/* Image Section */}
           <div className="w-2/5 hidden lg:block min-h-screen bg-primary">
-            <Image width={1920} height={1080} src="/img/navbar/caravanserai_1.jpg" className="object-center h-full object-cover" alt="Caravan Serai’s" title="Caravan Serai’s" />
+            <Image width={1920} height={1080} loading="eager" src="/img/navbar/caravanserai_1.jpg" className="object-center h-full object-cover" alt="Caravan Serai’s" title="Caravan Serai’s" />
           </div>
         </div>
       </div>
