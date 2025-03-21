@@ -8,17 +8,17 @@ const menuItems = [
 
         ],
     },
-    {
-        title: "ACCOMMODATIONS",
-        links: [
-            // { name: "suites classiques ", href: "/accommodations/suites_classiques" },
-            // { name: "suites juniors", href: "/accommodations/suites_juniors" },
-            // { name: "suites supérieures ", href: "/accommodations/suites_supérieures" },
-            // { name: "suites triples", href: "/accommodations/suites_triples" },
-            { name: "Suites", href: "/accommodations/suites" },
-            { name: "Suites piscines privées", href: "/accommodations/suites_piscines_privees" },
-        ],
-    },
+    // {
+    //     title: "ACCOMMODATIONS",
+    //     links: [
+    //         // { name: "suites classiques ", href: "/accommodations/suites_classiques" },
+    //         // { name: "suites juniors", href: "/accommodations/suites_juniors" },
+    //         // { name: "suites supérieures ", href: "/accommodations/suites_supérieures" },
+    //         // { name: "suites triples", href: "/accommodations/suites_triples" },
+    //         { name: "Suites", href: "/accommodations/suites" },
+    //         { name: "Suites piscines privées", href: "/accommodations/suites_piscines_privees" },
+    //     ],
+    // },
     {
         title: "RESTAURANTS",
         links: [
