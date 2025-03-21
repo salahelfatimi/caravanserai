@@ -5,8 +5,8 @@ export default function Loading() {
       <>
         <div className={`fixed  inset-0 flex items-center justify-center bg-white  duration-1000 transition z-[70] `}>
             <Image src="/img/Logo_single.png" height={500} width={500} alt="Caravan Serai" title="Caravan Serai" className="w-48 animate-bounce " />
-            <span className=" text-primary flex font-boska  items-center justify-center  font-extrabold  gap-3 md:text-5xl text-4xl ">
-              caravanserai
+            <span className=" text-primary flex font-boska  items-center justify-center  font-extrabold  gap-3 md:text-7xl text-4xl ">
+              Caravan Serai
             </span>
         </div>
       </>
