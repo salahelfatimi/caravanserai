@@ -62,13 +62,13 @@ export default function GoogleTranslate({ prefLangCookie }) {
     <div ref={dropdownRef}>
       <div id="google_translate_element" style={{ visibility: "hidden", width: "1px", height: "1px" }} ></div>
       <div className="relative select-none flex items-center justify-center">
-      <div onClick={() => setOpen(!open)} className="cursor-pointer flex items-center space-x-2 bg-primary hover:text-prbg-primary duration-700 border-2 border-primary text-white md:p-2 p-1 " >
-        <Image src={ languages.find((lang) => lang.value === langCookie)?.flag || "/flags/en.png" } alt={langCookie} className="w-10 min-w-6 object-cover" width={100} height={100} />
-      </div>
-        <div className={`absolute bottom-12 border-4 border-primary ${open ? "block" : "hidden" }`} >
+        <div onClick={() => setOpen(!open)} className="cursor-pointer  bg-white border border-primary text-white  p-1 " >
+          <Image src={ languages.find((lang) => lang.value === langCookie)?.flag || "/flags/en.png" } alt={langCookie} className="w-14 min-w-14 object-cover" width={100} height={100} />
+        </div>
+        <div className={`absolute bottom-14 border border-primary ${open ? "block" : "hidden" }`} >
           {languages.map((lang) => (
-            <div key={lang.value} onClick={() => { onChange(lang.value); setOpen(!open); }} className={`${lang.value === langCookie ? "bg-primary text-white" : "bg-white" } text-prbg-primary hover:text-white cursor-pointer flex items-center gap-2 md:p-2 p-1  hover:bg-primary duration-500`} >
-              <Image src={lang.flag} alt={lang.label} width={100} height={100} className="w-10 min-w-6 object-cover" />
+            <div key={lang.value} onClick={() => { onChange(lang.value); setOpen(!open); }} className={`${lang.value === langCookie ? "bg-primary" : "bg-white" }  hover:text-white cursor-pointer flex items-center gap-2 p-2  hover:bg-primary duration-500`} >
+              <Image src={lang.flag} alt={lang.label} width={100} height={100} className="w-14 min-w-14 object-cover" />
             </div>
           ))}
         </div>
