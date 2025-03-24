@@ -86,7 +86,6 @@ export default function Navbar() {
                   <X className="stroke-primary" size={30} />
                 </button>
               </div>
-              <Link href={'/'}><Image onClick={() => setOpenNav(false)} src="/img/Logo_text.png" loading="eager" height={500} width={500} alt="Caravan Serai" title="Caravan Serai" className="w-48" /></Link>
             </div>
             {/* Scrollable Menu Items Section */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-between overflow-y-auto h-[calc(100vh-200px)]">
