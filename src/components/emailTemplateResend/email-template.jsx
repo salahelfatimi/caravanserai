@@ -1,18 +1,17 @@
 import * as React from "react";
 
-export const EmailTemplate = ({ FullName, Phone, StartDate, EndDate, Adults, Children, Email , Suites }) => (
+export const EmailTemplate = ({ fullName,comment, phone, startDate, endDate, adults, children, email, suites }) => (
   <div>
-    <p><strong>My name is:</strong> {FullName}</p>
-    <p>I would like to book a table:</p>
     <div>
-      <p><strong>Name : </strong> {FullName}</p>
-      {Email && <p><strong>Email: </strong> {Email}</p>}      
-      <p><strong>Phone Number : </strong> {Phone}</p> 
-      <p><strong>Suites : </strong> {Suites}</p>
-      <p><strong>Check-in Date : </strong> {StartDate}</p>
-      <p><strong>Check-out Date : </strong> {EndDate}</p>
-      <p><strong>Adults : </strong> {Adults}</p>
-      <p><strong>Children : </strong> {Children}</p>
+      {fullName && <p><strong>Name : </strong> {fullName}</p>}
+      {email && <p><strong>Email: </strong> {email}</p>}
+      {phone && <p><strong>Phone Number : </strong> {phone}</p>}
+      {suites && <p><strong>Suites : </strong> {suites}</p>}
+      {startDate && <p><strong>Check-in Date : </strong> {startDate}</p>}
+      {endDate && <p><strong>Check-out Date : </strong> {endDate}</p>}
+      {adults && <p><strong>Adults : </strong> {adults}</p>}
+      {children && <p><strong>Children : </strong> {children}</p>}
+      {comment && <p><strong>Comment : </strong> {comment}</p>}
     </div>
   </div>
 );
