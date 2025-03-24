@@ -3,10 +3,10 @@
 import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import { ArrowRight, BookA, Calendar1, ChevronLeft, ChevronRight, Minus, Plus, X } from "lucide-react";
+import {  Calendar1, ChevronLeft, ChevronRight, Minus, Plus, X } from "lucide-react";
 import toast, { Toaster } from 'react-hot-toast';
 
-export default function BookFull({ onClose }) {
+export default function BookFull() {
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date(new Date().setDate(new Date().getDate() + 1)));
     const [adults, setAdults] = useState(1);
@@ -86,7 +86,7 @@ export default function BookFull({ onClose }) {
         <div  className='min-h-screen flex flex-col items-center justify-center z-50 bg-[url("/img/header.png")]'>
             <Toaster position="bottom-right" reverseOrder={false}/>
             <div className="  space-y-5 container py-24">
-                <h2 className=" text-2xl md:text-5xl text-center font-boska font-bold  text-white " >Book Your Stay at Caravan Serai Today</h2>
+                <h1 className=" text-2xl md:text-5xl text-center font-boska font-bold  text-white " >Book Your Stay at Caravan Serai Today</h1>
                 <div className="min-h-[10rem] container flex items-center flex-col justify-center ">
                     <form onSubmit={handleSubmit} className="flex flex-col w-full  justify-between container mx-auto border-4 border-primary  gap-20 p-4 px-10 shadow-2xl  bg-white ">
                         <div className={` flex flex-col  justify-between mx-auto py-2 gap-20 ${etaps==false?'block':'hidden'}`}>
