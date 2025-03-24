@@ -37,7 +37,7 @@ export default function Franch(){
                 <Image src={'/img/restaurant/restaurant_6.jpg'} loading="eager" width={1920} height={1080} className=" absolute inset-0 h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className="relative z-20 flex flex-col gap-4 container ">
-                    <h1 className="font-boska font-medium text-3xl lg:text-8xl text-white">French Gastronomy at Caravan Seraii</h1>
+                    <h1 className="font-boska font-medium text-3xl lg:text-8xl text-white">French Gastronomy at Caravan Serai</h1>
                     <p className="text-center text-white mb-8 text-xs lg:text-xl">Indulge in the elegance and refinement of French cuisine at Caravan Serai Restaurant. Our expertly crafted menu brings you the finest flavors of France, blending classic recipes with a touch of modern creativity. Experience a culinary journey filled with rich flavors, delicate textures, and exquisite presentation.</p>
                 </div>
             </div>

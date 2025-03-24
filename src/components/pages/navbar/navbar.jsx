@@ -64,13 +64,15 @@ export default function Navbar() {
           <Menu className="stroke-white" size={50} />
         </button>
         <Link href={'/'}><Image onClick={() => setOpenNav(false)} loading="eager" src="/img/logo_text_white.png" height={500} width={500} alt="Caravan Serai" title="Caravan Serai" className="w-48 " /></Link>
-        {/* <div className="hidden lg:block">
+        
+        <div className="hidden lg:block">
           <div className="flex flex-row gap-6 ">
             <button onClick={handleBookNowClick} className="bg-white font-medium text-primary hover:bg-primary hover:text-white duration-500 px-6 py-2 flex items-center justify-center gap-2 rounded-full ">
               <Calendar size={20} /> Book Now
             </button>
           </div>
-        </div> */}
+        </div>
+        
 
       </div>
 

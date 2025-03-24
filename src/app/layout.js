@@ -2,6 +2,7 @@ import Navbar from "@/components/pages/navbar/navbar";
 import "./globals.css";
 import Footer from "@/components/pages/footer/footer";
 import { Montserrat_Alternates } from "next/font/google";
+import GoogleTranslate from "@/components/tools/googleTranslate";
 
 const montserratAlternates = Montserrat_Alternates({
     subsets: ['latin'],
@@ -23,6 +24,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={` ${montserratAlternates.className}`}>
         <main>
+           <div className=" w-fit flex justify-end fixed bottom-10 right-4 z-[100]  ">
+            <GoogleTranslate/> 
+          </div>
           <Navbar/>
           {children}
           <Footer/>

@@ -13,7 +13,7 @@ export default function Suites_page_privees() {
 
     return (
         <div className="flex flex-col gap-6 py-20 bg-primary bg-contain lg:bg-[url(/img/bg.svg)]">
-            <h2 className="text-6xl md:text-7xl text-center font-boska font-medium text-white capitalize">Suites piscines prive </h2>
+            <h2 className="text-6xl md:text-7xl text-center font-boska font-medium text-white capitalize">private pool suites </h2>
             <p className={`container text-center text-white`}>Step into a world of luxury and comfort with our elegant Suites piscines privées. Enjoy a refined atmosphere, premium amenities, and a peaceful retreat. Scroll through the images to explore each space and find the perfect accommodation for your stay.</p>
             <div className="overflow-hidden relative select-none cursor-grab active:cursor-grabbing" ref={emblaRef}>
                 <div className="flex transition-transform ease-out duration-700">
