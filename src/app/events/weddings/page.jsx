@@ -53,20 +53,20 @@ export default function Weddings(){
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Why Choose Caravan Serai?</h2>
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
-                            <li> Exquisite Moroccan Ambiance – Celebrate in a breathtaking riad with stunning architecture, lush gardens, and serene courtyards.</li>
-                            <li>Personalized Event Planning – Our dedicated team will assist in planning and coordinating every detail to perfection.</li>
-                            <li>Gourmet Dining Experience – Indulge in a curated menu featuring traditional Moroccan and international cuisine.</li>
-                            <li>Luxury Accommodation – Offer your guests a relaxing stay in our beautifully designed rooms and suites.</li>
-                            <li>Seamless Service – From décor to entertainment, we ensure every aspect of your event runs smoothly.</li>
+                            <li><strong>Exquisite Moroccan Ambiance</strong> – Celebrate in a breathtaking riad with stunning architecture, lush gardens, and serene courtyards.</li>
+                            <li><strong>Personalized Event Planning</strong> – Our dedicated team will assist in planning and coordinating every detail to perfection.</li>
+                            <li><strong>Gourmet Dining Experience</strong> – Indulge in a curated menu featuring traditional Moroccan and international cuisine.</li>
+                            <li><strong>Luxury Accommodation</strong> – Offer your guests a relaxing stay in our beautifully designed rooms and suites.</li>
+                            <li><strong>Seamless Service</strong> – From décor to entertainment, we ensure every aspect of your event runs smoothly.</li>
                         </ul>
                     </div>
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Services We Offer</h2>
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
-                            <li>Weddings & Receptions – Say "I do" in a romantic Moroccan setting.</li>
-                            <li>Engagement Parties – Celebrate love with an intimate gathering.</li>
-                            <li>Anniversaries – Mark your milestones in an elegant atmosphere.</li>
-                            <li>Private Events – From birthdays to corporate celebrations, we cater to all occasions.</li>
+                            <li><strong>Weddings & Receptions</strong> – Say "I do" in a romantic Moroccan setting.</li>
+                            <li><strong>Engagement Parties</strong> – Celebrate love with an intimate gathering.</li>
+                            <li><strong>Anniversaries</strong> – Mark your milestones in an elegant atmosphere.</li>
+                            <li><strong>Private Events</strong> – From birthdays to corporate celebrations, we cater to all occasions.</li>
                         </ul>
                     </div>
                     <Link href="/contact" className=" text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary w-full p-2 px-3 text-2xl font-medium text-white rounded-full">Book Your Celebration</Link>

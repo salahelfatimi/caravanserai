@@ -52,9 +52,9 @@ export default function Billiards(){
                     <div className="flex flex-col gap-4 p-4 lg:w-1/2">
                         <h3 className=" font-bold text-xl text-primary">Why Choose Our Billiards Room ? </h3>
                         <ul className=" list-disc list-inside text-sm space-y-2">
-                            <li>Unmatched Comfort: Our billiards room is designed with your comfort in mind. Enjoy the game in a space where relaxation and fun come together perfectly.</li>
-                            <li>Ideal for Groups or Solo Play: Whether you’re hanging out with friends or simply looking for solo entertainment, the billiards table is the perfect place to relax and have fun.</li>
-                            <li>Available for All Guests: The billiards room is available for all of our hotel guests, so you can enjoy a game whenever you like during your stay.</li>
+                            <li> <strong>Unmatched Comfort : </strong> Our billiards room is designed with your comfort in mind. Enjoy the game in a space where relaxation and fun come together perfectly.</li>
+                            <li><strong>Ideal for Groups or Solo Play : </strong> Whether you’re hanging out with friends or simply looking for solo entertainment, the billiards table is the perfect place to relax and have fun.</li>
+                            <li><strong>Available for All Guests : </strong> The billiards room is available for all of our hotel guests, so you can enjoy a game whenever you like during your stay.</li>
                         </ul>
                     </div>
             </div>

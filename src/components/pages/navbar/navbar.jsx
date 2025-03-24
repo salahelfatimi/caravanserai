@@ -49,13 +49,6 @@ export default function Navbar() {
     }
   }, [openNav]);
 
-  const handleBookNowClick = () => {
-    const bookSection = document.getElementById("book");
-    if (bookSection) {
-      bookSection.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  };
-
   return (
     <div>
       {/* Navbar */}
@@ -67,9 +60,9 @@ export default function Navbar() {
         
         <div className="hidden lg:block">
           <div className="flex flex-row gap-6 ">
-            <button onClick={handleBookNowClick} className="bg-white font-medium text-primary hover:bg-primary hover:text-white duration-500 px-6 py-2 flex items-center justify-center gap-2 rounded-full ">
+            <Link href={'/book_at_caravan_serai'}  className="bg-white font-medium text-primary hover:bg-primary hover:text-white duration-500 px-6 py-2 flex items-center justify-center gap-2 rounded-full ">
               <Calendar size={20} /> Book Now
-            </button>
+            </Link>
           </div>
         </div>
         

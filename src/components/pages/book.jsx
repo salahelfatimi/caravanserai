@@ -3,8 +3,7 @@
 import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import { ArrowRight, BookA, Calendar1, ChevronLeft, ChevronRight, Minus, Plus } from "lucide-react";
-import BookFull from '../tools/bookFull';
+import { Calendar1, ChevronLeft, ChevronRight, Minus, Plus } from "lucide-react";
 import toast, { Toaster } from 'react-hot-toast';
 
 export default function Book() {

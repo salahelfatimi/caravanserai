@@ -7,6 +7,12 @@ export default function sitemap() {
       priority: 1,
     },
     {
+      url: `${process.env.NEXT_PUBLIC_WORDPRESS_API_URL}/book_at_caravan_serai`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 1,
+    },
+    {
       url: `${process.env.NEXT_PUBLIC_WORDPRESS_API_URL}/about_us`,
       lastModified: new Date(),
       changeFrequency: 'monthly',

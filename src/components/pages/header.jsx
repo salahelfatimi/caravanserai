@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,14 +19,6 @@ export default function Header() {
             },
         });
     }, []);
-
-    const handleBookNowClick = () => {
-        const bookSection = document.getElementById("book");
-        if (bookSection) {
-          bookSection.scrollIntoView({ behavior: "smooth", block: "center" });
-        }
-      };
-      
     return (
         <div className=" overflow-hidden bg-white ">
             <div className="relative">
@@ -37,9 +30,9 @@ export default function Header() {
                         Timeless tranquility and historic charm at Caravan Serai
                     </h1>
                     <div>
-                        <button onClick={handleBookNowClick} className={`bg-primary hover:bg-white hover:text-primary duration-700  text-white text-2xl font-boska px-8 py-4 mt-4`}>
+                        <Link href={'/book_at_caravan_serai'} className={`bg-primary hover:bg-white hover:text-primary duration-700  text-white text-2xl font-boska px-8 py-4 mt-4`}>
                             Book Now
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

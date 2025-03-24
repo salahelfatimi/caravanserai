@@ -53,21 +53,21 @@ export default function Seminars(){
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Why Choose Caravan Serai for Your Seminar?</h2>
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
-                            <li>Professional Environment – Our venue is equipped with modern amenities to support all your seminar needs, from high-quality audio-visual equipment to comfortable seating arrangements.</li>
-                            <li>Inspiring Atmosphere – Located in the heart of Marrakech, our Moroccan-inspired setting will provide your attendees with a unique and refreshing environment.</li>
-                            <li>Customizable Spaces – Whether you need a small intimate setting or a larger space for a bigger seminar, we offer flexible options to suit your event size and style.</li>
-                            <li>Dedicated Event Team – Our experienced team will be there every step of the way, assisting with planning, setup, and ensuring everything runs smoothly.</li>
-                            <li>Catering Options – Keep your attendees refreshed with our gourmet catering services, offering a variety of options for coffee breaks, lunch, and more.</li>
+                            <li> <strong>Professional Environment</strong> – Our venue is equipped with modern amenities to support all your seminar needs, from high-quality audio-visual equipment to comfortable seating arrangements.</li>
+                            <li><strong>Inspiring Atmosphere</strong> – Located in the heart of Marrakech, our Moroccan-inspired setting will provide your attendees with a unique and refreshing environment.</li>
+                            <li><strong>Customizable Spaces</strong> – Whether you need a small intimate setting or a larger space for a bigger seminar, we offer flexible options to suit your event size and style.</li>
+                            <li><strong>Dedicated Event Team</strong> – Our experienced team will be there every step of the way, assisting with planning, setup, and ensuring everything runs smoothly.</li>
+                            <li><strong>Catering Options</strong> – Keep your attendees refreshed with our gourmet catering services, offering a variety of options for coffee breaks, lunch, and more.</li>
                         </ul>
                     </div>
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Services We Offer</h2>
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
-                            <li>Seminar and Workshop Hosting – Perfect for corporate training, educational seminars, or specialized workshops.</li>
-                            <li>Business Conferences – A professional space for large conferences and business networking events.</li>
-                            <li>Networking Events – A stylish setting for networking opportunities, fostering collaboration and growth.</li>
-                            <li>Team-building Events – Organize productive and engaging team-building activities to strengthen bonds within your team.</li>
-                            <li>Product Launches – Showcase your brand and products in a unique and memorable environment.</li>
+                            <li><strong>Seminar and Workshop Hosting</strong> – Perfect for corporate training, educational seminars, or specialized workshops.</li>
+                            <li><strong>Business Conferences</strong> – A professional space for large conferences and business networking events.</li>
+                            <li><strong>Networking Events</strong> – A stylish setting for networking opportunities, fostering collaboration and growth.</li>
+                            <li><strong>Team-building Events</strong> – Organize productive and engaging team-building activities to strengthen bonds within your team.</li>
+                            <li><strong>Product Launches</strong> – Showcase your brand and products in a unique and memorable environment.</li>
                         </ul>
                     </div>
                     <Link href="/contact" className=" text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary w-full p-2 px-3 text-2xl font-medium text-white rounded-full">Book Your Seminar</Link>

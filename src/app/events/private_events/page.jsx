@@ -56,20 +56,20 @@ export default function Weddings(){
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Why Host Your Private Event at Caravan Serai?</h2>
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
-                            <li>Elegant Moroccan Setting – Celebrate your special occasion in the heart of Marrakech, surrounded by stunning Moroccan architecture, lush gardens, and tranquil courtyards.</li>
-                            <li>Tailored Event Planning – Our dedicated event planning team will work closely with you to personalize every detail, ensuring a flawless experience.</li>
-                            <li>Gourmet Dining – Enjoy a menu crafted to suit your event, featuring both traditional Moroccan flavors and international cuisine.</li>
-                            <li>Exclusive Use of Venue – Whether it’s a corporate event, a family celebration, or a private gathering, we offer exclusive access to our beautiful space.</li>
-                            <li>Professional Service – From decoration to entertainment, our experienced staff will ensure every aspect of your event is handled with care and precision.</li>
+                            <li><strong>Elegant Moroccan Setting</strong> – Celebrate your special occasion in the heart of Marrakech, surrounded by stunning Moroccan architecture, lush gardens, and tranquil courtyards.</li>
+                            <li><strong>Tailored Event Planning</strong> – Our dedicated event planning team will work closely with you to personalize every detail, ensuring a flawless experience.</li>
+                            <li><strong>Gourmet Dining</strong> – Enjoy a menu crafted to suit your event, featuring both traditional Moroccan flavors and international cuisine.</li>
+                            <li><strong>Exclusive Use of Venue</strong> – Whether it’s a corporate event, a family celebration, or a private gathering, we offer exclusive access to our beautiful space.</li>
+                            <li><strong>Professional Service</strong> – From decoration to entertainment, our experienced staff will ensure every aspect of your event is handled with care and precision.</li>
                         </ul>
                     </div>
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Services We Offer</h2>
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
-                            <li>Birthday Parties – Celebrate your milestones with an unforgettable event.</li>
-                            <li>Corporate Events – Host meetings, conferences, or team-building activities in a sophisticated environment.</li>
-                            <li>Private Dinners – Enjoy a private dining experience with bespoke menus and personalized service.</li>
-                            <li>Themed Celebrations – From intimate dinners to large-scale gatherings, we can help bring your vision to life.</li>
+                            <li><strong>Birthday Parties</strong> – Celebrate your milestones with an unforgettable event.</li>
+                            <li><strong>Corporate Events</strong> – Host meetings, conferences, or team-building activities in a sophisticated environment.</li>
+                            <li><strong>Private Dinners</strong> – Enjoy a private dining experience with bespoke menus and personalized service.</li>
+                            <li><strong>Themed Celebrations</strong> – From intimate dinners to large-scale gatherings, we can help bring your vision to life.</li>
                         </ul>
                     </div>
                     <Link href="/contact" className=" text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary w-full p-2 px-3 text-2xl font-medium text-white rounded-full">Book Your Private Event</Link>

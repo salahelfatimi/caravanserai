@@ -5,6 +5,7 @@ const menuItems = [
             { name: "Home", href: "/" },
             { name: "About Us", href: "/about_us" },
             { name: "Contact", href: "/contact" },
+            { name: "Book at caravan serai", href: "/book_at_caravan_serai" },
 
         ],
     },

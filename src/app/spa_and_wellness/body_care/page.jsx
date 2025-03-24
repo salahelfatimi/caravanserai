@@ -52,10 +52,10 @@ export default function Body_care(){
                     <div className="flex flex-col gap-4">
                         <h3 className=" font-bold text-xl text-primary">This treatment includes : </h3>
                         <ul className=" list-disc list-inside text-sm space-y-2">
-                            <li> Hammam au Savon Beldi et Argile (30 min) – A deep-cleansing Moroccan Hammam using black soap and Ghassoul clay to purify and soften the skin.</li>
-                            <li>Massage Relaxant (30 min) – A soothing relaxing massage designed to relieve tension and improve circulation.</li>
-                            <li>Manicure ou Pédicure Express – A quick yet effective nail treatment to keep your hands or feet looking perfect.</li>
-                            <li>Boisson Chaude/Froide au Choix – Enjoy a refreshing or warm beverage of your choice for a complete relaxation experience.</li>
+                            <li> <strong>Hammam au Savon Beldi et Argile (30 min)</strong> – A deep-cleansing Moroccan Hammam using black soap and Ghassoul clay to purify and soften the skin.</li>
+                            <li><strong>Massage Relaxant (30 min)</strong> – A soothing relaxing massage designed to relieve tension and improve circulation.</li>
+                            <li><strong>Manicure ou Pédicure Express</strong> – A quick yet effective nail treatment to keep your hands or feet looking perfect.</li>
+                            <li><strong>Boisson Chaude/Froide au Choix</strong> – Enjoy a refreshing or warm beverage of your choice for a complete relaxation experience.</li>
                         </ul>
                     </div>
                 </div>

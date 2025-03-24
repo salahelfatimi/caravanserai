@@ -24,12 +24,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={` ${montserratAlternates.className}`}>
         <main>
-           <div className=" w-fit flex justify-end fixed bottom-10 right-4 z-[100]  ">
-            <GoogleTranslate/> 
-          </div>
           <Navbar/>
           {children}
           <Footer/>
+          <div className=" w-fit h-fit  fixed bottom-10 right-4 z-[100]  ">
+            <GoogleTranslate/> 
+          </div>
         </main>
       </body>
     </html>
