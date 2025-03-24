@@ -34,11 +34,6 @@ export default function ContactPage(){
             <div>
                 <Form/>
             </div>
-            <div className=" flex flex-col   gap-10 py-20 bg-white bg-top bg-[url(/img/bg-yellow.svg)] ">
-                <h2 className=" text-3xl md:text-5xl text-center font-boska font-bold  text-primary " >Book Your Stay at Caravan Serai Today</h2>
-                <p className=" text-center">Escape to a world of tranquility and timeless beauty at Caravan Serai Marrakech. Whether for a romantic getaway, family retreat, or cultural adventure, our boutique hotel offers a truly unforgettable experience.</p>
-                <Book/>
-            </div> 
             <div className=" flex flex-col items-center gap-6 pt-10 text-center ">
                 <h2 className=" container text-3xl lg:text-5xl font-bold uppercase text-primary font-serif">Find Us on Google Maps</h2>
                 <p className="container text- lg:text-lg">Easily locate us on the map and visit our location. Need directions? <br /> Click on the map to open Google Maps and navigate to us effortlessly!</p>
