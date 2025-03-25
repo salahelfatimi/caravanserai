@@ -19,7 +19,7 @@ export default function Suites_Page() {
                                 <div className="flex gap-10">
                                     {suite.images.map((image, index) => (
                                         <div key={index} >
-                                            <Image src={image} alt={`caravan serai`} title={`caravan serai`} width={1000} quality={50} height={1000} className="min-w-[40rem] max-w-[40rem] object-bottom object-cover h-full w-full border-4 shadow-2xl border-primary rounded-2xl" />
+                                            <Image src={image} alt={`caravan serai`} title={`caravan serai`} width={1000} quality={50} height={1000} className="min-w-[40rem] max-h-[20rem]  object-bottom object-cover  border-4 shadow-2xl border-primary rounded-2xl" />
                                         </div>
                                     ))}
                                 </div>
