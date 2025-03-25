@@ -2,22 +2,22 @@ const suites = [
     {
         id: 'suites',
         title: 'Suites',
-        images: ['/img/suites&rooms/suites_1/suites_1.jpg','/img/suites&rooms/suites_1/suites_2.jpg','/img/suites&rooms/suites_1/suites_3.jpg','/img/suites&rooms/suites_5/suites_4.jpg','/img/suites&rooms/suites_5/suites_5.jpg','/img/suites&rooms/suites_5/suites_6.jpg','/img/suites&rooms/suites_5/suites_7.jpg']
+        images: ['/img/suites&rooms/suites_1/suites_1.jpg','/img/suites&rooms/suites_1/suites_2.jpg','/img/suites&rooms/suites_1/suites_3.jpg','/img/suites&rooms/suites_1/suites_4.jpg','/img/suites&rooms/suites_1/suites_5.jpg','/img/suites&rooms/suites_1/suites_6.jpg','/img/suites&rooms/suites_1/suites_7.jpg']
     },
     {
         id: 'suites',
         title: 'Suites',
-        images: ['/img/suites&rooms/suites_2/suites_1.jpg','/img/suites&rooms/suites_2/suites_2.jpg','/img/suites&rooms/suites_2/suites_3.jpg','/img/suites&rooms/suites_5/suites_4.jpg','/img/suites&rooms/suites_5/suites_5.jpg','/img/suites&rooms/suites_5/suites_6.jpg','/img/suites&rooms/suites_5/suites_7.jpg','/img/suites&rooms/suites_5/suites_8.jpg','/img/suites&rooms/suites_5/suites_9.jpg']
+        images: ['/img/suites&rooms/suites_2/suites_1.jpg','/img/suites&rooms/suites_2/suites_2.jpg','/img/suites&rooms/suites_2/suites_3.jpg','/img/suites&rooms/suites_2/suites_4.jpg','/img/suites&rooms/suites_2/suites_5.jpg','/img/suites&rooms/suites_2/suites_6.jpg','/img/suites&rooms/suites_2/suites_7.jpg','/img/suites&rooms/suites_2/suites_8.jpg','/img/suites&rooms/suites_2/suites_9.jpg']
     },
     {
         id: 'suites',
         title: 'Suites',
-        images: ['/img/suites&rooms/suites_3/suites_1.jpg','/img/suites&rooms/suites_3/suites_2.jpg','/img/suites&rooms/suites_3/suites_3.jpg','/img/suites&rooms/suites_5/suites_4.jpg','/img/suites&rooms/suites_5/suites_5.jpg','/img/suites&rooms/suites_5/suites_6.jpg','/img/suites&rooms/suites_5/suites_7.jpg']
+        images: ['/img/suites&rooms/suites_3/suites_1.jpg','/img/suites&rooms/suites_3/suites_2.jpg','/img/suites&rooms/suites_3/suites_3.jpg','/img/suites&rooms/suites_3/suites_4.jpg','/img/suites&rooms/suites_3/suites_5.jpg','/img/suites&rooms/suites_3/suites_6.jpg','/img/suites&rooms/suites_3/suites_7.jpg']
     },
     {
         id: 'suites',
         title: 'Suites',
-        images: ['/img/suites&rooms/suites_4/suites_1.jpg','/img/suites&rooms/suites_4/suites_2.jpg','/img/suites&rooms/suites_4/suites_3.jpg','/img/suites&rooms/suites_5/suites_4.jpg','/img/suites&rooms/suites_5/suites_5.jpg']
+        images: ['/img/suites&rooms/suites_4/suites_1.jpg','/img/suites&rooms/suites_4/suites_2.jpg','/img/suites&rooms/suites_4/suites_3.jpg','/img/suites&rooms/suites_4/suites_4.jpg','/img/suites&rooms/suites_4/suites_5.jpg']
     },
     {
         id: 'suites',
