@@ -6,6 +6,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import { useState, useEffect, useCallback } from 'react';
 import suite_privee from '../../app/data/suite_privee';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Suites_page_privees() {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start', containScroll: 'trimSnaps', dragFree: true },
@@ -47,7 +48,13 @@ function SuiteCarousel({ images, title }) {
         if (!emblaApi) return;
         setSelectedIndex(emblaApi.selectedScrollSnap());
     }, [emblaApi]);
+    const scrollPrev = useCallback(() => {
+        if (emblaApi) emblaApi.scrollPrev();
+    }, [emblaApi]);
 
+    const scrollNext = useCallback(() => {
+        if (emblaApi) emblaApi.scrollNext();
+    }, [emblaApi]);
     useEffect(() => {
         if (!emblaApi) return;
         emblaApi.on('select', onSelect);
@@ -64,6 +71,12 @@ function SuiteCarousel({ images, title }) {
                     ))}
                 </div>
             </div>
+            <button onClick={scrollPrev} className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg">
+                <ChevronLeft />
+            </button>
+            <button onClick={scrollNext} className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg">
+                <ChevronRight />
+            </button>
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
                 {images.map((_, index) => (
                     <div key={index} className={`w-3 h-3 rounded-full transition-all duration-500 ${selectedIndex === index ? 'bg-white' : 'bg-gray-400'}`} />
