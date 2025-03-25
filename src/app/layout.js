@@ -12,7 +12,7 @@ const montserratAlternates = Montserrat_Alternates({
 
 
 export const metadata = {
-  title: {  template: "Caravan Serai Marrakesh | %s" } ,
+  title: {  template: "Caravan Serai | %s" } ,
   description: "Book your stay at Caravan Serai Marrakesh. Enjoy spa treatments, hammams, fine dining, and elegant accommodations in a serene oasis.",
   keywords: ["Caravan Serai", "Marrakech", "Morocco", "luxury hotel", "boutique hotel", "spa", "hammam", "restaurant", "activities", "suites", "private suites", "book now"],
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),

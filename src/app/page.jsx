@@ -12,7 +12,7 @@ import BookFull from "@/components/tools/bookFull";
 
 export async function generateMetadata() {
   return {
-    title: "Caravan Serai Marrakesh  | Luxury Hotel & Spa Official Site ",
+    title: "Caravan Serai | Luxury Hotel & Spa Official Site ",
     alternates: {
       canonical: "/",
     },
