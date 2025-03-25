@@ -43,7 +43,7 @@ export default function Page() {
                 </div>
             </div>
             <Menu/>
-            <div className=" flex flex-col   gap-10 py-20 bg-white bg-top bg-[url(/img/bg-yellow.svg)] ">
+            <div className=" flex flex-col   gap-10 py-10 bg-white bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <h2 className=" text-3xl md:text-5xl text-center font-boska font-bold  text-primary " >Book Your Stay at Caravan Serai Today</h2>
                 <p className=" text-center">Escape to a world of tranquility and timeless beauty at Caravan Serai Marrakech. Whether for a romantic getaway, family retreat, or cultural adventure, our boutique hotel offers a truly unforgettable experience.</p>
                 <Book/>
