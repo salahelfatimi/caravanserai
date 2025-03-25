@@ -16,7 +16,7 @@ export default function ContactPage(){
             <div className=" flex flex-col md:flex-row items-center justify-center gap-6 bg-primary py-10 bg-cover bg-[url(/img/bg.svg)]">
                 <div className=" bg-white rounded flex flex-col lg:flex-row items-center gap-1 p-4">
                     <h2 className=" text-lg  font-medium font-serif text-primary ">Email : </h2>
-                    <p className=" text-sm">contat@caravanserai_marrakech.com</p>
+                    <p className=" text-sm">contat@caravanserai-marrakech.com</p>
                 </div>
                 <div className=" bg-white rounded flex flex-row items-center gap-1 p-4">
                     <h2 className=" text-lg  font-medium font-serif text-primary ">Phone : </h2>

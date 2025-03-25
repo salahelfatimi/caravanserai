@@ -5,7 +5,7 @@ const menuItems = [
             { name: "Home", href: "/" },
             { name: "About Us", href: "/about_us" },
             { name: "Contact", href: "/contact" },
-            { name: "Book at caravan serai", href: "/book_at_caravan_serai" },
+            { name: "Book now", href: "/book_at_caravan_serai" },
 
         ],
     },
@@ -23,26 +23,26 @@ const menuItems = [
     {
         title: "RESTAURANTS",
         links: [
-            { name: "The moroccan", href: "/restaurants/moroccan" },
-            { name: "The franch", href: "/restaurants/franch" },
+            { name: "moroccan", href: "/restaurants/moroccan" },
+            { name: "french", href: "/restaurants/franch" },
             { name: "Menu", href: "/restaurants/menu" },
         ],
     },
     {
         title: "SPA & WELLNESS",
         links: [
-            { name: "Hammam & messages", href: "/spa_and_wellness/hammam_and_messages" },
+            { name: "Hammam & massages", href: "/spa_and_wellness/hammam_and_messages" },
             { name: "Hair removal", href: "/spa_and_wellness/hair_removal" },
             { name: "Body care", href: "/spa_and_wellness/body_care" },
             { name: "Hands & feet", href: "/spa_and_wellness/hands_and_feet" },
         ],
     },
     {
-        title: "EVENTS",
+        title: "ÉVÉNEMENTIEL",
         links: [
             { name: "Seminars", href: "/events/seminars" },
             { name: "Weddings & celebrations", href: "/events/weddings" },
-            { name: "Private events", href: "/events/private_events" },
+            { name: "Privatization", href: "/events/private_events" },
         ],
     },
     {
