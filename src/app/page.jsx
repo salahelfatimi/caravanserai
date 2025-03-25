@@ -8,7 +8,6 @@ import ServiceList from "@/components/pages/service";
 import Spa from "@/components/pages/spa";
 import Suites_Page from "@/components/pages/suites_page";
 import Suites_page_privees from "@/components/pages/suites_page_privees";
-import BookFull from "@/components/tools/bookFull";
 
 export async function generateMetadata() {
   return {
