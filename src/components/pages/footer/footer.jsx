@@ -1,20 +1,9 @@
 'use client'
-import Lenis from "lenis";
 import { Instagram } from "lucide-react";
 import Image from "next/image";
-import { useEffect } from "react";
 
 export default function Footer(){
-    useEffect( () => {
-        const lenis = new Lenis()
-        function raf(time) {
-          lenis.raf(time)
-          requestAnimationFrame(raf)
-        }
-        requestAnimationFrame(raf)
-    }, [])
     return(
-
         <div className="bg-primary bg-top bg-cover bg-[url(/img/bg-yellow.svg)]" >
             <div className=" flex lg:flex-row flex-col items-center justify-between container py-10 ">
                 <Image src="/img/logo_white.png" height={500} width={500} alt="Caravan Serai" title="Caravan Serai" className=" w-40" />
