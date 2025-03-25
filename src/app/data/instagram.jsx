@@ -8,7 +8,9 @@ export const caravanseraiImages = [
     "/img/instagram/caravanserai_7.png",
     "/img/instagram/caravanserai_8.png",
     "/img/instagram/caravanserai_9.png",
-    "/img/instagram/caravanserai_10.png"
+    "/img/instagram/caravanserai_10.png",
+    "/img/instagram/caravanserai_11.png"
+
 ];
 
 export default caravanseraiImages

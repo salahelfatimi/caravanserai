@@ -31,7 +31,7 @@ export default function Instagram() {
                 <h2 className="font-boska font-bold text-primary text-3xl lg:text-6xl leading-tight text-center">
                     Escape to Paradise at Caravan Serai Hotel & Spa
                 </h2>
-                <div className="columns-2 lg:columns-4 container space-y-4">
+                <div className="columns-2 lg:columns-3 container space-y-4">
                     <div className="min-h-52 flex flex-col gap-4 bg-primary p-4 items-center justify-center">
                         <h2 className="font-boska  lg:text-4xl font-medium text-white">Inspiré par vous</h2>
                         <p className=" lg:text-2xl font-boska text-white">@caravanserai_marrakech</p>
