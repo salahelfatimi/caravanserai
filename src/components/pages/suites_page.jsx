@@ -1,5 +1,4 @@
 'use client';
-
 import AutoScroll from 'embla-carousel-auto-scroll';
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -10,7 +9,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Suites_Page() {
     const [emblaRef] = useEmblaCarousel({ loop: true, align: 'start' },
-        [AutoScroll({ playOnInit: true, speed: 1, stopOnInteraction: false, stopOnMouseEnter: true, stopOnFocusIn: false })])
+        [AutoScroll({ playOnInit: true, speed: 1, stopOnInteraction: true, stopOnMouseEnter: true })])
     return (
         <div className="flex flex-col gap-6 py-20 bg-contain lg:bg-[url(/img/bg-yellow.svg)]">
             <h2 className="text-6xl md:text-7xl text-center font-boska font-medium text-primary">Suites & Rooms</h2>
