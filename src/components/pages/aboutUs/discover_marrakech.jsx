@@ -36,23 +36,16 @@ export default function Restaurant() {
             <h2 className="text-4xl md:text-7xl text-center font-boska font-semibold mb-4 text-white">Discover Marrakech & Beyond</h2>
             <p className=" text-center mb-10 text-white ">Caravan Serai offers easy access to Marrakech’s top attractions, including:</p>
 
-            <div className="lg:columns-3 columns-2 container space-y-5 p-5 bg-cover lg:block hidden">
+            <div className="lg:columns-3 columns-1 container space-y-5 p-5 bg-cover">
                 {discover_marrakech.map((ele, index) => (
-                    <div key={index} ref={el => imageRefs.current[index] = el}>
-                        <Image className="rounded-2xl border-4 border-white  object-cover object-bottom"  src={`/img/aboutUs/discover_marrakech/${ele}`} width={1920} height={1080} alt="Caravan Serai" title="Caravan Serai" />
+                    <div key={index} ref={el => imageRefs.current[index] = el}  className="relative border-4 border-white rounded-2xl">
+                        <h2 className=" absolute inset-0 z-10 flex items-center justify-center text-center font-extrabold text-white text-2xl">{ele.title}</h2>
+                        <div className=" absolute inset-0 bg-black z-0 opacity-30 rounded-2xl "></div>
+                        <Image className="rounded-2xl   object-cover object-bottom "  src={`/img/aboutUs/discover_marrakech/${ele.url}`} width={1920} height={1080} alt="Caravan Serai" title="Caravan Serai" />
                     </div>
                 ))}
             </div>
-            <div className="w-fit overflow-hidden  select-none cursor-grab active:cursor-grabbing block lg:hidden" ref={emblaRef}>
-                <div className="flex  w-fit transition-transform duration-700 ease-linear ">
-                    {discover_marrakech.map((ele, index) => (
-                        <div key={index} className="relative flex-none w-fit pl-10 ">
-                            <Image width={1920} height={1080} quality={50} src={`/img/aboutUs/discover_marrakech/${ele}`}  className="rounded-2xl border-4 border-whitte w-full h-[20rem] object-cover " alt="Caravan Serai" title="Caravan Serai" />
-
-                        </div>
-                    ))}
-                </div>
-            </div>
+            
         </div>
     );
 }
