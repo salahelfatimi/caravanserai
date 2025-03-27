@@ -65,7 +65,7 @@ function SuiteCarousel({ images, title }) {
             <div className="overflow-hidden" ref={emblaRef}>
                 <div className="flex">
                     {images.map((image, index) => (
-                        <div key={index} className="flex-[0_0_100%] relative h-[40rem] ">
+                        <div key={index} className="flex-[0_0_100%] relative h-[20rem] lg:h-[40rem] ">
                             <Image src={image} alt={`${title}`} title={`${title}`} width={1000} quality={50} height={1000} className="object-bottom  object-cover h-full w-full" />
                         </div>
                     ))}
