@@ -9,8 +9,8 @@ import suite_privee from '../../app/data/suite_privee';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Suites_page_privees() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start', containScroll: 'trimSnaps', dragFree: true },
-        [AutoScroll({ playOnInit: true, speed: 1, stopOnInteraction: false, stopOnMouseEnter: true, stopOnFocusIn: false })]);
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true},
+        [AutoScroll({ speed: 1, stopOnInteraction: false, stopOnMouseEnter: true, stopOnFocusIn: false })]);
 
     return (
         <div className="flex flex-col gap-6 py-20 bg-primary bg-contain lg:bg-[url(/img/bg.svg)]">
@@ -19,9 +19,9 @@ export default function Suites_page_privees() {
             <div className="overflow-hidden relative select-none cursor-grab active:cursor-grabbing" ref={emblaRef}>
                 <div className="flex transition-transform ease-out duration-700">
                     {suite_privee.map((suite, index) => (
-                        <div key={index} className="min-w-full lg:min-w-[40rem] h-full p-4">
-                            <div className="rounded-2xl border-4 border-white overflow-hidden shadow-lg bg-white">
-                                <div className="relative">
+                        <div key={index} className=" p-4">
+                            <div className="rounded-2xl border-4  border-white overflow-hidden shadow-lg bg-white " >
+                                <div className="relative w-[24rem] lg:w-[57rem]">
                                     <SuiteCarousel images={suite.images} title={'caravanserai marrakech'} />
                                 </div>
                             </div>
@@ -65,8 +65,8 @@ function SuiteCarousel({ images, title }) {
             <div className="overflow-hidden" ref={emblaRef}>
                 <div className="flex">
                     {images.map((image, index) => (
-                        <div key={index} className="flex-[0_0_100%] min-w-0 relative h-96">
-                            <Image src={image} alt={`${title}`} title={`${title}`} width={1000} quality={50} height={1000} className="object-bottom object-cover h-full w-full" />
+                        <div key={index} className="flex-[0_0_100%] relative h-[40rem] ">
+                            <Image src={image} alt={`${title}`} title={`${title}`} width={1000} quality={50} height={1000} className="object-bottom  object-cover h-full w-full" />
                         </div>
                     ))}
                 </div>
