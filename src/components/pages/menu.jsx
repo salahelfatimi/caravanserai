@@ -5,7 +5,7 @@ export default function Menu() {
         <div className="container mx-auto py-10 px-4">
             {menuItems.map((section, index) => (
                 <div key={index} className="mb-8 flex items-center justify-center flex-col ">
-                    <h2 className="text-2xl font-semibold bg-primary  w-fit   p-4 text-white text-center mb-4">{section.category}</h2>
+                    <h2 className="text-2xl font-semibold   p-4 text-primary text-center mb-4">{section.category}</h2>
                     <div className="grid md:grid-cols-2 gap-6 w-full">
                         {section.items.map((item, idx) => (
                             <div key={idx} className="p-4 border-2 border-primary shadow-lg rounded-xl bg-white ">

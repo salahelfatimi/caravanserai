@@ -1,6 +1,6 @@
 export const menuItems = [
     {
-        category: "🥗 Entrées / Starters",
+        category: "Entrées / Starters",
         items: [
             { title: "Salade Caesar", price: "70 DHS", description: "Classic Caesar salad with fresh lettuce, croutons, parmesan, and Caesar dressing." },
             { title: "Tomate-Mozzarella", price: "60 DHS", description: "Fresh mozzarella and ripe tomatoes drizzled with olive oil and balsamic glaze." },
@@ -9,7 +9,7 @@ export const menuItems = [
         ]
     },
     {
-        category: "🍔 Plats / Main Courses",
+        category: "Plats / Main Courses",
         items: [
             { title: "Panini jambon de dinde, servi avec frites", price: "70 DHS", description: "Turkey ham panini, toasted to perfection, served with crispy French fries." },
             { title: "Burger de bœuf Caravan Serai, servi avec frites", price: "80 DHS", description: "Juicy beef burger with fresh toppings and golden fries." },

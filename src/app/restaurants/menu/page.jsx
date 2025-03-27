@@ -1,5 +1,6 @@
 import Book from "@/components/pages/book";
 import Menu from "@/components/pages/menu";
+import { AlertCircle } from "lucide-react";
 import Image from "next/image";
 
 export async function generateMetadata() {
@@ -43,6 +44,9 @@ export default function Page() {
                 </div>
             </div>
             <Menu/>
+            <div className="p-4 shadow-lg rounded-xl bg-primary text-white container ">
+              <h2 className="text-lg font-medium flex items-center justify-center gap-2"><AlertCircle/> Other dishes are available on request on the menu. </h2>
+            </div>
             <div className=" flex flex-col   gap-10 py-10 bg-white bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <h2 className=" text-3xl md:text-5xl text-center font-boska font-bold  text-primary " >Book Your Stay at Caravan Serai Today</h2>
                 <p className=" text-center">Escape to a world of tranquility and timeless beauty at Caravan Serai Marrakech. Whether for a romantic getaway, family retreat, or cultural adventure, our boutique hotel offers a truly unforgettable experience.</p>

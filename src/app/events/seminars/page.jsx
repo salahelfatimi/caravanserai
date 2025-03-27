@@ -47,9 +47,9 @@ export default function Seminars(){
             </div>
             <div className=" flex lg:flex-row-reverse flex-col items-center justify-center gap-3  bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <div className="lg:w-1/2 h-screen">
-                    <Image src={'/img/events/seminar/seminar_1.jpg'} width={1920} height={1080} className="h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
+                    <Image src={'/img/events/weddings_and_celebrations/weddings_and_celebrations_6.jpg'} width={1920} height={1080} className="h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 </div>
-                <div className=" lg:w-1/2 p-4 flex flex-col gap-4">
+                <div className="  lg:p-10 p-4 flex flex-col gap-4">
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Why Choose Caravan Serai for Your Seminar?</h2>
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
@@ -71,6 +71,9 @@ export default function Seminars(){
                         </ul>
                     </div>
                     <Link href="/contact" className=" text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary w-full p-2 px-3 text-2xl font-medium text-white rounded-full">Book Your Seminar</Link>
+                </div>
+                <div className="lg:w-1/2 h-screen">
+                    <Image src={'/img/events/weddings_and_celebrations/weddings_and_celebrations_5.jpg'} width={1920} height={1080} className="h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 </div>
             </div>
         </div>
