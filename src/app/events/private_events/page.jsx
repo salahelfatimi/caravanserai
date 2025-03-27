@@ -47,7 +47,7 @@ export default function Weddings(){
             </div>
             <div className=" flex lg:flex-row-reverse flex-col items-center justify-center gap-3  bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <div className=" h-screen">
-                    <video autoPlay loop muted className="w-full h-full  object-cover " about="Caravan Serai" title="Caravan Serai" > 
+                    <video autoPlay playsInline loop muted className="w-full h-full  object-cover " about="Caravan Serai" title="Caravan Serai" > 
                         <source src="/vid/events/private_events/private_events_1.mp4" type="video/mp4"/>
                         Your browser does not support the video tag.
                     </video>
@@ -75,7 +75,7 @@ export default function Weddings(){
                     <Link href="/contact" className=" text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary w-full p-2 px-3 text-2xl font-medium text-white rounded-full">Book Your Private Event</Link>
                 </div>
                 <div className=" h-screen">
-                    <video autoPlay loop muted className="w-full h-full  object-cover " about="Caravan Serai" title="Caravan Serai" > 
+                    <video autoPlay playsInline loop muted className="w-full h-full  object-cover " about="Caravan Serai" title="Caravan Serai" > 
                         <source src="/vid/events/private_events/private_events_2.mp4" type="video/mp4"/>
                         Your browser does not support the video tag.
                     </video>

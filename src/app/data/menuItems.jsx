@@ -23,8 +23,8 @@ const menuItems = [
     {
         title: "RESTAURANTS",
         links: [
-            { name: "moroccan", href: "/restaurants/moroccan" },
-            { name: "french", href: "/restaurants/franch" },
+            { name: "Moroccan", href: "/restaurants/moroccan" },
+            { name: "French", href: "/restaurants/franch" },
             { name: "Menu", href: "/restaurants/menu" },
         ],
     },

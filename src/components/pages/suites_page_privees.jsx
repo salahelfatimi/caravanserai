@@ -15,7 +15,7 @@ export default function Suites_page_privees() {
     return (
         <div className="flex flex-col gap-6 py-20 bg-primary bg-contain lg:bg-[url(/img/bg.svg)]">
             <h2 className="text-6xl md:text-7xl text-center font-boska font-medium text-white capitalize">private pool suites </h2>
-            <p className={`container text-center text-white`}>Step into a world of luxury and comfort with our elegant Suites piscines privées. Enjoy a refined atmosphere, premium amenities, and a peaceful retreat. Scroll through the images to explore each space and find the perfect accommodation for your stay.</p>
+            <p className={`container text-center text-white`}>Step into a world of luxury and comfort with our **Majorelle and Beldi** King Suites with private pools. Enjoy a refined atmosphere, premium amenities, and a peaceful retreat. Scroll through the images to explore each space and find the perfect accommodation for your stay.</p>
             <div className="overflow-hidden relative select-none cursor-grab active:cursor-grabbing" ref={emblaRef}>
                 <div className="flex transition-transform ease-out duration-700">
                     {suite_privee.map((suite, index) => (
@@ -65,7 +65,7 @@ function SuiteCarousel({ images, title }) {
             <div className="overflow-hidden" ref={emblaRef}>
                 <div className="flex">
                     {images.map((image, index) => (
-                        <div key={index} className="flex-[0_0_100%] relative h-[20rem] lg:h-[40rem] ">
+                        <div key={index} className="flex-[0_0_100%] relative h-[20rem] lg:h-[30rem] ">
                             <Image src={image} alt={`${title}`} title={`${title}`} width={1000} quality={50} height={1000} className="object-bottom  object-cover h-full w-full" />
                         </div>
                     ))}

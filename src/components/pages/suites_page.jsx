@@ -17,9 +17,9 @@ export default function Suites_Page() {
             <div className="overflow-hidden relative select-none cursor-grab active:cursor-grabbing" ref={emblaRef}>
                 <div className="flex transition-transform ease-out duration-700">
                     {suites.map((suite, index) => (
-                        <div key={index} className="min-w-full lg:min-w-[40rem] p-4">
+                        <div key={index} className="p-4">
                             <div className="rounded-2xl border-4 border-primary overflow-hidden shadow-lg bg-white">
-                                <div className="relative">
+                                <div className="relative w-[24rem] lg:w-[50rem]">
                                     <SuiteCarousel images={suite.images} title={'caravanserai marrakech'} />
                                 </div>
                             </div>
@@ -60,7 +60,7 @@ function SuiteCarousel({ images, title }) {
             <div className="overflow-hidden" ref={emblaRef}>
                 <div className="flex">
                     {images.map((image, index) => (
-                        <div key={index} className="flex-[0_0_100%] relative h-96 lg:h-auto">
+                        <div key={index} className="flex-[0_0_100%] relative h-[20rem] lg:h-[30rem]">
                             <Image src={image} alt={`${title}`} title={`${title}`} width={1000} quality={50} height={1000} className="object-bottom object-cover h-full w-full lg:w-auto" />
                         </div>
                     ))}
