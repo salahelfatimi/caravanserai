@@ -54,9 +54,9 @@ export default function Seminars(){
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
                             <li> <strong>Professional Environment</strong> – Our venue is equipped with modern amenities to support all your seminar needs, from high-quality audio-visual equipment to comfortable seating arrangements.</li>
-                            <li><strong>Inspiring Atmosphere</strong> – Located in the heart of Marrakech, our Moroccan-inspired setting will provide your attendees with a unique and refreshing environment.</li>
+                            <li><strong>Inspiring Atmosphere</strong> – Our Moroccan-inspired setting will provide your attendees with a unique and refreshing environment.</li>
                             <li><strong>Customizable Spaces</strong> – Whether you need a small intimate setting or a larger space for a bigger seminar, we offer flexible options to suit your event size and style.</li>
-                            <li><strong>Dedicated Event Team</strong> – Our experienced team will be there every step of the way, assisting with planning, setup, and ensuring everything runs smoothly.</li>
+                            <li><strong>Dedicated Event Team</strong> – Our experienced team will be there every step of the way, assisting with planning, setup, and ensuring everything as planned  .</li>
                             <li><strong>Catering Options</strong> – Keep your attendees refreshed with our gourmet catering services, offering a variety of options for coffee breaks, lunch, and more.</li>
                         </ul>
                     </div>
