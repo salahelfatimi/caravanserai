@@ -44,7 +44,7 @@ export default function Yoga_sessions(){
             </div>    
             <div className=" flex lg:flex-row-reverse flex-col items-center justify-center gap-3  bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <div className="lg:w-1/2 h-screen">
-                    <video autoPlay loop muted className="w-full h-full object-cover " about="Caravan Serai" title="Caravan Serai" > 
+                    <video autoPlay playsInline loop muted className="w-full h-full object-cover " about="Caravan Serai" title="Caravan Serai" > 
                         <source src="/vid/yoga/yoga.mp4" type="video/mp4"/>
                         Your browser does not support the video tag.
                     </video>

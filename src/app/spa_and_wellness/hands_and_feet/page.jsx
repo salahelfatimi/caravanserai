@@ -46,6 +46,28 @@ export default function Hands_and_feet(){
             <div className=" bg-primary py-10  bg-cover bg-top bg-[url(/img/bg-yellow.svg)]">
                <p className=" container text-center text-white font-medium text-xs lg:text-base">At Caravan Serai Spa, we believe that self-care starts from head to toe. Our specialized manicure, pedicure, and henna treatments ensure that your hands and feet are nourished, revitalized, and looking their best. Whether you need a quick refresh or an indulgent beauty treatment, we’ve got you covered.</p>
             </div> 
+            <div className=" flex lg:flex-row-reverse  flex-col items-center justify-center gap-3  bg-top bg-[url(/img/bg-yellow.svg)] ">
+                <div className="lg:w-1/2 h-screen">
+                    <video autoPlay playsInline loop muted className="w-full h-full object-cover " about="Caravan Serai" title="Caravan Serai" > 
+                        <source src="/vid/spa_and_wellness/hands_and_feet/hands_and_feet.mp4" type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div className=" lg:w-1/2 p-4 flex flex-col gap-4">
+                    <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Henna Tattoo – 150 DHS</h2>
+                    <p className="text-sm ">Experience the beauty of traditional Moroccan henna art, crafted by skilled artists.</p>
+                    <div className="flex flex-col gap-4">
+                        <h3 className=" font-bold text-xl text-primary"> What’s Included ?</h3>
+                        <ul className=" list-disc list-inside text-sm space-y-2 ">
+                            <li><strong>Natural Henna</strong> – Made from organic ingredients</li>
+                            <li><strong>Long-Lasting Designs</strong> – Stays up to two weeks</li>
+                            <li><strong>Authentic Moroccan Patterns</strong> – Custom designs available</li>
+                
+                        </ul>
+                        <span className=" font-bold bg-white border-primary border-4 w-fit p-2 text-primary rounded-full flex items-center  gap-2"><Clock/> 30-45 minutes</span>
+                    </div>
+                </div>
+            </div> 
             <div className=" flex lg:flex-row  flex-col items-center justify-center gap-3  bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <div className="lg:w-1/2 ">
                     <Image src={'/img/spa_and_wellness/hands_and_feet/hands_and_feet_1.jpg'} width={1920} height={1080} className="  h-full w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
@@ -86,25 +108,7 @@ export default function Hands_and_feet(){
                     </div>
                 </div>
             </div>   
-            <div className=" flex lg:flex-row  flex-col items-center justify-center gap-3  bg-top bg-[url(/img/bg-yellow.svg)] ">
-                <div className="lg:w-1/2 ">
-                    <Image src={'/img/spa_and_wellness/hands_and_feet/hands_and_feet_3.jpg'} width={1920} height={1080} className="  h-full w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
-                </div>
-                <div className=" lg:w-1/2 p-4 flex flex-col gap-4">
-                    <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Henna Tattoo – 150 DHS</h2>
-                    <p className="text-sm ">Experience the beauty of traditional Moroccan henna art, crafted by skilled artists.</p>
-                    <div className="flex flex-col gap-4">
-                        <h3 className=" font-bold text-xl text-primary"> What’s Included ?</h3>
-                        <ul className=" list-disc list-inside text-sm space-y-2 ">
-                            <li><strong>Natural Henna</strong> – Made from organic ingredients</li>
-                            <li><strong>Long-Lasting Designs</strong> – Stays up to two weeks</li>
-                            <li><strong>Authentic Moroccan Patterns</strong> – Custom designs available</li>
-                
-                        </ul>
-                        <span className=" font-bold bg-white border-primary border-4 w-fit p-2 text-primary rounded-full flex items-center  gap-2"><Clock/> 30-45 minutes</span>
-                    </div>
-                </div>
-            </div>   
+            
         </div>
     )
 }
