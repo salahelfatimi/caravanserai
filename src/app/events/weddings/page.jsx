@@ -60,7 +60,7 @@ export default function Weddings(){
                             <li><strong>Personalized Event Planning</strong> – Our dedicated team will assist in planning and coordinating every detail to perfection.</li>
                             <li><strong>Gourmet Dining Experience</strong> – Indulge in a curated menu featuring traditional Moroccan and international cuisine.</li>
                             <li><strong>Luxury Accommodation</strong> – Offer your guests a relaxing stay in our beautifully designed rooms and suites.</li>
-                            <li><strong>Seamless Service</strong> – From décor to entertainment, we ensure every aspect of your event runs smoothly.</li>
+                            <li><strong>Seamless Service</strong> – From décor to entertainment, we ensure every aspect of your event as planned.</li>
                         </ul>
                     </div>
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Services We Offer</h2>
