@@ -17,9 +17,9 @@ export default function Suites_Page() {
             <div className="overflow-hidden relative select-none cursor-grab active:cursor-grabbing" ref={emblaRef}>
                 <div className="flex transition-transform ease-out duration-700">
                     {suites.map((suite, index) => (
-                        <div key={index} className="p-4">
+                        <div key={index} className="min-w-full lg:min-w-[40rem] p-4">
                             <div className="rounded-2xl border-4 border-primary overflow-hidden shadow-lg bg-white">
-                                <div className="relative w-[24rem] lg:w-[50rem]">
+                                <div className="relative">
                                     <SuiteCarousel images={suite.images} title={'caravanserai marrakech'} />
                                 </div>
                             </div>
@@ -60,19 +60,19 @@ function SuiteCarousel({ images, title }) {
             <div className="overflow-hidden" ref={emblaRef}>
                 <div className="flex">
                     {images.map((image, index) => (
-                        <div key={index} className="flex-[0_0_100%] relative h-[20rem] lg:h-[30rem]">
+                        <div key={index} className="flex-[0_0_100%] relative h-96 lg:h-auto">
                             <Image src={image} alt={`${title}`} title={`${title}`} width={1000} quality={50} height={1000} className="object-bottom object-cover h-full w-full lg:w-auto" />
                         </div>
                     ))}
                 </div>
             </div>
-            <button onClick={scrollPrev} className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg">
+            <button onClick={scrollPrev} className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg z-40">
                 <ChevronLeft />
             </button>
-            <button onClick={scrollNext} className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg">
+            <button onClick={scrollNext} className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg z-40">
                 <ChevronRight />
             </button>
-            <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
+            <div className="absolute z-40 bottom-4 left-0 right-0 flex justify-center gap-2">
                 {images.map((_, index) => (
                     <div key={index} className={`w-3 h-3 rounded-full transition-all duration-500 ${selectedIndex === index ? 'bg-white' : 'bg-gray-400'}`} />
                 ))}
