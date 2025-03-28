@@ -67,7 +67,7 @@ export default function Weddings(){
                     </div>
                     <Link href="/contact" className=" text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary w-fit p-2 px-6 text-2xl font-medium text-white rounded-full">Book Your Private Event</Link>
             </div>
-            <div className="  flex lg:flex-row-reverse flex-col items-center justify-center ">
+            <div className="  flex lg:flex-row-reverse gap-10 py-10  flex-col items-center justify-center ">
                 <div className=" h-screen w-full">
                     <video autoPlay playsInline loop muted className="w-full h-full  object-cover " about="Caravan Serai" title="Caravan Serai" > 
                         <source src="/vid/events/private_events/private_events_1.mp4" type="video/mp4"/>

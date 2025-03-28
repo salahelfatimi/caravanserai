@@ -42,10 +42,7 @@ export default function Weddings(){
                     <p className="text-center text-white mb-8 text-xs lg:text-xl">Create Unforgettable Memories in a Magical Setting</p>
                 </div>
             </div>
-            <div className=" bg-primary py-10  bg-cover bg-top bg-[url(/img/bg-yellow.svg)]">
-               <p className=" container text-center text-white font-medium text-xs lg:text-base">At Caravan Serai, we offer the perfect backdrop for your dream wedding or special celebration. Nestled in the heart of Marrakech, our enchanting venue blends Moroccan elegance with modern luxury, creating an unforgettable experience for you and your guests.</p>
-            </div>
-            <div className=" p-4 flex flex-col items-center justify-center gap-10 py-20">
+            <div className=" p-4 flex flex-col items-center justify-center gap-10 py-20 bg-top bg-[url(/img/bg-yellow.svg)]">
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Why Choose Caravan Serai?</h2>
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
@@ -67,8 +64,8 @@ export default function Weddings(){
                     </div>
                     <Link href="/contact" className="w-fit text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary p-2 px-6 text-2xl font-medium text-white rounded-full">Book Your Celebration</Link>
             </div>
-            <div className=" justify-between flex lg:flex-row-reverse flex-col items-center    bg-top bg-[url(/img/bg-yellow.svg)] ">
-                <div className=" h-screen w-full">
+            <div className=" justify-between flex lg:flex-row-reverse flex-col items-center  gap-10 py-10   ">
+                <div className=" h-screen w-full ">
                     <video autoPlay playsInline loop muted className="w-full h-full  object-cover " about="Caravan Serai" title="Caravan Serai" > 
                         <source src="/vid/events/weddings/weddings_1.mp4" type="video/mp4"/>
                         Your browser does not support the video tag.

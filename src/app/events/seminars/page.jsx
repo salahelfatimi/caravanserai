@@ -42,9 +42,7 @@ export default function Seminars(){
                     <p className="text-center text-white mb-8 text-xs lg:text-xl">Host Your Next Seminar in a Stylish and Productive Setting</p>
                 </div>
             </div>
-            <div className=" bg-primary py-10  bg-cover bg-top bg-[url(/img/bg-yellow.svg)]">
-               <p className=" container text-center text-white font-medium text-xs lg:text-base">At Caravan Serai, we provide the ideal environment for hosting seminars, workshops, and business conferences. Our venue combines modern facilities with traditional Moroccan charm, ensuring that your event is both productive and inspiring.</p>
-            </div>
+            
             <div className="  lg:p-10 p-4 flex flex-col items-center justify-center gap-4  bg-top bg-[url(/img/bg-yellow.svg)]">
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Why Choose Caravan Serai for Your Seminar?</h2>
                     <div className="flex flex-col gap-4">
@@ -68,7 +66,7 @@ export default function Seminars(){
                     </div>
                     <Link href="/contact" className=" text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary w-fit p-2 px-6 text-2xl font-medium text-white rounded-full">Book Your Seminar</Link>
                 </div>
-            <div className=" flex lg:flex-row-reverse flex-col items-center justify-center   ">
+            <div className=" flex lg:flex-row-reverse gap-10 py-10  flex-col items-center justify-center   ">
                 <div className="lg:w-1/2 h-screen">
                     <Image src={'/img/events/seminar/seminar_3.jpg'} width={1920} height={1080} className="h-full  w-full object-cover" alt="Caravan Serai" title="Caravan Serai"/>
                 </div>
