@@ -154,7 +154,7 @@ export default function Book() {
                         
                     </form>
                     {showExtraPersonMessage && (
-                            <p className="text-white mt-2 rounded-full text-sm font-medium  text-center bg-red-500 p-2">Adding a third person will incur an additional charge.</p>
+                            <p className="text-white mt-2 rounded text-sm font-medium  text-center bg-red-500 p-2">Adding a third person will incur an additional charge.</p>
                     )}
                     <div className="container w-full flex flex-row items-center justify-center gap-3 mx-auto px-4 mt-6">
                         <button onClick={() => setEtaps(false)} className={`${etaps == true ? 'block' : 'hidden'} flex flex-row-reverse gap-2 items-center bg-primary font-bold capitalize lg:ttext-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
