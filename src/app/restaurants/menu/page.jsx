@@ -44,8 +44,8 @@ export default function Page() {
                 </div>
             </div>
             <Menu/>
-            <div className="p-4 shadow-lg rounded-xl bg-primary text-white container ">
-              <h2 className="text-lg font-medium flex items-center justify-center gap-2"><AlertCircle/> Other dishes are available on request on the menu. </h2>
+            <div className="p-6 shadow-lg rounded-xl bg-tertiary text-white container w-fit animate-bounce ">
+              <h2 className="text-2xl font-medium flex items-center justify-center gap-2 text-yellow-500"><AlertCircle size={40}/> Other dishes are available on request . </h2>
             </div>
             <div className=" flex flex-col   gap-10 py-10 bg-white bg-top bg-[url(/img/bg-yellow.svg)] ">
                 <h2 className=" text-3xl md:text-5xl text-center font-boska font-bold  text-primary " >Book Your Stay at Caravan Serai Today</h2>

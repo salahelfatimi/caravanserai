@@ -1,19 +1,16 @@
 'use client'
 import { Instagram } from "lucide-react";
 import Image from "next/image";
-import { useEffect } from "react";
 
 export default function Footer(){
-    
     return(
-
         <div className="bg-primary bg-top bg-cover bg-[url(/img/bg-yellow.svg)]" >
             <div className=" flex lg:flex-row flex-col items-center justify-between container py-10 ">
                 <Image src="/img/logo_white.png" height={500} width={500} alt="Caravan Serai" title="Caravan Serai" className=" w-40" />
                 <div className="flex flex-col items-center lg:items-start gap-1">
                     <p className=" text-white font-serif text-lg font-bold  ">Info :</p>
                     <p className=" text-white font-serif  "><span>Location : </span>264 Ouled, Ben Rahmoune 40000</p>
-                    <p className=" text-white font-serif  "><span>Phone : </span>05243-54176</p>
+                    <p className=" text-white font-serif  "><span>Phone : </span>05 24 35 41 76</p>
                     <p className=" text-white font-serif  "><span>Email : </span>info@caravanserai-marrakech.com</p>
                 </div>
             </div>
@@ -26,7 +23,6 @@ export default function Footer(){
                         <Instagram size={30} className=" stroke-[#fff]" />
                     </div>
                 </div>
-               
             </div>
         </div>
        

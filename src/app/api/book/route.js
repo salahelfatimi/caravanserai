@@ -6,7 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request) {
   try {
     const body = await request.json();
-    const {startDate,endDate, adults, children, fullName ,phone,email,suites } = body;
+    const {startDate,endDate, adults, children, fullName ,phone,email,suites,showExtraPersonMessage } = body;
     const data = await resend.emails.send({
       from: `${fullName}<brett@caravanserai-marrakech.com>`,
       to: "salahfatimi16@gmail.com",
@@ -18,7 +18,7 @@ export async function POST(request) {
         endDate:endDate,
         adults:adults,
         email:email,
-        children:children,
+        showExtraPersonMessage:showExtraPersonMessage,
         suites:suites
       }),
     });

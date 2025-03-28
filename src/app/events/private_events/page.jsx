@@ -45,14 +45,7 @@ export default function Weddings(){
             <div className=" bg-primary py-10  bg-cover bg-top bg-[url(/img/bg-yellow.svg)]">
                <p className=" container text-center text-white font-medium text-xs lg:text-base">At Caravan Serai, we understand that each event is unique and deserves to be celebrated in a setting that is both elegant and memorable. Whether you’re hosting an intimate gathering or a grand celebration, our venue provides the perfect atmosphere for any occasion.</p>
             </div>
-            <div className=" flex lg:flex-row-reverse flex-col items-center justify-center gap-3  bg-top bg-[url(/img/bg-yellow.svg)] ">
-                <div className=" h-screen">
-                    <video autoPlay playsInline loop muted className="w-full h-full  object-cover " about="Caravan Serai" title="Caravan Serai" > 
-                        <source src="/vid/events/private_events/private_events_1.mp4" type="video/mp4"/>
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div className="  p-4 lg:p-10 flex flex-col gap-4">
+            <div className="  p-4 lg:p-10 flex flex-col gap-4  bg-top bg-[url(/img/bg-yellow.svg)] items-center justify-center ">
                     <h2 className="font-boska font-medium text-2xl lg:text-4xl text-primary">Why Host Your Private Event at Caravan Serai?</h2>
                     <div className="flex flex-col gap-4">
                         <ul className=" list-disc list-inside text-sm space-y-2">
@@ -72,9 +65,28 @@ export default function Weddings(){
                             <li><strong>Themed Celebrations</strong> – From intimate dinners to large-scale gatherings, we can help bring your vision to life.</li>
                         </ul>
                     </div>
-                    <Link href="/contact" className=" text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary w-full p-2 px-3 text-2xl font-medium text-white rounded-full">Book Your Private Event</Link>
+                    <Link href="/contact" className=" text-center hover:bg-white hover:text-primary border-primary border duration-700 bg-primary w-fit p-2 px-6 text-2xl font-medium text-white rounded-full">Book Your Private Event</Link>
+            </div>
+            <div className="  flex lg:flex-row-reverse flex-col items-center justify-center ">
+                <div className=" h-screen w-full">
+                    <video autoPlay playsInline loop muted className="w-full h-full  object-cover " about="Caravan Serai" title="Caravan Serai" > 
+                        <source src="/vid/events/private_events/private_events_1.mp4" type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-                <div className=" h-screen">
+                <div className=" h-screen w-full">
+                    <video autoPlay playsInline loop muted className="w-full h-full  object-cover " about="Caravan Serai" title="Caravan Serai" > 
+                        <source src="/vid/events/private_events/private_events_3.mp4" type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div className=" h-screen w-full">
+                    <video autoPlay playsInline loop muted className="w-full h-full  object-cover " about="Caravan Serai" title="Caravan Serai" > 
+                        <source src="/vid/events/private_events/private_events.mp4" type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div className=" h-screen w-full">
                     <video autoPlay playsInline loop muted className="w-full h-full  object-cover " about="Caravan Serai" title="Caravan Serai" > 
                         <source src="/vid/events/private_events/private_events_2.mp4" type="video/mp4"/>
                         Your browser does not support the video tag.

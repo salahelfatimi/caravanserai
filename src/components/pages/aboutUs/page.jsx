@@ -12,7 +12,7 @@ export default function AboutUsPage(){
                 <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
                 <div className="relative z-20 flex flex-col gap-4 container">
                     <h1 className="font-boska font-medium text-6xl lg:text-8xl text-white">About Caravan Serai Marrakech</h1>
-                    <p className="text-center text-white mb-8 text-xs lg:text-xl">Perched in the verdant oasis , Caravan Serai is a luxurious boutique hotel inspired by the historic caravanserais, where travelers once rested on their journeys across the desert. Our 4-star hotel blends traditional Moroccan charm with modern comforts, offering a tranquil escape from the bustling city.</p>
+                    <p className="text-center text-white mb-8 text-xs lg:text-xl">on the edge of the palm grove , Caravan Serai is a luxurious boutique hotel inspired by the historic caravanserais, where travelers once rested on their journeys across the desert. Our 4-star hotel blends traditional Moroccan charm with modern comforts, offering a tranquil escape from the bustling city.</p>
                 </div>
             </div>
             <div className=" flex flex-col  items-center justify-center gap-6 bg-primary py-10 bg-top  bg-[url(/img/bg.svg)]">
