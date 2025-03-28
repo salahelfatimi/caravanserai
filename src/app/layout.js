@@ -4,6 +4,7 @@ import Footer from "@/components/pages/footer/footer";
 import { Montserrat_Alternates } from "next/font/google";
 import GoogleTranslate from "@/components/tools/googleTranslate";
 import { GoogleAnalytics } from '@next/third-parties/google'
+import MessageCookies from "@/components/tools/cookies/message";
 
 const montserratAlternates = Montserrat_Alternates({
     subsets: ['latin'],
@@ -25,6 +26,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={` ${montserratAlternates.className}`}>
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_MEASUREMENT_ID}/>
+        <MessageCookies/>
+
         <main>
           <Navbar/>
           {children}

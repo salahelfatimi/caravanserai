@@ -13,8 +13,8 @@ export default function Activitte() {
             <div className=" ">
                 <Image src={'/img/activite/activite_3.jpg'} width={1920} height={1080} quality={50} alt="Caravan Serai" title="Caravan Serai" className="w-full lg:h-[60rem] object-bottom object-cover"/>
             </div>
-                <div className=" flex flex-col  items-center justify-center text-white py-20 container">
-                    <h2 className=" text-4xl text-center font-boska font-medium mb-10">
+                <div className=" flex flex-col  items-center justify-center text-white py-10 container">
+                    <h2 className=" text-4xl text-center font-boska font-medium mb-4">
                         Adventures, Culture & Pure Fun
                     </h2>
                     <p className={`text-sm lg:text-xl text-center  mb-4`}>

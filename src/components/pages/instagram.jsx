@@ -42,7 +42,7 @@ export default function Instagram() {
                     </div>
                     {caravanseraiImages.map((ele, index) => (
                         <div key={index} ref={(el) => (imageRefs.current[index] = el)} >
-                            <Image quality={50} width={500} height={500} src={ele} alt="Caravan Serai" title="Caravan Serai" />
+                            <Image quality={50} width={500} height={500} src={ele} alt="Caravan Serai" title="Caravan Serai" className=" object-cover" />
                         </div>
                     ))}
                 </div>
