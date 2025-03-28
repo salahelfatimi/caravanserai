@@ -32,7 +32,7 @@ export default function Suites_Page() {
 }
 
 function SuiteCarousel({ images, title }) {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true ,dragThreshold:false}, [
         Autoplay({ stopOnInteraction: true, stopOnMouseEnter: true, speed: 1, delay: 3000 })
     ]);
     const [selectedIndex, setSelectedIndex] = useState(0);
