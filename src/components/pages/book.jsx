@@ -106,8 +106,8 @@ export default function Book() {
         <div id='book' className=''>
             <Toaster position="bottom-right" reverseOrder={false} />
             <div className=" ">
-                <div className="min-h-[10rem] container w-full flex items-center flex-col justify-center ">
-                    <form onSubmit={handleSubmit} className="flex flex-col justify-center border-4 border-primary  p-4 px-10 shadow-2xl bg-white lg:rounded-full">
+                <div className="min-h-[10rem] container w-fit flex items-center flex-col justify-center  ">
+                    <form onSubmit={handleSubmit} className="flex flex-col justify-center border-4 border-primary  p-4  shadow-2xl bg-white lg:rounded-full ">
                         <div className={`flex flex-col lg:flex-row justify-between mx-auto py-2 gap-10 ${etaps == false ? 'block' : 'hidden'}`}>
                             <div className="flex flex-col items-center justify-center ">
                                 <h3 className={`text-primary text-lg lg:text-xl mb-2 font-medium font-serif`}>Arrival</h3>
@@ -119,7 +119,7 @@ export default function Book() {
                             </div>
                             <div>
                                 <h3 className={`after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Suites</h3>
-                                <select onChange={(e) => handleSuiteChange(e.target.value)} name="Suites" id=" " value={suites} className={`bg-transparent border-b-2 ${validation && !suites ? 'border-red-500' : 'border-primary'} text-lg pb-1 placeholder:text-2xl text-black focus:outline-none min-w-70 pl-4`} >
+                                <select onChange={(e) => handleSuiteChange(e.target.value)} name="Suites" id=" " value={suites} className={`bg-transparent border-b-2 ${validation && !suites ? 'border-red-500' : 'border-primary'} text-lg pb-1 placeholder:text-2xl text-black focus:outline-none w-full  pl-4`} >
                                     <option value="">Choose a suite</option>
                                     <option value="Suites classiques - 85 €">Suites classiques - 85 € | 2 people</option>
                                     <option value="Suites juniors - 110 €">Suites juniors - 110 € | 2 people</option>

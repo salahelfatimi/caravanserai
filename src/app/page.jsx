@@ -46,7 +46,7 @@ export default function Home() {
         <Header/>
         <ServiceList/>
         <Suites_Page/>
-        <div className="bg-top bg-[url(/img/bg-yellow.svg)] pb-10 flex flex-col gap-4 bg-cover  px-4 ">
+        <div className="bg-top bg-[url(/img/bg-yellow.svg)] pb-10 flex flex-col gap-4 bg-cover  px-4  ">
           <h2 className=" text-3xl md:text-5xl text-center font-boska font-bold  text-primary " >Book Your Stay at Caravan Serai Today</h2>
           <p className=" text-center">Escape to a world of tranquility and timeless beauty at Caravan Serai Marrakech. Whether for a romantic getaway, family retreat, or cultural adventure, our boutique hotel offers a truly unforgettable experience.</p>
           <Book/>
