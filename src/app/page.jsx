@@ -16,7 +16,7 @@ export async function generateMetadata() {
       canonical: "/",
     },
     openGraph: {
-      title: "Caravan Serai",
+      title: "Caravan Serai | Luxury Hotel & Spa Official Site ",
       description: "Book your stay at Caravan Serai Marrakesh. Enjoy spa treatments, hammams, fine dining, and elegant accommodations in a serene oasis.",
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
       robots: {

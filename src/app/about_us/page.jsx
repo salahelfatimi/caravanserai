@@ -7,7 +7,7 @@ export async function generateMetadata() {
         canonical: "/about_us",
       },
       openGraph: {
-        title: "Caravan Serai",
+        title: "Caravan Serai / Luxury Retreat in Marrakesh",
         description: "Discover Caravan Serai, a tranquil oasis in Marrakesh offering luxury stays, spa treatments, fine dining, and authentic Moroccan hospitality.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/about_us`,
         robots: {

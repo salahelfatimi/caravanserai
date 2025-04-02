@@ -9,7 +9,7 @@ export async function generateMetadata() {
         canonical: "/spa_and_wellness/hair_removal",
       },
       openGraph: {
-        title: "Caravan Serai",
+        title: "Caravan Serai / Hair Removal at Caravan Serai Marrakech",
         description: "Achieve smooth, radiant skin with our expert hair removal services at Caravan Serai Marrakech. Enjoy a perfect and gentle experience with our professional treatments. Book your session today!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/spa_and_wellness/hair_removal`,
         robots: {

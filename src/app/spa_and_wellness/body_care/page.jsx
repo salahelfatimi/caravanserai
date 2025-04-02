@@ -8,7 +8,7 @@ export async function generateMetadata() {
         canonical: "/spa_and_wellness/body_care",
       },
       openGraph: {
-        title: "Caravan Serai",
+        title: "Caravan Serai / Body Care at Caravan Serai Marrakech",
         description: "Rejuvenate your body and skin with luxurious body care treatments at Caravan Serai Marrakech. Indulge in nourishing treatments designed to leave you feeling refreshed and glowing. Book your session today!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/spa_and_wellness/body_care`,
         robots: {

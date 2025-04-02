@@ -1,27 +1,26 @@
-import Footer from "@/components/pages/footer/footer";
 
 export const metadata = {
-  title: "Politique de Confidentialité",
+  title: "Caravan Serai | Politique de Confidentialité",
   alternates: {
-    canonical: "/politique-de-confidentialite",
+    canonical: "/privacy-policy",
   },
   openGraph: {
-    title: "TRAFIC GENIUS | Politique de Confidentialité",
+    title: "Caravan Serai | Politique de Confidentialité",
     description:
-      "Découvrez comment Trafic Genius gère vos données personnelles et respecte votre vie privée sur ce site.",
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/politique-de-confidentialite`,
+      "Découvrez comment Caravan Serai gère vos données personnelles et respecte votre vie privée sur ce site.",
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}/privacy-policy`,
     robots: {
       index: true,
       follow: true,
     },
-    siteName: "TRAFIC GENIUS | Politique de Confidentialité",
+    siteName: "Caravan Serai | Politique de Confidentialité",
     images: [
       {
         url: `/opengraph-image.jpg`,
         secureUrl: `/opengraph-image.jpg`,
         width: 1200,
         height: 675,
-        alt: `TRAFIC GENIUS`,
+        alt: `Caravan Serai`,
       },
     ],
     type: "website",

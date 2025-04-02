@@ -7,7 +7,7 @@ export async function generateMetadata() {
         canonical: "/book_at_caravan_serai",
       },
       openGraph: {
-        title: "Caravan Serai",
+        title: "Caravan Serai / Book Your Stay at Caravan Serai Today",
         description: " Reach out to Caravan Serai in Marrakesh for reservations, inquiries, or event bookings. Call, email, or visit us for an unforgettable experience.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/book_at_caravan_serai`,
         robots: {

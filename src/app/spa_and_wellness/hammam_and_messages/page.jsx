@@ -8,7 +8,7 @@ export async function generateMetadata() {
         canonical: "/spa_and_wellness/hammam_and_messages",
       },
       openGraph: {
-        title: "Caravan Serai",
+        title: "Caravan Serai / Hammam & Massages at Caravan Serai Marrakech",
         description: "Experience ultimate relaxation at Caravan Serai Marrakech with traditional Moroccan hammam treatments and rejuvenating massages. Indulge in a soothing journey for the body and mind. Book your treatment today!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/spa_and_wellness/hammam_and_messages`,
         robots: {

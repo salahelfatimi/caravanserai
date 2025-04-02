@@ -8,7 +8,7 @@ export async function generateMetadata() {
         canonical: "/restaurants/franch",
       },
       openGraph: {
-        title: "Caravan Serai",
+        title: "Caravan Serai / Best French Cuisine",
         description: "Enjoy authentic French dishes at our restaurant in Morocco. Experience refined culinary delights with exceptional service and a warm ambiance. Book your table today!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/restaurants/franch`,
         robots: {
