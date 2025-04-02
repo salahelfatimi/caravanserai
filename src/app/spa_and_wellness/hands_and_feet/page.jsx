@@ -4,12 +4,13 @@ import Image from "next/image";
 
 export async function generateMetadata() {
     return {
-      title: "Hands & Feet Care at Caravan Serai Marrakech",
+      title: "Caravan Serai | Hands & Feet Care at Caravan Serai Marrakech",
+      description: "Pamper your hands and feet with luxurious treatments at Caravan Serai Marrakech. Our professional care will leave your skin soft, smooth, and revitalized. Book your appointment today for the ultimate relaxation experience!",
       alternates: {
         canonical: "/spa_and_wellness/hands_and_feet",
       },
       openGraph: {
-        title: "Caravan Serai / Hands & Feet Care at Caravan Serai Marrakech",
+        title: "Caravan Serai | Hands & Feet Care at Caravan Serai Marrakech",
         description: "Pamper your hands and feet with luxurious treatments at Caravan Serai Marrakech. Our professional care will leave your skin soft, smooth, and revitalized. Book your appointment today for the ultimate relaxation experience!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/spa_and_wellness/hands_and_feet`,
         robots: {

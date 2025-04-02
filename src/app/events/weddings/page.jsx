@@ -3,12 +3,13 @@ import Link from "next/link";
 
 export async function generateMetadata() {
     return {
-      title: "Weddings & Celebrations At Caravan Serai Marrakech",
+      title: "Caravan Serai | Weddings & Celebrations At Caravan Serai Marrakech",
+      description: "Celebrate your special day at Caravan Serai Marrakech. From weddings to anniversaries, our stunning venue and expert planners will create unforgettable memories. Book your celebration with us today!",
       alternates: {
         canonical: "/events/weddings",
       },
       openGraph: {
-        title: "Caravan Serai / Weddings & Celebrations At Caravan Serai Marrakech",
+        title: "Caravan Serai | Weddings & Celebrations At Caravan Serai Marrakech",
         description: "Celebrate your special day at Caravan Serai Marrakech. From weddings to anniversaries, our stunning venue and expert planners will create unforgettable memories. Book your celebration with us today!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/events/weddings`,
         robots: {

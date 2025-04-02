@@ -3,12 +3,13 @@ import Image from "next/image";
 
 export async function generateMetadata() {
     return {
-      title: "Billiards at Caravan Serai Marrakech",
+      title: "Caravan Serai | Billiards at Caravan Serai Marrakech",
+      description: "Unwind with a game of billiards at Caravan Serai Marrakech. Experience a relaxing atmosphere while enjoying our top-notch facilities in a luxurious setting. Join us for a fun and elegant experience today!",
       alternates: {
         canonical: "/experiences/billiards",
       },
       openGraph: {
-        title: "Caravan Serai / Billiards at Caravan Serai Marrakech",
+        title: "Caravan Serai | Billiards at Caravan Serai Marrakech",
         description: "Unwind with a game of billiards at Caravan Serai Marrakech. Experience a relaxing atmosphere while enjoying our top-notch facilities in a luxurious setting. Join us for a fun and elegant experience today!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/experiences/billiards`,
         robots: {

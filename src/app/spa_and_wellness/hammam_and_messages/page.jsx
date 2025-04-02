@@ -3,12 +3,13 @@ import Image from "next/image";
 
 export async function generateMetadata() {
     return {
-      title: "Hammam & Massages at Caravan Serai Marrakech",
+      title: "Caravan Serai | Hammam & Massages at Caravan Serai Marrakech",
+      description: "Experience ultimate relaxation at Caravan Serai Marrakech with traditional Moroccan hammam treatments and rejuvenating massages. Indulge in a soothing journey for the body and mind. Book your treatment today!",
       alternates: {
         canonical: "/spa_and_wellness/hammam_and_messages",
       },
       openGraph: {
-        title: "Caravan Serai / Hammam & Massages at Caravan Serai Marrakech",
+        title: "Caravan Serai | Hammam & Massages at Caravan Serai Marrakech",
         description: "Experience ultimate relaxation at Caravan Serai Marrakech with traditional Moroccan hammam treatments and rejuvenating massages. Indulge in a soothing journey for the body and mind. Book your treatment today!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/spa_and_wellness/hammam_and_messages`,
         robots: {

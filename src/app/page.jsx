@@ -12,6 +12,8 @@ import Suites_page_privees from "@/components/pages/suites_page_privees";
 export async function generateMetadata() {
   return {
     title: "Caravan Serai | Luxury Hotel & Spa Official Site ",
+    description: "Book your stay at Caravan Serai Marrakesh. Enjoy spa treatments, hammams, fine dining, and elegant accommodations in a serene oasis.",
+
     alternates: {
       canonical: "/",
     },

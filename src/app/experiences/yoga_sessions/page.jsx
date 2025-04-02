@@ -3,12 +3,13 @@ import Image from "next/image";
 
 export async function generateMetadata() {
     return {
-      title: "Rejuvenate Your Mind & Body",
+      title: "Caravan Serai | Rejuvenate Your Mind & Body",
+      description: "Find balance and relaxation with our yoga sessions at Caravan Serai Marrakech. Experience peace of mind and body in a serene setting with expert instructors. Book your session today!",
       alternates: {
         canonical: "/experiences/yoga_sessions",
       },
       openGraph: {
-        title: "Caravan Serai / Rejuvenate Your Mind & Body",
+        title: "Caravan Serai | Rejuvenate Your Mind & Body",
         description: "Find balance and relaxation with our yoga sessions at Caravan Serai Marrakech. Experience peace of mind and body in a serene setting with expert instructors. Book your session today!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/experiences/yoga_sessions`,
         robots: {

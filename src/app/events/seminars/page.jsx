@@ -3,12 +3,13 @@ import Link from "next/link";
 
 export async function generateMetadata() {
     return {
-      title: "Professional Meeting & Event Space",
+      title: "Caravan Serai | Professional Meeting & Event Space",
+      description: "Host your next seminar or corporate event at Caravan Serai Marrakech. Our luxurious venue offers a perfect setting for seminars, conferences, and business meetings. Book your event space today!",
       alternates: {
         canonical: "/events/seminars",
       },
       openGraph: {
-        title: "Caravan Serai / Professional Meeting & Event Space",
+        title: "Caravan Serai | Professional Meeting & Event Space",
         description: "Host your next seminar or corporate event at Caravan Serai Marrakech. Our luxurious venue offers a perfect setting for seminars, conferences, and business meetings. Book your event space today!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/events/seminars`,
         robots: {

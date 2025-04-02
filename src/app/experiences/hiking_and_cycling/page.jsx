@@ -3,12 +3,13 @@ import Image from "next/image";
 
 export async function generateMetadata() {
     return {
-      title: "Explore the Surroundings of Marrakech",
+      title: "Caravan Serai | Explore the Surroundings of Marrakech",
+      description: "Discover the beauty of Marrakech with hiking and cycling adventures at Caravan Serai. Enjoy guided tours through scenic landscapes and immerse yourself in nature. Book your outdoor experience today!",
       alternates: {
         canonical: "/experiences/hiking_and_cycling",
       },
       openGraph: {
-        title: "Caravan Serai / Explore the Surroundings of Marrakech",
+        title: "Caravan Serai | Explore the Surroundings of Marrakech",
         description: "Discover the beauty of Marrakech with hiking and cycling adventures at Caravan Serai. Enjoy guided tours through scenic landscapes and immerse yourself in nature. Book your outdoor experience today!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/experiences/hiking_and_cycling`,
         robots: {

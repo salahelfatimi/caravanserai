@@ -5,12 +5,13 @@ import Image from "next/image";
 
 export async function generateMetadata() {
     return {
-      title: "Exceptional Dining Experience with Multiple Restaurants",
+      title: "Caravan Serai | Exceptional Dining Experience with Multiple Restaurants",
+      description: "Explore a variety of exceptional dining experiences at Caravan Serai in Marrakech. From authentic Moroccan cuisine to international flavors, our restaurants offer something for every taste. Browse our menu options today!",
       alternates: {
         canonical: "/restaurants/menu",
       },
       openGraph: {
-        title: "Caravan Serai / Exceptional Dining Experience with Multiple Restaurants",
+        title: "Caravan Serai | Exceptional Dining Experience with Multiple Restaurants",
         description: "Explore a variety of exceptional dining experiences at Caravan Serai in Marrakech. From authentic Moroccan cuisine to international flavors, our restaurants offer something for every taste. Browse our menu options today!",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/restaurants/franch`,
         robots: {

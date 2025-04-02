@@ -1,13 +1,13 @@
 
 export const metadata = {
   title: "Caravan Serai | Politique de Confidentialité",
+  description:"Découvrez comment Caravan Serai gère vos données personnelles et respecte votre vie privée sur ce site.",
   alternates: {
     canonical: "/privacy-policy",
   },
   openGraph: {
     title: "Caravan Serai | Politique de Confidentialité",
-    description:
-      "Découvrez comment Caravan Serai gère vos données personnelles et respecte votre vie privée sur ce site.",
+    description:"Découvrez comment Caravan Serai gère vos données personnelles et respecte votre vie privée sur ce site.",
     url: `${process.env.NEXT_PUBLIC_BASE_URL}/privacy-policy`,
     robots: {
       index: true,

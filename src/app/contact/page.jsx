@@ -2,12 +2,13 @@
 import ContactPage from "@/components/pages/contact/page";
 export async function generateMetadata() {
     return {
-      title: "Get in Touch with Us",
+      title: "Caravan Serai | Get in Touch with Us",
+      description: " Reach out to Caravan Serai in Marrakesh for reservations, inquiries, or event bookings. Call, email, or visit us for an unforgettable experience.",
       alternates: {
         canonical: "/contact",
       },
       openGraph: {
-        title: "Caravan Serai / Get in Touch with Us",
+        title: "Caravan Serai | Get in Touch with Us",
         description: " Reach out to Caravan Serai in Marrakesh for reservations, inquiries, or event bookings. Call, email, or visit us for an unforgettable experience.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact`,
         robots: {
