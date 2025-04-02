@@ -15,10 +15,10 @@ export default function Activitte() {
             </div>
                 <div className=" flex flex-col  items-center justify-center text-white py-10 container">
                     <h2 className=" text-4xl text-center font-boska font-medium mb-4">
-                        Adventures, Culture & Pure Fun
+                        Adventures, Culture & Pure Fun at Caravan Serai
                     </h2>
                     <p className={`text-sm lg:text-xl text-center  mb-4`}>
-                        From sunrise bike rides through palm groves to sunset yoga on the terrace, Caravan Serai turns every moment into an adventure. Explore local art, dive into Moroccan culture, or challenge your friends to a game of billiards — because at Caravan Serai, every day is a new story waiting to be written.
+                        From sunrise bike rides through palm groves to sunset yoga on the terrace, Caravan Serai transforms every moment into an unforgettable adventure. Explore local art, immerse yourself in Moroccan culture, or challenge your friends to a game of billiards — at Caravan Serai, every day is a new story waiting to be written.                    
                     </p>
                     <button onClick={handleBookNowClick}  className="bg-white hover:bg-primary border-2 border-white hover:text-white duration-700 text-primary text-2xl font-boska px-8 py-2">
                         Book Now

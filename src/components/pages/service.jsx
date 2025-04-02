@@ -29,7 +29,7 @@ const ServiceList = () => {
         <div className="bg-primary bg-contain lg:bg-[url(/img/bg.svg)]">
             <div className="flex flex-col gap-6 py-20 container">
                 <h2 className="text-3xl lg:text-6xl text-center font-boska font-medium text-white">
-                    Premium Hotel Services for an Unforgettable Stay
+                    Caravan Serai Services for an Unforgettable Stay
                 </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-2">
                     {services.map(({ title, description, icon: Icon }, index) => (
