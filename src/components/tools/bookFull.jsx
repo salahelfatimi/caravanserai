@@ -19,6 +19,7 @@ export default function BookFull() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [validation, setValidation] = useState(false);
     const [showAlert, setShowAlert] = useState(false); 
+    const [isNonRefundable, setIsNonRefundable] = useState(false); // State for non-refundable checkbox
 
     const handleAdultsChange = (delta) => {
         const newAdults = Math.max(1, adults + delta);
@@ -42,7 +43,7 @@ export default function BookFull() {
         setAdults(maxPeopleForSuite);
     };
     const handleConfirmExtraPerson = () => {
-        setAdults(adults + 1);
+        setAdults(adults + 1); 
         setShowExtraPersonMessage(true);
         setShowAlert(false); 
     };
@@ -55,11 +56,20 @@ export default function BookFull() {
         e.preventDefault();
         setValidation(true);
         setIsSubmitting(true);
+
         if (!fullName || !phone || !email || !suites) {
             toast.error('Please fill in all required fields.');
             setIsSubmitting(false);
             return;
         }
+
+        // Check if the non-refundable checkbox is checked
+        if (!isNonRefundable) {
+            toast.error('Please agree to the non-refundable policy.');
+            setIsSubmitting(false);
+            return;
+        }
+
         const reservationData = {
             startDate: startDate.toLocaleDateString(),
             endDate: endDate.toLocaleDateString(),
@@ -69,7 +79,9 @@ export default function BookFull() {
             fullName,
             phone,
             email,
+            isNonRefundable, // Include the non-refundable flag
         };
+
         try {
             const response = await fetch('/api/book', {
                 method: 'POST',
@@ -91,6 +103,7 @@ export default function BookFull() {
                 setStartDate(new Date());
                 setMaxPeople(0);
                 setShowExtraPersonMessage(false);
+                setIsNonRefundable(false); // Reset the non-refundable checkbox
             } else {
                 toast.error('Failed to submit reservation.');
             }
@@ -102,6 +115,7 @@ export default function BookFull() {
             setValidation(false);
         }
     };
+
 
 
     return (
@@ -153,9 +167,22 @@ export default function BookFull() {
                                 <h3 className={` after:ml-0.5 after:text-red-500 after:content-['*'] text-primary text-lg lg:text-xl mb-2 font-medium font-serif text-center`}>Email</h3>
                                 <input type="email" onChange={(e) => setEmail(e.target.value)} value={email} name="email" id="" className={` ${validation && !email ? 'border-red-500' : 'border-primary'} bg-transparent border-b-2 border-primary text-lg placeholder:text-2xl text-black focus:outline-none w-full text-center pl-4`} />
                             </div>
+                            <div className="flex items-center justify-center ">
+                                <input
+                                    type="checkbox"
+                                    id="nonRefundable"
+                                    checked={isNonRefundable}
+                                    onChange={(e) => setIsNonRefundable(e.target.checked)}
+                                    className="mr-2"
+                                />
+                                <label htmlFor="nonRefundable" className="text-primary ">
+                                    I agree to the <span className="text-red-500">non-refundable</span> policy
+                                </label>
+                            </div>
                         </div>
                         
                     </form>
+                    
                     {showExtraPersonMessage && (
                             <p className="text-white mt-2 rounded text-sm font-medium  text-center bg-red-500 p-2">Adding a third person will incur an additional charge.</p>
                     )}

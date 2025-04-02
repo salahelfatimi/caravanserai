@@ -18,6 +18,7 @@ export default function Book() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [validation, setValidation] = useState(false);
     const [showAlert, setShowAlert] = useState(false); 
+    const [isNonRefundable, setIsNonRefundable] = useState(false); // State for non-refundable checkbox
 
     const handleAdultsChange = (delta) => {
         const newAdults = Math.max(1, adults + delta);
@@ -54,11 +55,20 @@ export default function Book() {
         e.preventDefault();
         setValidation(true);
         setIsSubmitting(true);
+
         if (!fullName || !phone || !email || !suites) {
             toast.error('Please fill in all required fields.');
             setIsSubmitting(false);
             return;
         }
+
+        // Check if the non-refundable checkbox is checked
+        if (!isNonRefundable) {
+            toast.error('Please agree to the non-refundable policy.');
+            setIsSubmitting(false);
+            return;
+        }
+
         const reservationData = {
             startDate: startDate.toLocaleDateString(),
             endDate: endDate.toLocaleDateString(),
@@ -68,7 +78,9 @@ export default function Book() {
             fullName,
             phone,
             email,
+            isNonRefundable, // Include the non-refundable flag
         };
+
         try {
             const response = await fetch('/api/book', {
                 method: 'POST',
@@ -90,6 +102,7 @@ export default function Book() {
                 setStartDate(new Date());
                 setMaxPeople(0);
                 setShowExtraPersonMessage(false);
+                setIsNonRefundable(false); // Reset the non-refundable checkbox
             } else {
                 toast.error('Failed to submit reservation.');
             }
@@ -101,6 +114,7 @@ export default function Book() {
             setValidation(false);
         }
     };
+
 
     return (
         <div id='book' className=''>
@@ -153,6 +167,18 @@ export default function Book() {
                         </div>
                         
                     </form>
+                    <div className="flex items-center justify-center mt-4">
+                        <input
+                            type="checkbox"
+                            id="nonRefundable"
+                            checked={isNonRefundable}
+                            onChange={(e) => setIsNonRefundable(e.target.checked)}
+                            className="mr-2"
+                        />
+                        <label htmlFor="nonRefundable" className="text-primary ">
+                            I agree to the <span className="text-red-500">non-refundable</span> policy
+                        </label>
+                    </div>
                     {showExtraPersonMessage && (
                         <p className="text-white mt-2 rounded text-sm font-medium  text-center bg-red-500 p-2">Adding a third person will incur an additional charge.</p>
                     )}
@@ -168,6 +194,7 @@ export default function Book() {
                             {isSubmitting ? 'Booking...' : 'Book Now'} <Calendar1 />
                         </button>
                     </div>
+                    
                     {showAlert && (
                         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4">
                             <div className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6 w-96">
