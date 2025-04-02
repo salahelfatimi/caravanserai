@@ -8,7 +8,7 @@ import MessageCookies from "@/components/tools/cookies/message";
 
 const montserratAlternates = Montserrat_Alternates({
     subsets: ['latin'],
-    weight: ['400', '500', '700'], // Customize based on your design
+    weight: ['400', '500', '700'],
     display: 'swap',
 });
 
@@ -16,7 +16,7 @@ const montserratAlternates = Montserrat_Alternates({
 export const metadata = {
   title: {  template: "Caravan Serai | %s" } ,
   description: "Book your stay at Caravan Serai Marrakesh. Enjoy spa treatments, hammams, fine dining, and elegant accommodations in a serene oasis.",
-  keywords: ["Caravan Serai", "Marrakech", "Morocco", "luxury hotel", "boutique hotel", "spa", "hammam", "restaurant", "activities", "suites", "private suites", "book now"],
+  keywords: ["Caravan Serai", "caravan serai marrakech", "caravan serai", "caravanserai", "caravan+serai+marrakech+morocco", "caravan serai hotel", "caravan saray", "caravan serai marrakech morocco", "hotels in marrakech with pool", "caravansérail", "hotel caravanserai marrakech", "caravansérail maroc","hotel caravan serail"],
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
 };
 
