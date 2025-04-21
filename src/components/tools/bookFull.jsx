@@ -165,7 +165,6 @@ export default function Book() {
         <Toaster position="bottom-right" reverseOrder={false} />
             <div className=" w-1/2 ">
                 <div className="min-h-[10rem] container w-full flex items-center flex-col justify-center   ">
-                    {showExtraPersonMessage && (<p className="text-white mb-2 rounded text-sm font-medium  text-center bg-red-500 p-2 ">Adding a third person will incur an additional charge.</p>)}
                     <form onSubmit={handleSubmit} className="flex flex-col justify-center border-4 border-primary  p-4 py-20  shadow-2xl bg-white  w-full">
                         <div className={`flex flex-col  justify-between mx-auto py-2 px-10 gap-10 ${etaps == false ? 'block' : 'hidden'}`}>
                             <div className="flex flex-col items-center justify-center ">
@@ -221,6 +220,7 @@ export default function Book() {
                             </label>
                         </div>
                     </form>
+                    {showExtraPersonMessage && (<p className="text-white mb-2 rounded-full text-sm font-medium  text-center bg-red-500 p-2 mt-4 ">Adding a third person will incur an additional charge.</p>)}
                     <div className="container w-full flex flex-row items-center justify-center gap-3 mx-auto px-4 mt-6">
                         <button onClick={() => setEtaps(false)} className={`${etaps == true ? 'block' : 'hidden'} flex flex-row-reverse gap-2 items-center bg-primary font-bold capitalize lg:ttext-lg text-white py-2 px-6 rounded-full hover:bg-white hover:text-primary border-2 border-primary transition duration-300`}>
                             Back <ChevronLeft />

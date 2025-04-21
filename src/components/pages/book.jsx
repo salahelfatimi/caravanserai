@@ -165,7 +165,7 @@ export default function Book() {
             <Toaster position="bottom-right" reverseOrder={false} />
             <div className=" ">
                 <div className="min-h-[10rem] container w-fit flex items-center flex-col justify-center   ">
-                    {showExtraPersonMessage && (<p className="text-white mb-2 rounded text-sm font-medium  text-center bg-red-500 p-2 ">Adding a third person will incur an additional charge.</p>)}
+                    {showExtraPersonMessage && (<p className="text-white mb-2 rounded-full text-sm font-medium  text-center bg-red-500 p-2 ">Adding a third person will incur an additional charge.</p>)}
                     <form onSubmit={handleSubmit} className="flex flex-col justify-center border-4 border-primary  p-4  shadow-2xl bg-white lg:rounded-full ">
                         <div className={`flex flex-col lg:flex-row justify-between mx-auto py-2 px-10 gap-10 ${etaps == false ? 'block' : 'hidden'}`}>
                             <div className="flex flex-col items-center justify-center ">
