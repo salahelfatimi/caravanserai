@@ -163,7 +163,7 @@ export default function Book() {
     return (
         <div  className='min-h-screen flex flex-col items-center justify-center z-50 bg-[url("/img/header.png")]'>            
         <Toaster position="bottom-right" reverseOrder={false} />
-            <div className=" w-1/2 ">
+            <div className="  ">
                 <div className="min-h-[10rem] container w-full flex items-center flex-col justify-center   ">
                     <form onSubmit={handleSubmit} className="flex flex-col justify-center border-4 border-primary  p-4 py-20  shadow-2xl bg-white  w-full">
                         <div className={`flex flex-col  justify-between mx-auto py-2 px-10 gap-10 ${etaps == false ? 'block' : 'hidden'}`}>
